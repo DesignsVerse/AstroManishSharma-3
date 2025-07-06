@@ -10,6 +10,7 @@ import { Calendar, Clock, ArrowRight, Search } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import Link from 'next/link';
 
+
 function BlogContent() {
   const { t } = useLanguage();
 
