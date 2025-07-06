@@ -189,7 +189,6 @@ function AboutContent() {
     </div>
   );
 }
-
 export default function AboutPage() {
   return (
     <LanguageProvider>

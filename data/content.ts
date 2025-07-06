@@ -1,3 +1,6 @@
+import { services } from './services/services';
+import { blog } from './blog/blog';
+
 export const content = {
   en: {
     header: {
@@ -18,102 +21,8 @@ export const content = {
       cta: "Book Consultation",
       secondary: "Learn More"
     },
-    services: {
-      title: "Our Services",
-      subtitle: "Comprehensive Astrology Solutions",
-      items: [
-        {
-          id: "birth-chart-analysis",
-          title: "Birth Chart Analysis",
-          description: "Complete natal chart reading with detailed personality insights and life path guidance.",
-          price: "₹2,999",
-          duration: "60 minutes",
-          features: ["Detailed PDF Report", "Personal Consultation", "Future Predictions"],
-          image: "https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600"
-        },
-        {
-          id: "relationship-compatibility",
-          title: "Relationship Compatibility",
-          description: "Analyze relationship dynamics and compatibility between partners using vedic astrology.",
-          price: "₹3,499",
-          duration: "45 minutes",
-          features: ["Couple Analysis", "Compatibility Score", "Relationship Guidance"],
-          image: "https://images.pexels.com/photos/6077368/pexels-photo-6077368.jpeg?auto=compress&cs=tinysrgb&w=600"
-        },
-        {
-          id: "career-guidance",
-          title: "Career Guidance",
-          description: "Professional astrology consultation for career decisions and business ventures.",
-          price: "₹2,499",
-          duration: "45 minutes",
-          features: ["Career Path Analysis", "Best Timing", "Success Predictions"],
-          image: "https://images.pexels.com/photos/6077334/pexels-photo-6077334.jpeg?auto=compress&cs=tinysrgb&w=600"
-        },
-        {
-          id: "health-astrology",
-          title: "Health Astrology",
-          description: "Health predictions and wellness guidance based on planetary positions.",
-          price: "₹2,199",
-          duration: "30 minutes",
-          features: ["Health Analysis", "Preventive Measures", "Wellness Tips"],
-          image: "https://images.pexels.com/photos/6077335/pexels-photo-6077335.jpeg?auto=compress&cs=tinysrgb&w=600"
-        },
-        {
-          id: "financial-astrology",
-          title: "Financial Astrology",
-          description: "Investment timing, wealth predictions, and financial planning guidance.",
-          price: "₹2,799",
-          duration: "45 minutes",
-          features: ["Wealth Analysis", "Investment Timing", "Financial Planning"],
-          image: "https://images.pexels.com/photos/6077336/pexels-photo-6077336.jpeg?auto=compress&cs=tinysrgb&w=600"
-        },
-        {
-          id: "gemstone-consultation",
-          title: "Gemstone Consultation",
-          description: "Personalized gemstone recommendations based on your birth chart.",
-          price: "₹1,999",
-          duration: "30 minutes",
-          features: ["Gemstone Selection", "Wearing Guidelines", "Activation Process"],
-          image: "https://images.pexels.com/photos/6077337/pexels-photo-6077337.jpeg?auto=compress&cs=tinysrgb&w=600"
-        }
-      ]
-    },
-    blog: {
-      title: "Astrology Insights",
-      subtitle: "Latest Articles & Wisdom",
-      posts: [
-        {
-          id: "understanding-moon-sign",
-          title: "Understanding Your Moon Sign",
-          excerpt: "Discover how your moon sign influences your emotional nature and inner self.",
-          date: "March 15, 2024",
-          readTime: "5 min read",
-          category: "Basics",
-          image: "https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600",
-          author: "Dr. Rajesh Sharma"
-        },
-        {
-          id: "mercury-retrograde-guide",
-          title: "Mercury Retrograde: What You Need to Know",
-          excerpt: "Learn how to navigate Mercury retrograde periods and turn challenges into opportunities.",
-          date: "March 10, 2024",
-          readTime: "7 min read",
-          category: "Transits",
-          image: "https://images.pexels.com/photos/6077368/pexels-photo-6077368.jpeg?auto=compress&cs=tinysrgb&w=600",
-          author: "Dr. Priya Gupta"
-        },
-        {
-          id: "vedic-astrology-power",
-          title: "The Power of Vedic Astrology",
-          excerpt: "Explore the ancient wisdom of Vedic astrology and its relevance in modern times.",
-          date: "March 5, 2024",
-          readTime: "6 min read",
-          category: "Vedic",
-          image: "https://images.pexels.com/photos/6077334/pexels-photo-6077334.jpeg?auto=compress&cs=tinysrgb&w=600",
-          author: "Master Acharya Sharma"
-        }
-      ]
-    },
+    services: services.en,
+    blog: blog.en,
     about: {
       title: "About AstroMystic",
       subtitle: "Your Trusted Astrology Partner",
@@ -218,102 +127,8 @@ export const content = {
       cta: "परामर्श बुक करें",
       secondary: "और जानें"
     },
-    services: {
-      title: "हमारी सेवाएं",
-      subtitle: "व्यापक ज्योतिष समाधान",
-      items: [
-        {
-          id: "birth-chart-analysis",
-          title: "जन्म कुंडली विश्लेषण",
-          description: "विस्तृत व्यक्तित्व अंतर्दृष्टि और जीवन पथ मार्गदर्शन के साथ पूर्ण जन्म कुंडली रीडिंग।",
-          price: "₹2,999",
-          duration: "60 मिनट",
-          features: ["विस्तृत पीडीएफ रिपोर्ट", "व्यक्तिगत परामर्श", "भविष्य की भविष्यवाणियां"],
-          image: "https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600"
-        },
-        {
-          id: "relationship-compatibility",
-          title: "रिश्ते की अनुकूलता",
-          description: "वैदिक ज्योतिष का उपयोग करके साझेदारों के बीच रिश्ते की गतिशीलता और अनुकूलता का विश्लेषण।",
-          price: "₹3,499",
-          duration: "45 मिनट",
-          features: ["जोड़े का विश्लेषण", "अनुकूलता स्कोर", "रिश्ते का मार्गदर्शन"],
-          image: "https://images.pexels.com/photos/6077368/pexels-photo-6077368.jpeg?auto=compress&cs=tinysrgb&w=600"
-        },
-        {
-          id: "career-guidance",
-          title: "करियर मार्गदर्शन",
-          description: "करियर निर्णयों और व्यावसायिक उद्यमों के लिए पेशेवर ज्योतिष परामर्श।",
-          price: "₹2,499",
-          duration: "45 मिनट",
-          features: ["करियर पथ विश्लेषण", "सर्वोत्तम समय", "सफलता की भविष्यवाणियां"],
-          image: "https://images.pexels.com/photos/6077334/pexels-photo-6077334.jpeg?auto=compress&cs=tinysrgb&w=600"
-        },
-        {
-          id: "health-astrology",
-          title: "स्वास्थ्य ज्योतिष",
-          description: "ग्रहों की स्थिति के आधार पर स्वास्थ्य भविष्यवाणियां और कल्याण मार्गदर्शन।",
-          price: "₹2,199",
-          duration: "30 मिनट",
-          features: ["स्वास्थ्य विश्लेषण", "निवारक उपाय", "कल्याण सुझाव"],
-          image: "https://images.pexels.com/photos/6077335/pexels-photo-6077335.jpeg?auto=compress&cs=tinysrgb&w=600"
-        },
-        {
-          id: "financial-astrology",
-          title: "वित्तीय ज्योतिष",
-          description: "निवेश समय, धन भविष्यवाणियां, और वित्तीय योजना मार्गदर्शन।",
-          price: "₹2,799",
-          duration: "45 मिनट",
-          features: ["धन विश्लेषण", "निवेश समय", "वित्तीय योजना"],
-          image: "https://images.pexels.com/photos/6077336/pexels-photo-6077336.jpeg?auto=compress&cs=tinysrgb&w=600"
-        },
-        {
-          id: "gemstone-consultation",
-          title: "रत्न परामर्श",
-          description: "आपकी जन्म कुंडली के आधार पर व्यक्तिगत रत्न सिफारिशें।",
-          price: "₹1,999",
-          duration: "30 मिनट",
-          features: ["रत्न चयन", "पहनने के दिशानिर्देश", "सक्रियकरण प्रक्रिया"],
-          image: "https://images.pexels.com/photos/6077337/pexels-photo-6077337.jpeg?auto=compress&cs=tinysrgb&w=600"
-        }
-      ]
-    },
-    blog: {
-      title: "ज्योतिष अंतर्दृष्टि",
-      subtitle: "नवीनतम लेख और ज्ञान",
-      posts: [
-        {
-          id: "understanding-moon-sign",
-          title: "अपनी चंद्र राशि को समझना",
-          excerpt: "जानें कि आपकी चंद्र राशि आपकी भावनात्मक प्रकृति और आंतरिक स्वभाव को कैसे प्रभावित करती है।",
-          date: "15 मार्च, 2024",
-          readTime: "5 मिनट पढ़ें",
-          category: "बेसिक्स",
-          image: "https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600",
-          author: "डॉ. राजेश शर्मा"
-        },
-        {
-          id: "mercury-retrograde-guide",
-          title: "बुध वक्री: आपको क्या जानना चाहिए",
-          excerpt: "बुध वक्री अवधि को नेविगेट करना सीखें और चुनौतियों को अवसरों में बदलें।",
-          date: "10 मार्च, 2024",
-          readTime: "7 मिनट पढ़ें",
-          category: "ट्रांजिट",
-          image: "https://images.pexels.com/photos/6077368/pexels-photo-6077368.jpeg?auto=compress&cs=tinysrgb&w=600",
-          author: "डॉ. प्रिया गुप्ता"
-        },
-        {
-          id: "vedic-astrology-power",
-          title: "वैदिक ज्योतिष की शक्ति",
-          excerpt: "वैदिक ज्योतिष के प्राचीन ज्ञान और आधुनिक समय में इसकी प्रासंगिकता का अन्वेषण करें।",
-          date: "5 मार्च, 2024",
-          readTime: "6 मिनट पढ़ें",
-          category: "वैदिक",
-          image: "https://images.pexels.com/photos/6077334/pexels-photo-6077334.jpeg?auto=compress&cs=tinysrgb&w=600",
-          author: "मास्टर आचार्य शर्मा"
-        }
-      ]
-    },
+    services: services.hi,
+    blog: blog.hi,
     about: {
       title: "एस्ट्रोमिस्टिक के बारे में",
       subtitle: "आपका भरोसेमंद ज्योतिष साथी",

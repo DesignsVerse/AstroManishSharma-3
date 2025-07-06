@@ -325,12 +325,11 @@ function ContactContent() {
       <Footer />
     </div>
   );
-}
-
-export default function ContactPage() {
+}export default function ContactPage() {
   return (
     <LanguageProvider>
       <ContactContent />
     </LanguageProvider>
   );
 }
+
