@@ -16,6 +16,7 @@ import { ServiceId } from '@/types/service';
 function ServiceDetailContent() {
   const { t, language } = useLanguage();
   const params = useParams();
+  
   const serviceId = params.id as ServiceId;
 
   const service = serviceDetails[language][serviceId];
