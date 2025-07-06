@@ -1,5 +1,4 @@
 "use client";
-
 import { LanguageProvider } from '@/contexts/LanguageContext';
 import { useLanguage } from '@/contexts/LanguageContext';
 import Header from '@/components/Header';
