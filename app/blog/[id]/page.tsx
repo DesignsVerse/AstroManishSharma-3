@@ -10,6 +10,27 @@ import { Calendar, Clock, ArrowLeft, User, Share2, BookOpen } from 'lucide-react
 import Link from 'next/link';
 import { blogDetails } from '@/data/blogDetails';
 
+interface BlogPost {
+  title: string;
+  subtitle: string;
+  excerpt: string;
+  content: string;
+  date: string;
+  readTime: string;
+  category: string;
+  image: string;
+  author: string;
+  tags: string[];
+}
+
+interface BlogDetails {
+  [key: string]: BlogPost;
+}
+
+interface BlogDetailsData {
+  [language: string]: BlogDetails;
+}
+
 interface BlogDetailContentProps {
   params: { id: string };
 }
@@ -18,7 +39,8 @@ function BlogDetailContent({ params }: BlogDetailContentProps) {
   const { language } = useLanguage();
   const blogId = params.id;
 
-  const blog = blogDetails[language][blogId];
+  const blogDetailsData = blogDetails as BlogDetailsData;
+  const blog = blogDetailsData[language]?.[blogId];
 
   if (!blog) {
     return (
@@ -124,7 +146,7 @@ function BlogDetailContent({ params }: BlogDetailContentProps) {
             <div className="max-w-4xl mx-auto">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Tags:</h3>
               <div className="flex flex-wrap gap-2">
-                {blog.tags.map((tag, index) => (
+                {blog.tags.map((tag: string, index: number) => (
                   <Badge key={index} variant="secondary" className="bg-orange-50 text-orange-700">
                     {tag}
                   </Badge>

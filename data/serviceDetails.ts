@@ -1,4 +1,6 @@
-export const serviceDetails = {
+import { ServiceDetailsData } from '@/types/service';
+
+export const serviceDetails: ServiceDetailsData = {
   en: {
     "birth-chart-analysis": {
       title: "Birth Chart Analysis",

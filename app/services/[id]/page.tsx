@@ -11,11 +11,12 @@ import { Star, Clock, CheckCircle, ArrowLeft, Users, Award, Shield } from 'lucid
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { serviceDetails } from '@/data/serviceDetails';
+import { ServiceId } from '@/types/service';
 
 function ServiceDetailContent() {
   const { t, language } = useLanguage();
   const params = useParams();
-  const serviceId = params.id as string;
+  const serviceId = params.id as ServiceId;
 
   const service = serviceDetails[language][serviceId];
 
@@ -99,7 +100,7 @@ function ServiceDetailContent() {
                 What's Included
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                {service.features.map((feature, index) => (
+                {service.features.map((feature: string, index: number) => (
                   <div key={index} className="flex items-center gap-3 p-4 bg-orange-50 rounded-lg">
                     <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0" />
                     <span className="text-gray-700 font-medium">{feature}</span>
@@ -118,7 +119,7 @@ function ServiceDetailContent() {
                 What You'll Receive
               </h2>
               <div className="grid md:grid-cols-2 gap-8">
-                {service.whatYouGet.map((item, index) => (
+                {service.whatYouGet.map((item: string, index: number) => (
                   <Card key={index} className="border-orange-100">
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
@@ -143,7 +144,7 @@ function ServiceDetailContent() {
                 Our Process
               </h2>
               <div className="space-y-6">
-                {service.process.map((step, index) => (
+                {service.process.map((step: string, index: number) => (
                   <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-lg shadow-md">
                     <div className="bg-orange-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">
                       {index + 1}
@@ -164,7 +165,7 @@ function ServiceDetailContent() {
                 Why Choose Our Service
               </h2>
               <div className="grid md:grid-cols-3 gap-8">
-                {service.whyChoose.map((reason, index) => (
+                {service.whyChoose.map((reason: string, index: number) => (
                   <Card key={index} className="text-center border-orange-100">
                     <CardContent className="p-6">
                       <div className="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
