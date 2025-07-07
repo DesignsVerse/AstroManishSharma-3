@@ -49,16 +49,16 @@ function AboutContent() {
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-16 bg-gradient-to-br from-orange-50 to-amber-50">
+        <section className="py-16 bg-gradient-to-b from-orange-500 to-orange-600">
           <div className="container mx-auto px-4">
             <div className="text-center max-w-3xl mx-auto">
-              <h1 className="text-5xl font-bold text-gray-900 mb-6">
+              <h1 className="text-5xl font-bold text-white mb-6">
                 {t('about.title')}
               </h1>
-              <p className="text-xl text-orange-600 font-semibold mb-8">
+              <p className="text-xl text-orange-100 font-semibold mb-8">
                 {t('about.subtitle')}
               </p>
-              <p className="text-gray-600 leading-relaxed text-lg">
+              <p className="text-orange-100 leading-relaxed text-lg">
                 {t('about.description')}
               </p>
             </div>

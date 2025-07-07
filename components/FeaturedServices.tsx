@@ -14,7 +14,6 @@ export default function FeaturedServices() {
       icon: Star,
       title: "Birth Chart Reading",
       description: "Discover your cosmic blueprint and life purpose",
-      price: "₹2,999",
       duration: "60 min",
       popular: true,
       link: "/services/birth-chart-analysis"
@@ -23,7 +22,6 @@ export default function FeaturedServices() {
       icon: Heart,
       title: "Love Compatibility",
       description: "Find your perfect match through astrology",
-      price: "₹3,499",
       duration: "45 min",
       popular: false,
       link: "/services/relationship-compatibility"
@@ -32,7 +30,6 @@ export default function FeaturedServices() {
       icon: TrendingUp,
       title: "Career Guidance",
       description: "Navigate your professional journey with confidence",
-      price: "₹2,499",
       duration: "45 min",
       popular: false,
       link: "/services/career-guidance"
@@ -72,9 +69,6 @@ export default function FeaturedServices() {
                   {service.description}
                 </p>
                 <div className="flex items-center justify-center gap-4 mb-6">
-                  <span className="text-2xl font-bold text-orange-600">
-                    {service.price}
-                  </span>
                   <div className="flex items-center gap-1 text-gray-500">
                     <Clock className="w-4 h-4" />
                     <span className="text-sm">{service.duration}</span>

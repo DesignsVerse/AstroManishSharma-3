@@ -15,25 +15,31 @@ export const content = {
       cta: "Get Reading"
     },
     hero: {
-      title: "Unlock Your Destiny",
-      subtitle: "Professional Astrology Guidance",
-      description: "Discover your path through ancient wisdom and modern insights. Get personalized readings from experienced astrologers who understand your journey.",
-      cta: "Book Consultation",
-      secondary: "Learn More"
+      title: "Shri Baglamukhi Siddhapeeth, Nalkheda",
+      subtitle: "Experience the Divine Power of Maa Baglamukhi",
+      description: "Seek blessings at one of only three sacred Baglamukhi Siddhapeeths in the world. Discover spiritual peace and overcome obstacles through the divine grace of the Goddess who controls all negative energies.",
+      cta: "Book Puja Now",
+      secondary: "View Temple Timings",
+      features: [
+        "One of three sacred Baglamukhi Siddhapeeths",
+        "Ancient temple with powerful spiritual energy",
+        "Special rituals for victory over enemies",
+        "Navratri celebrations with unique traditions"
+      ]
     },
     services: services.en,
     blog: blog.en,
     about: {
-      title: "About AstroMystic",
-      subtitle: "Your Trusted Astrology Partner",
-      description: "With over 15 years of experience in Vedic and Western astrology, we provide authentic guidance to help you navigate life's challenges and opportunities.",
+      title: "About Maa Baglamukhi Temple, Nalkheda",
+      subtitle: "A Sacred Siddhapeeth",
+      description: "The Bagalamukhi Temple in Nalkheda is a revered shrine located on the banks of the Lakhundar River in Madhya Pradesh, dedicated to Goddess Bagalamukhi, one of the ten Mahavidyas in Hinduism.",
       stats: [
-        { number: "15+", label: "Years Experience" },
-        { number: "5000+", label: "Happy Clients" },
-        { number: "10000+", label: "Readings Done" },
-        { number: "98%", label: "Accuracy Rate" }
+        { number: "3", label: "Major Temples in India" },
+        { number: "200+", label: "Years of History" },
+        { number: "Siddhapeeth", label: "Divine Status" },
+        { number: "Year-Round", label: "Devotees Visit" }
       ],
-      story: "Founded by Master Astrologer Rajesh Sharma, AstroMystic has been guiding individuals and families through life's complexities using ancient wisdom and modern techniques. Our mission is to provide accurate, compassionate, and practical astrological guidance that empowers you to make informed decisions and live your best life."
+      story: "The Bagalamukhi Temple, Nalkheda is located on the banks of the Lakhundar River, a tributary of the Narmada River. It is one of only three important ancient Bagalamukhi temples in the world considered as Siddhapeeth.\n\nMaa Bagalamukhi holds the eighth place among the ten Mahavidyas and is associated with the color yellow. The temple was restored in 1815 and becomes particularly popular during Navaratri.\n\nThe temple complex features Bilvapatra, Champa, White Ankara, Amla, Neem and Peepal trees growing together, surrounded by lush green gardens. Despite being located in a cremation area, it attracts devotees throughout the year.\n\nNotable visitors have included Prime Minister Narendra Modi's brother, BJP MP Jagdambika Pal, MP Digvijaya Singh, and P. C. Sharma. The other two major Bagalamukhi temples are in Datia (Madhya Pradesh) and Kangra (Himachal Pradesh)."
     },
     testimonials: {
       title: "What Our Clients Say",
@@ -86,27 +92,30 @@ export const content = {
     contact: {
       title: "Contact Us",
       subtitle: "Get in Touch for Consultation",
-      description: "Ready to discover your destiny? Reach out to us for professional astrology consultation.",
+      description: "If you have any problem regarding any Pooja or Product then you can contact us by filling this form or you can directly call us from button given below.",
       form: {
         name: "Full Name",
+        firstName: "First Name",
+        lastName: "Last Name",
         email: "Email Address",
         phone: "Phone Number",
         service: "Select Service",
         message: "Your Message",
-        submit: "Send Message",
+        submit: "Send",
         birthDate: "Date of Birth",
         birthTime: "Time of Birth",
         birthPlace: "Place of Birth"
       },
       info: {
-        title: "Contact Information",
-        phone: "Phone",
-        email: "Email",
-        address: "Address",
+        title: "Maa Baglamukhi Mataji, Nalkheda, MadhyaPradesh",
+        phone: "+91 77339 94827",
+        email: "panditmanishs935@gmail.com",
+        address: "Maa Baglamukhi Mataji, Nalkheda, MadhyaPradesh",
         hours: "Working Hours",
-        hoursValue: "Mon - Sat: 9:00 AM - 8:00 PM"
+        hoursValue: "Mon - Sat: 9:00 AM - 8:00 PM",
+        callNow: "Call Now!!"
       }
-    }
+    },
   },
   hi: {
     header: {
@@ -121,25 +130,31 @@ export const content = {
       cta: "रीडिंग लें"
     },
     hero: {
-      title: "अपना भाग्य जानें",
-      subtitle: "पेशेवर ज्योतिष मार्गदर्शन",
-      description: "प्राचीन ज्ञान और आधुनिक अंतर्दृष्टि के माध्यम से अपना रास्ता खोजें। अनुभवी ज्योतिषियों से व्यक्तिगत रीडिंग प्राप्त करें।",
-      cta: "परामर्श बुक करें",
-      secondary: "और जानें"
+      title: "श्री बगलामुखी सिद्धपीठ, नलखेड़ा",
+      subtitle: "माँ बगलामुखी की दिव्य शक्ति का अनुभव करें",
+      description: "दुनिया के केवल तीन पवित्र बगलामुखी सिद्धपीठों में से एक में आशीर्वाद प्राप्त करें। नकारात्मक ऊर्जाओं को नियंत्रित करने वाली देवी की दिव्य कृपा से आध्यात्मिक शांति प्राप्त करें और बाधाओं को दूर करें।",
+      cta: "पूजा बुक करें",
+      secondary: "मंदिर समय देखें",
+      features: [
+        "तीन पवित्र बगलामुखी सिद्धपीठों में से एक",
+        "शक्तिशाली आध्यात्मिक ऊर्जा वाला प्राचीन मंदिर",
+        "शत्रुओं पर विजय के लिए विशेष अनुष्ठान",
+        "अनोखी परंपराओं के साथ नवरात्रि उत्सव"
+      ]
     },
     services: services.hi,
     blog: blog.hi,
     about: {
-      title: "एस्ट्रोमिस्टिक के बारे में",
-      subtitle: "आपका भरोसेमंद ज्योतिष साथी",
-      description: "वैदिक और पश्चिमी ज्योतिष में 15 से अधिक वर्षों के अनुभव के साथ, हम आपको जीवन की चुनौतियों और अवसरों से निपटने में मदद करने के लिए प्रामाणिक मार्गदर्शन प्रदान करते हैं।",
+      title: "माँ बगलामुखी मंदिर, नलखेड़ा के बारे में",
+      subtitle: "एक पवित्र सिद्धपीठ",
+      description: "नलखेड़ा स्थित बगलामुखी मंदिर मध्य प्रदेश में लाखुंदर नदी के तट पर स्थित एक पूजनीय स्थल है, जो हिंदू धर्म की दस महाविद्याओं में से एक देवी बगलामुखी को समर्पित है।",
       stats: [
-        { number: "15+", label: "वर्षों का अनुभव" },
-        { number: "5000+", label: "खुश ग्राहक" },
-        { number: "10000+", label: "रीडिंग्स की गई" },
-        { number: "98%", label: "सटीकता दर" }
+        { number: "3", label: "भारत में प्रमुख मंदिर" },
+        { number: "200+", label: "वर्षों का इतिहास" },
+        { number: "सिद्धपीठ", label: "दिव्य स्थिति" },
+        { number: "साल भर", label: "भक्तों का आगमन" }
       ],
-      story: "मास्टर ज्योतिषी राजेश शर्मा द्वारा स्थापित, एस्ट्रोमिस्टिक प्राचीन ज्ञान और आधुनिक तकनीकों का उपयोग करके व्यक्तियों और परिवारों को जीवन की जटिलताओं के माध्यम से मार्गदर्शन कर रहा है। हमारा मिशन सटीक, करुणामय और व्यावहारिक ज्योतिषीय मार्गदर्शन प्रदान करना है जो आपको सूचित निर्णय लेने और अपना सर्वोत्तम जीवन जीने के लिए सशक्त बनाता है।"
+      story: "माँ बगलामुखी मंदिर, नलखेड़ा नर्मदा नदी की सहायक लाखुंदर नदी के तट पर स्थित है। यह दुनिया में केवल तीन प्राचीन बगलामुखी मंदिरों में से एक है जिसे सिद्धपीठ माना जाता है।\n\nमाँ बगलामुखी दस महाविद्याओं में आठवें स्थान पर हैं और पीले रंग से जुड़ी हुई हैं। इस मंदिर का 1815 में जीर्णोद्धार किया गया था और नवरात्रि के समय यह विशेष रूप से लोकप्रिय होता है।\n\nमंदिर परिसर में बिल्वपत्र, चंपा, सफेद अंकोला, आंवला, नीम और पीपल के पेड़ एक साथ स्थित हैं, जो हरे-भरे बगीचों से घिरे हुए हैं। श्मशान क्षेत्र में स्थित होने के बावजूद यह साल भर भक्तों को आकर्षित करता है।\n\nप्रमुख आगंतुकों में प्रधानमंत्री नरेंद्र मोदी के भाई, भाजपा सांसद जगदंबिका पाल, सांसद दिग्विजय सिंह और पी.सी. शर्मा शामिल हैं। अन्य दो प्रमुख बगलामुखी मंदिर दतिया (मध्य प्रदेश) और कांगड़ा (हिमाचल प्रदेश) में स्थित हैं।"
     },
     testimonials: {
       title: "हमारे ग्राहक क्या कहते हैं",
@@ -191,26 +206,29 @@ export const content = {
     },
     contact: {
       title: "संपर्क करें",
-      subtitle: "परामर्श के लिए संपर्क करें",
-      description: "अपना भाग्य जानने के लिए तैयार हैं? पेशेवर ज्योतिष परामर्श के लिए हमसे संपर्क करें।",
+      subtitle: "पूजा या उत्पाद के लिए संपर्क करें",
+      description: "यदि आपको किसी पूजा या उत्पाद के संबंध में कोई समस्या है तो आप इस फॉर्म को भरकर हमसे संपर्क कर सकते हैं या नीचे दिए गए बटन से सीधे कॉल कर सकते हैं।",
       form: {
         name: "पूरा नाम",
+        firstName: "पहला नाम",
+        lastName: "अंतिम नाम",
         email: "ईमेल पता",
         phone: "फोन नंबर",
         service: "सेवा चुनें",
         message: "आपका संदेश",
-        submit: "संदेश भेजें",
+        submit: "भेजें",
         birthDate: "जन्म तिथि",
         birthTime: "जन्म समय",
         birthPlace: "जन्म स्थान"
       },
       info: {
-        title: "संपर्क जानकारी",
-        phone: "फोन",
-        email: "ईमेल",
-        address: "पता",
+        title: "माँ बगलामुखी माताजी, नलखेड़ा, मध्य प्रदेश",
+        phone: "+91 77339 94827",
+        email: "panditmanishs935@gmail.com",
+        address: "माँ बगलामुखी माताजी, नलखेड़ा, मध्य प्रदेश",
         hours: "कार्य समय",
-        hoursValue: "सोम - शनि: सुबह 9:00 - शाम 8:00"
+        hoursValue: "सोम - शनि: सुबह 9:00 - शाम 8:00",
+        callNow: "अभी कॉल करें!!"
       }
     }
   }

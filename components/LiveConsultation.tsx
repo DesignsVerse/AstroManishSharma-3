@@ -26,22 +26,19 @@ export default function LiveConsultation() {
       icon: Video,
       title: "Video Call",
       description: "Face-to-face consultation with screen sharing",
-      duration: "30-60 min",
-      price: "₹2,499"
+      duration: "30-60 min"
     },
     {
       icon: Phone,
       title: "Voice Call",
       description: "Personal phone consultation at your convenience",
-      duration: "30-45 min",
-      price: "₹1,999"
+      duration: "30-45 min"
     },
     {
       icon: MessageCircle,
       title: "Chat Support",
       description: "Quick answers to your astrology questions",
-      duration: "15-30 min",
-      price: "₹999"
+      duration: "15-30 min"
     }
   ];
 
@@ -75,9 +72,6 @@ export default function LiveConsultation() {
                   {method.description}
                 </p>
                 <div className="flex items-center justify-center gap-4 mb-6">
-                  <Badge variant="secondary" className="bg-orange-50 text-orange-700">
-                    {method.price}
-                  </Badge>
                   <div className="flex items-center gap-1 text-gray-500">
                     <Clock className="w-4 h-4" />
                     <span className="text-sm">{method.duration}</span>
@@ -120,11 +114,11 @@ export default function LiveConsultation() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button className="bg-orange-600 hover:bg-orange-700 text-white">
                     <Video className="w-4 h-4 mr-2" />
-                    Video Call - ₹2,999
+                    Video Call
                   </Button>
                   <Button variant="outline" className="border-orange-600 text-orange-600 hover:bg-orange-50">
                     <Phone className="w-4 h-4 mr-2" />
-                    Voice Call - ₹1,999
+                    Voice Call
                   </Button>
                 </div>
               </div>

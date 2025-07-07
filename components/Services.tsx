@@ -25,16 +25,13 @@ export default function Services() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
+          {services.slice(0, 6).map((service, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-orange-100 hover:border-orange-200">
               <CardHeader className="pb-4">
                 <div className="flex justify-between items-start mb-2">
                   <div className="bg-orange-100 p-3 rounded-lg group-hover:bg-orange-200 transition-colors">
                     <Star className="w-6 h-6 text-orange-600" />
                   </div>
-                  <Badge variant="secondary" className="bg-orange-50 text-orange-700">
-                    {service.price}
-                  </Badge>
                 </div>
                 <CardTitle className="text-xl font-semibold text-gray-900 group-hover:text-orange-600 transition-colors">
                   {service.title}

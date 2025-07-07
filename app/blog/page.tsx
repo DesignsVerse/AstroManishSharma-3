@@ -53,20 +53,20 @@ function BlogContent() {
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-16 bg-gradient-to-br from-orange-50 to-amber-50">
+        <section className="py-16 bg-gradient-to-b from-orange-500 to-orange-600">
           <div className="container mx-auto px-4">
             <div className="text-center max-w-3xl mx-auto">
-              <h1 className="text-5xl font-bold text-gray-900 mb-6">
+              <h1 className="text-5xl font-bold text-white mb-6">
                 {t('blog.title')}
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-xl text-orange-100 mb-8">
                 {t('blog.subtitle')}
               </p>
               <div className="relative max-w-md mx-auto">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
                 <Input 
                   placeholder="Search articles..." 
-                  className="pl-10 py-3 border-orange-200 focus:border-orange-500"
+                  className="pl-10 py-3 border-white/30 focus:border-white focus:ring-white bg-white/10 backdrop-blur-sm text-white placeholder:text-orange-200"
                 />
               </div>
             </div>
