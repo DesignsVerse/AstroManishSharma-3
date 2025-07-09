@@ -14,7 +14,7 @@ import { Input } from '@/components/ui/input';
 import { useState } from 'react';
 
 function ServicesContent() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const services = t('services.items') as any[];
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -56,10 +56,14 @@ function ServicesContent() {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl font-bold text-white mb-6">
-              Transform Your Life With Cosmic Wisdom
+              {language === 'en'
+                ? t('services.hero.title_en')
+                : t('services.hero.title_hi')}
             </h1>
             <p className="text-xl text-orange-100 mb-8">
-              Our premium astrology services combine ancient Vedic techniques with modern interpretation to provide life-changing guidance.
+              {language === 'en'
+                ? t('services.hero.desc_en')
+                : t('services.hero.desc_hi')}
             </p>
             <div className="flex flex-wrap justify-center gap-3 mb-8">
               <Badge variant="secondary" className="bg-orange-400/20 text-orange-100 hover:bg-orange-400/30 px-4 py-2">
@@ -118,11 +122,6 @@ function ServicesContent() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                  <div className="absolute bottom-4 left-4">
-                    <Badge className="bg-orange-500 hover:bg-orange-600 text-white">
-                      {service.duration}
-                    </Badge>
-                  </div>
                 </div>
                 
                 <CardHeader className="pb-4">
@@ -135,13 +134,8 @@ function ServicesContent() {
                 </CardHeader>
                 
                 <CardContent className="pt-0">
-                  <div className="space-y-3 mb-6">
-                    {service.features.map((feature: string, featureIndex: number) => (
-                      <div key={featureIndex} className="flex items-center gap-3">
-                        <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                        <span className="text-gray-700">{feature}</span>
-                      </div>
-                    ))}
+                  <div className="mb-6">
+                    <p className="text-gray-700">{service.description}</p>
                   </div>
                   
                   <div className="space-y-3">

@@ -12,8 +12,31 @@ export const blog = {
         category: "Basics",
         image: "https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600",
         author: "Dr. Rajesh Sharma",
-        content: "Your moon sign represents your emotional nature, inner self, and subconscious mind. It reveals how you process feelings, what makes you feel secure, and your intuitive responses to life's situations. Understanding your moon sign can help you better understand your emotional needs and reactions."
-      }
+        content: [
+          {
+            heading: "What is a Moon Sign?",
+            description: "Your moon sign represents your emotional nature, inner self, and subconscious mind. Unlike your sun sign which represents your core identity, the moon sign governs your emotional responses and instincts."
+          },
+          {
+            heading: "How It Affects You",
+            description: [
+              "Influences how you process feelings and emotions",
+              "Determines what makes you feel secure and comfortable",
+              "Shapes your intuitive responses to life situations",
+              "Affects your relationships and emotional needs"
+            ]
+          },
+          {
+            heading: "Finding Your Moon Sign",
+            description: "To determine your moon sign, you'll need your exact birth date, time, and location. The moon changes signs every 2-3 days, so an accurate birth time is crucial for proper calculation."
+          },
+          {
+            heading: "Moon Signs Through the Zodiac",
+            description: "Each zodiac sign imbues the moon with different emotional characteristics. For example, a Moon in Aries reacts quickly and passionately, while a Moon in Taurus seeks stability and comfort."
+          }
+        ]
+      },
+      // ... other posts with similar content structure
     ]
   },
   hi: {
@@ -29,8 +52,24 @@ export const blog = {
         category: "बेसिक्स",
         image: "https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600",
         author: "डॉ. राजेश शर्मा",
-        content: "आपकी चंद्र राशि आपकी भावनात्मक प्रकृति, आंतरिक स्वभाव और अवचेतन मन का प्रतिनिधित्व करती है। यह बताती है कि आप भावनाओं को कैसे संसाधित करते हैं, क्या आपको सुरक्षित महसूस कराता है, और जीवन की स्थितियों के प्रति आपकी सहज प्रतिक्रियाएं क्या हैं। अपनी चंद्र राशि को समझने से आप अपनी भावनात्मक जरूरतों और प्रतिक्रियाओं को बेहतर ढंग से समझ सकते हैं।"
-      }
+        content: [
+          {
+            heading: "चंद्र राशि क्या है?",
+            description: "आपकी चंद्र राशि आपकी भावनात्मक प्रकृति, आंतरिक स्वभाव और अवचेतन मन का प्रतिनिधित्व करती है। आपकी सूर्य राशि के विपरीत जो आपकी मूल पहचान को दर्शाती है, चंद्र राशि आपकी भावनात्मक प्रतिक्रियाओं और सहज प्रवृत्तियों को नियंत्रित करती है।"
+          },
+          {
+            heading: "यह आपको कैसे प्रभावित करता है",
+            description: [
+              "भावनाओं को संसाधित करने के तरीके को प्रभावित करता है",
+              "निर्धारित करता है कि आपको क्या सुरक्षित और आरामदायक महसूस कराता है",
+              "जीवन की स्थितियों के प्रति आपकी सहज प्रतिक्रियाओं को आकार देता है",
+              "आपके रिश्तों और भावनात्मक जरूरतों को प्रभावित करता है"
+            ]
+          },
+          // ... other sections
+        ]
+      },
+      // ... other posts with similar content structure
     ]
   }
-}; 
+};

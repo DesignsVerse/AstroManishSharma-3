@@ -1,6 +1,20 @@
 export const servicesEn = {
     title: "Our Puja Services",
     subtitle: "Comprehensive Solutions Through the Blessings of Maa Baglamukhi",
+    hero: {
+      title_en: "Transform Your Life With Cosmic Wisdom",
+      title_hi: "ब्रह्मांडीय ज्ञान से अपने जीवन को बदलें",
+      desc_en: "Our premium astrology services combine ancient Vedic techniques with modern interpretation to provide life-changing guidance.",
+      desc_hi: "हमारी प्रीमियम ज्योतिष सेवाएँ प्राचीन वैदिक तकनीकों को आधुनिक व्याख्या के साथ जोड़ती हैं, जो जीवन बदलने वाली मार्गदर्शना प्रदान करती हैं।",
+      badge1_en: "Personalized Readings",
+      badge1_hi: "व्यक्तिगत पाठ",
+      badge2_en: "Remedial Solutions",
+      badge2_hi: "उपचारात्मक समाधान",
+      badge3_en: "Yearly Forecasts",
+      badge3_hi: "वार्षिक पूर्वानुमान",
+      search_placeholder_en: "Search for astrology services...",
+      search_placeholder_hi: "ज्योतिष सेवाओं के लिए खोजें..."
+    },
     items: [
       {
         id: "lakshmi-prapti-pooja",

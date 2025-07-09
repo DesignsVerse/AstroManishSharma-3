@@ -47,13 +47,8 @@ export default function ServicesPreview() {
               </CardHeader>
               
               <CardContent className="pt-0 flex-grow">
-                <div className="space-y-3 mb-6">
-                  {service.features.slice(0, 3).map((feature: string, featureIndex: number) => (
-                    <div key={featureIndex} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700">{feature}</span>
-                    </div>
-                  ))}
+                <div className="mb-6">
+                  <span className="text-gray-700">{service.description}</span>
                 </div>
               </CardContent>
 

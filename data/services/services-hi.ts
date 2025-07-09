@@ -902,5 +902,11 @@ export const servicesHi = {
         ],
         process: "हम माँ बगलामुखी की पूजा और मंत्र जाप के माध्यम से आपके करियर की बाधाओं को दूर करते हैं और मनचाही नौकरी प्रदान करते हैं।"
       }
-    ]
+    ],
+    hero: {
+      title_en: "Transform Your Life With Cosmic Wisdom",
+      title_hi: "ब्रह्मांडीय ज्ञान से अपने जीवन को बदलें",
+      desc_en: "Our premium astrology services combine ancient Vedic techniques with modern interpretation to provide life-changing guidance.",
+      desc_hi: "हमारी प्रीमियम ज्योतिष सेवाएँ प्राचीन वैदिक तकनीकों को आधुनिक व्याख्या के साथ जोड़ती हैं, जो जीवन बदलने वाली मार्गदर्शना प्रदान करती हैं।"
+    }
   };

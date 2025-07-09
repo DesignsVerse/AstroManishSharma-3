@@ -16,37 +16,7 @@ function BlogContent() {
 
   const posts = t('blog.posts') as any[];
 
-  // Extended blog posts for variety
-  const allPosts = [
-    ...posts,
-    {
-      id: "2024-horoscope-predictions",
-      title: "2024 Horoscope Predictions",
-      excerpt: "Discover what the year 2024 holds for each zodiac sign with detailed predictions.",
-      date: "February 28, 2024",
-      readTime: "8 min read",
-      category: "Predictions",
-      image: "/api/placeholder/400/250"
-    },
-    {
-      id: "gemstone-healing-properties",
-      title: "Gemstone Healing Properties",
-      excerpt: "Learn about the healing properties of different gemstones and their astrological significance.",
-      date: "February 20, 2024",
-      readTime: "6 min read",
-      category: "Gemstones",
-      image: "/api/placeholder/400/250"
-    },
-    {
-      id: "career-astrology-guide",
-      title: "Career Astrology Guide",
-      excerpt: "How to use astrology to make better career decisions and find your professional path.",
-      date: "February 15, 2024",
-      readTime: "9 min read",
-      category: "Career",
-      image: "/api/placeholder/400/250"
-    }
-  ];
+  // Removed static allPosts, use only posts from translation context
 
   return (
     <div className="min-h-screen">
@@ -72,54 +42,6 @@ function BlogContent() {
             </div>
           </div>
         </section>
-
-        {/* Featured Post */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <Card className="overflow-hidden shadow-2xl">
-                <div className="md:flex">
-                  <div className="md:w-1/2">
-                    <img
-                      src="https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600"
-                      alt="Featured article"
-                      className="w-full h-64 md:h-full object-cover"
-                    />
-                  </div>
-                  <div className="md:w-1/2 p-8">
-                    <Badge className="mb-4 bg-orange-600 text-white">Featured</Badge>
-                    <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                      {posts[0].title}
-                    </h2>
-                    <p className="text-gray-600 mb-6 leading-relaxed">
-                      {posts[0].excerpt}
-                    </p>
-                    <div className="flex items-center gap-4 text-sm text-gray-500 mb-6">
-                      <div className="flex items-center gap-1">
-                        <Calendar className="w-4 h-4" />
-                        {posts[0].date}
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <Clock className="w-4 h-4" />
-                        {posts[0].readTime}
-                      </div>
-                    </div>
-                    <Button 
-                      asChild 
-                      className="bg-orange-600 hover:bg-orange-700 text-white"
-                    >
-                      <Link href="/blog/understanding-moon-sign" className="flex items-center gap-2">
-                        Read Full Article
-                        <ArrowRight className="w-4 h-4" />
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
-              </Card>
-            </div>
-          </div>
-        </section>
-
         {/* All Posts */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
@@ -127,7 +49,7 @@ function BlogContent() {
               Recent Articles
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {allPosts.map((post, index) => (
+              {posts.map((post, index) => (
                 <Card key={index} className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
                   <div className="relative h-48 overflow-hidden">
                     <img
