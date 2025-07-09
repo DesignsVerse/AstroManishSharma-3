@@ -191,8 +191,6 @@ function AboutContent() {
 }
 export default function AboutPage() {
   return (
-    <LanguageProvider>
-      <AboutContent />
-    </LanguageProvider>
+    <AboutContent />
   );
 }

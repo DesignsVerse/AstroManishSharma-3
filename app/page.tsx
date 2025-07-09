@@ -12,25 +12,28 @@ import About from '@/components/About';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
+import ContactComponent from '@/components/contact';
+import AboutAstrologer from '@/components/AboutAstrologer';
 
 export default function Home() {
   return (
-    <LanguageProvider>
-      <div className="min-h-screen">
-        <Header />
-        <main>
-          <Hero />
-          <FeaturedServices />
-          <DailyHoroscope />
-          <Services />
-          <LiveConsultation />
-          <Blog />
-          <About />
-          <WhyChooseUs />
-          <Testimonials />
-        </main>
-        <Footer />
-      </div>
-    </LanguageProvider>
+    <div className="min-h-screen">
+      <Header />
+      <main>
+        <Hero />
+        <Services />
+        <About />
+        <Testimonials />
+        {/* <FeaturedServices /> */}
+        {/* <DailyHoroscope /> */}
+        
+        {/* <LiveConsultation /> */}
+        <AboutAstrologer/>
+        <Blog />
+        <WhyChooseUs />
+        <ContactComponent/>
+      </main>
+      <Footer />
+    </div>
   );
 }

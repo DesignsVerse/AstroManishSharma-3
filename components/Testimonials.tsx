@@ -2,21 +2,29 @@
 
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Card, CardContent } from '@/components/ui/card';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import { Star, Quote } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 
 export default function Testimonials() {
   const { t } = useLanguage();
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  const containerRef = useRef<HTMLDivElement>(null);
   const testimonials = t('testimonials.items') as any[];
+
+  // Clone testimonials to create infinite loop effect
+  const items = [...testimonials, ...testimonials, ...testimonials];
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % testimonials.length);
-    }, 5000);
+      setCurrentIndex((prev) => {
+        const nextIndex = prev + 1;
+        if (nextIndex >= testimonials.length) return 0;
+        return nextIndex;
+      });
+    }, 4000);
 
     return () => clearInterval(interval);
   }, [testimonials.length]);
@@ -26,14 +34,21 @@ export default function Testimonials() {
       <Star
         key={i}
         className={`w-4 h-4 ${
-          i < rating ? 'text-yellow-400 fill-current' : 'text-gray-300'
+          i < rating ? 'text-amber-400 fill-current' : 'text-gray-200'
         }`}
       />
     ));
   };
 
+  // Calculate which testimonials to show (3 at a time)
+  const visibleTestimonials = [];
+  for (let i = 0; i < 3; i++) {
+    const index = (currentIndex + i) % testimonials.length;
+    visibleTestimonials.push(testimonials[index]);
+  }
+
   return (
-    <section className="py-20 bg-gradient-to-br from-orange-50 to-amber-50">
+    <section className="py-20 bg-gradient-to-br from-amber-50 to-orange-50/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -44,61 +59,68 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="relative max-w-4xl mx-auto">
-          <div className="overflow-hidden">
-            <div 
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-            >
-              {testimonials.map((testimonial, index) => (
-                <div key={index} className="w-full flex-shrink-0 px-4">
-                  <Card className="shadow-xl border-orange-100 relative">
-                    <CardContent className="p-8">
-                      <div className="absolute top-4 right-4 text-orange-200">
-                        <Quote className="w-12 h-12" />
-                      </div>
-                      <div className="flex items-center gap-2 mb-4">
-                        {renderStars(testimonial.rating)}
-                      </div>
-                      <p className="text-gray-700 text-lg leading-relaxed mb-6 italic">
-                        "{testimonial.text}"
-                      </p>
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-4">
-                          <Avatar className="w-12 h-12 bg-orange-100">
-                            <AvatarFallback className="text-orange-600 font-semibold">
-                              {testimonial.name.split(' ').map((n: string) => n[0]).join('')}
-                            </AvatarFallback>
-                          </Avatar>
-                          <div>
-                            <div className="font-semibold text-gray-900">
-                              {testimonial.name}
-                            </div>
-                            <div className="text-sm text-gray-500">
-                              {testimonial.location}
-                            </div>
+        <div className="relative max-w-7xl mx-auto">
+          <div 
+            ref={containerRef}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            {visibleTestimonials.map((testimonial, index) => (
+              <motion.div
+                key={`${testimonial.name}-${index}`}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <Card className="h-full shadow-sm border-orange-100 bg-white/70 hover:shadow-md transition-shadow">
+                  <CardContent className="p-6 h-full flex flex-col">
+                    <div className="absolute top-4 right-4 text-amber-100">
+                      <Quote className="w-10 h-10" />
+                    </div>
+                    <div className="flex items-center gap-1 mb-4">
+                      {renderStars(testimonial.rating)}
+                    </div>
+                    <p className="text-gray-700 text-base leading-relaxed mb-6 italic flex-1">
+                      "{testimonial.text}"
+                    </p>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                        <Avatar className="w-10 h-10 bg-amber-100">
+                          {testimonial.image && (
+                            <AvatarImage src={testimonial.image} />
+                          )}
+                          <AvatarFallback className="text-amber-600 font-medium">
+                            {testimonial.name.split(' ').map((n: string) => n[0]).join('')}
+                          </AvatarFallback>
+                        </Avatar>
+                        <div>
+                          <div className="font-medium text-gray-900">
+                            {testimonial.name}
+                          </div>
+                          <div className="text-xs text-gray-500">
+                            {testimonial.location}
                           </div>
                         </div>
-                        <Badge variant="secondary" className="bg-orange-50 text-orange-700">
-                          {testimonial.service}
-                        </Badge>
                       </div>
-                    </CardContent>
-                  </Card>
-                </div>
-              ))}
-            </div>
+                      <Badge variant="outline" className="bg-amber-50 text-amber-700 border-amber-200 text-xs">
+                        {testimonial.service}
+                      </Badge>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
           </div>
 
           {/* Indicators */}
-          <div className="flex justify-center mt-8 gap-2">
+          <div className="flex justify-center mt-10 gap-2">
             {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full transition-colors ${
-                  index === currentIndex ? 'bg-orange-600' : 'bg-orange-200'
+                className={`w-3 h-3 rounded-full transition-all ${
+                  index === currentIndex ? 'bg-amber-600' : 'bg-amber-200 hover:bg-amber-300'
                 }`}
+                aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}
           </div>

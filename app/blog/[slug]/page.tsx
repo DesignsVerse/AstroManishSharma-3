@@ -158,8 +158,6 @@ function BlogPostContent() {
 
 export default function BlogPostPage() {
   return (
-    <LanguageProvider>
-      <BlogPostContent />
-    </LanguageProvider>
+    <BlogPostContent />
   );
 } 

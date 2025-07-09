@@ -219,8 +219,6 @@ function BlogContent() {
 
 export default function BlogPage() {
   return (
-    <LanguageProvider>
-      <BlogContent />
-    </LanguageProvider>
+    <BlogContent />
   );
 }

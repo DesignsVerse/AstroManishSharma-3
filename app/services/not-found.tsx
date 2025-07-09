@@ -66,8 +66,6 @@ function NotFoundContent() {
 
 export default function NotFound() {
   return (
-    <LanguageProvider>
-      <NotFoundContent />
-    </LanguageProvider>
+    <NotFoundContent />
   );
 } 

@@ -234,8 +234,6 @@ function ServicesContent() {
 
 export default function ServicesPage() {
   return (
-    <LanguageProvider>
-      <ServicesContent />
-    </LanguageProvider>
+    <ServicesContent />
   );
 }

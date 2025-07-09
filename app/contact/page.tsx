@@ -327,9 +327,7 @@ function ContactContent() {
   );
 }export default function ContactPage() {
   return (
-    <LanguageProvider>
-      <ContactContent />
-    </LanguageProvider>
+    <ContactContent />
   );
 }
 

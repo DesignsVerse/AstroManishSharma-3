@@ -93,18 +93,41 @@ export const content = {
       title: "Contact Us",
       subtitle: "Get in Touch for Consultation",
       description: "If you have any problem regarding any Pooja or Product then you can contact us by filling this form or you can directly call us from button given below.",
-      form: {
+      formTitle: "Send Us a Message",
+      infoTitle: "Contact Information",
+      hoursTitle: "Consultation Hours",
+      phoneLabel: "Phone",
+      emailLabel: "Email",
+      addressLabel: "Address",
+      closed: "Closed",
+      submitButton: "Send Message",
+      successMessage: "Your message has been sent successfully! We'll contact you soon.",
+      formLabels: {
         name: "Full Name",
-        firstName: "First Name",
-        lastName: "Last Name",
         email: "Email Address",
         phone: "Phone Number",
-        service: "Select Service",
+        service: "Service Required",
         message: "Your Message",
-        submit: "Send",
         birthDate: "Date of Birth",
         birthTime: "Time of Birth",
         birthPlace: "Place of Birth"
+      },
+      formPlaceholders: {
+        name: "Enter your full name",
+        email: "Enter your email",
+        phone: "Enter your phone number",
+        service: "Select a service",
+        message: "Write your message here...",
+        birthDate: "DD/MM/YYYY",
+        birthTime: "HH:MM",
+        birthPlace: "City, Country"
+      },
+      formErrors: {
+        name: "Name must be at least 2 characters",
+        email: "Please enter a valid email",
+        phone: "Phone number must be at least 10 digits",
+        service: "Please select a service",
+        message: "Message must be at least 10 characters"
       },
       info: {
         title: "Maa Baglamukhi Mataji, Nalkheda, MadhyaPradesh",
@@ -112,10 +135,62 @@ export const content = {
         email: "panditmanishs935@gmail.com",
         address: "Maa Baglamukhi Mataji, Nalkheda, MadhyaPradesh",
         hours: "Working Hours",
-        hoursValue: "Mon - Sat: 9:00 AM - 8:00 PM",
+        hoursValue: "9:00 AM - 8:00 PM",
         callNow: "Call Now!!"
       }
     },
+    days: {
+      monday: "Monday",
+      tuesday: "Tuesday",
+      wednesday: "Wednesday",
+      thursday: "Thursday",
+      friday: "Friday",
+      saturday: "Saturday",
+      sunday: "Sunday"
+    },
+    whyChooseUs: {
+      title: "Why Choose AstroMystic?",
+      subtitle: "Discover what makes us the most trusted name in astrology consultation",
+      reasons: [
+        {
+          icon: "Award",
+          title: "15+ Years Experience",
+          description: "Trusted expertise in Vedic and Western astrology with thousands of successful consultations."
+        },
+        {
+          icon: "Shield",
+          title: "98% Accuracy Rate",
+          description: "Our predictions are backed by authentic astrological methods and proven track record."
+        },
+        {
+          icon: "Users",
+          title: "5000+ Happy Clients",
+          description: "Join our community of satisfied clients who have transformed their lives through astrology."
+        },
+        {
+          icon: "Clock",
+          title: "24/7 Support",
+          description: "Get guidance whenever you need it with our round-the-clock consultation services."
+        },
+        {
+          icon: "Star",
+          title: "Personalized Approach",
+          description: "Every reading is tailored specifically to your unique birth chart and life circumstances."
+        },
+        {
+          icon: "Heart",
+          title: "Compassionate Guidance",
+          description: "We provide caring, empathetic support to help you navigate life's challenges with confidence."
+        }
+      ]
+    },
+    aboutAstrologer: {
+      title: "About Our Astrologer",
+      subtitle: "Meet Your Guide to the Stars",
+      description: "Pandit Manish Sharma is a renowned astrologer with over 15 years of experience in Vedic and Western astrology. He has helped thousands of clients find clarity and direction in their lives through accurate predictions and compassionate guidance.",
+      image: "/images/astrologer.jpg"
+    }
+    
   },
   hi: {
     header: {
@@ -208,18 +283,41 @@ export const content = {
       title: "संपर्क करें",
       subtitle: "पूजा या उत्पाद के लिए संपर्क करें",
       description: "यदि आपको किसी पूजा या उत्पाद के संबंध में कोई समस्या है तो आप इस फॉर्म को भरकर हमसे संपर्क कर सकते हैं या नीचे दिए गए बटन से सीधे कॉल कर सकते हैं।",
-      form: {
+      formTitle: "हमें संदेश भेजें",
+      infoTitle: "संपर्क जानकारी",
+      hoursTitle: "परामर्श समय",
+      phoneLabel: "फोन",
+      emailLabel: "ईमेल",
+      addressLabel: "पता",
+      closed: "बंद",
+      submitButton: "संदेश भेजें",
+      successMessage: "आपका संदेश सफलतापूर्वक भेजा गया है! हम जल्द ही आपसे संपर्क करेंगे।",
+      formLabels: {
         name: "पूरा नाम",
-        firstName: "पहला नाम",
-        lastName: "अंतिम नाम",
         email: "ईमेल पता",
         phone: "फोन नंबर",
-        service: "सेवा चुनें",
+        service: "आवश्यक सेवा",
         message: "आपका संदेश",
-        submit: "भेजें",
         birthDate: "जन्म तिथि",
         birthTime: "जन्म समय",
         birthPlace: "जन्म स्थान"
+      },
+      formPlaceholders: {
+        name: "अपना पूरा नाम दर्ज करें",
+        email: "अपना ईमेल दर्ज करें",
+        phone: "अपना फोन नंबर दर्ज करें",
+        service: "एक सेवा चुनें",
+        message: "अपना संदेश यहाँ लिखें...",
+        birthDate: "दिन/महीना/साल",
+        birthTime: "घंटा:मिनट",
+        birthPlace: "शहर, देश"
+      },
+      formErrors: {
+        name: "नाम कम से कम 2 अक्षरों का होना चाहिए",
+        email: "कृपया एक वैध ईमेल दर्ज करें",
+        phone: "फोन नंबर कम से कम 10 अंकों का होना चाहिए",
+        service: "कृपया एक सेवा चुनें",
+        message: "संदेश कम से कम 10 अक्षरों का होना चाहिए"
       },
       info: {
         title: "माँ बगलामुखी माताजी, नलखेड़ा, मध्य प्रदेश",
@@ -227,9 +325,61 @@ export const content = {
         email: "panditmanishs935@gmail.com",
         address: "माँ बगलामुखी माताजी, नलखेड़ा, मध्य प्रदेश",
         hours: "कार्य समय",
-        hoursValue: "सोम - शनि: सुबह 9:00 - शाम 8:00",
+        hoursValue: "सुबह 9:00 - शाम 8:00",
         callNow: "अभी कॉल करें!!"
       }
+    },
+    days: {
+      monday: "सोमवार",
+      tuesday: "मंगलवार",
+      wednesday: "बुधवार",
+      thursday: "गुरुवार",
+      friday: "शुक्रवार",
+      saturday: "शनिवार",
+      sunday: "रविवार"
+    },
+    whyChooseUs: {
+      title: "एस्ट्रोमिस्टिक क्यों चुनें?",
+      subtitle: "जानें कि ज्योतिष परामर्श में हम सबसे विश्वसनीय नाम क्यों हैं",
+      reasons: [
+        {
+          icon: "Award",
+          title: "15+ वर्षों का अनुभव",
+          description: "वैदिक और पश्चिमी ज्योतिष में विश्वसनीय विशेषज्ञता, हजारों सफल परामर्शों के साथ।"
+        },
+        {
+          icon: "Shield",
+          title: "98% सटीकता दर",
+          description: "हमारी भविष्यवाणियाँ प्रामाणिक ज्योतिषीय विधियों और सिद्ध ट्रैक रिकॉर्ड पर आधारित हैं।"
+        },
+        {
+          icon: "Users",
+          title: "5000+ खुश ग्राहक",
+          description: "हमारे संतुष्ट ग्राहकों के समुदाय में शामिल हों, जिन्होंने ज्योतिष के माध्यम से अपना जीवन बदला है।"
+        },
+        {
+          icon: "Clock",
+          title: "24/7 सहायता",
+          description: "हमारी चौबीसों घंटे परामर्श सेवाओं के साथ जब भी आपको मार्गदर्शन चाहिए, तुरंत पाएं।"
+        },
+        {
+          icon: "Star",
+          title: "व्यक्तिगत दृष्टिकोण",
+          description: "हर रीडिंग विशेष रूप से आपकी अनूठी जन्म कुंडली और जीवन परिस्थितियों के अनुसार तैयार की जाती है।"
+        },
+        {
+          icon: "Heart",
+          title: "सहानुभूतिपूर्ण मार्गदर्शन",
+          description: "हम सहानुभूति और देखभाल के साथ आपकी जीवन चुनौतियों को आत्मविश्वास से पार करने में मदद करते हैं।"
+        }
+      ]
+    },
+    aboutAstrologer: {
+      title: "हमारे ज्योतिषाचार्य के बारे में",
+      subtitle: "अपने सितारों के मार्गदर्शक से मिलें",
+      description: "पंडित मनीष शर्मा एक प्रसिद्ध ज्योतिषाचार्य हैं, जिन्हें वैदिक और पश्चिमी ज्योतिष में 15+ वर्षों का अनुभव है। इन्होंने हजारों लोगों को सटीक भविष्यवाणी और सहानुभूतिपूर्ण मार्गदर्शन से जीवन में स्पष्टता और दिशा पाने में मदद की है।",
+      image: "/images/astrologer.jpg"
     }
+    
   }
 };
