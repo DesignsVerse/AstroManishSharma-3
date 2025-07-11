@@ -67,13 +67,13 @@ function ServicesContent() {
             </p>
             <div className="flex flex-wrap justify-center gap-3 mb-8">
               <Badge variant="secondary" className="bg-orange-400/20 text-orange-100 hover:bg-orange-400/30 px-4 py-2">
-                Personalized Readings
+                {language === 'hi' ? 'व्यक्तिगत रीडिंग्स' : 'Personalized Readings'}
               </Badge>
               <Badge variant="secondary" className="bg-orange-400/20 text-orange-100 hover:bg-orange-400/30 px-4 py-2">
-                Remedial Solutions
+                {language === 'hi' ? 'उपाय समाधान' : 'Remedial Solutions'}
               </Badge>
               <Badge variant="secondary" className="bg-orange-400/20 text-orange-100 hover:bg-orange-400/30 px-4 py-2">
-                Yearly Forecasts
+                {language === 'hi' ? 'वार्षिक पूर्वानुमान' : 'Yearly Forecasts'}
               </Badge>
             </div>
             
@@ -113,7 +113,7 @@ function ServicesContent() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredServices.map((service, index) => (
-              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-orange-300 overflow-hidden">
+              <Card key={index} className="group hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-orange-300 overflow-hidden flex flex-col h-full">
                 <div className="relative h-60">
                   <Image
                     src={service.image}
@@ -133,27 +133,23 @@ function ServicesContent() {
                   </CardDescription>
                 </CardHeader>
                 
-                <CardContent className="pt-0">
-                  <div className="mb-6">
-                    <p className="text-gray-700">{service.description}</p>
-                  </div>
-                  
-                  <div className="space-y-3">
-                    <Button 
-                      asChild 
-                      className="w-full bg-orange-600 hover:bg-orange-700 text-white h-12"
-                    >
-                      <Link href={`/services/${service.id}`}>View Details</Link>
-                    </Button>
-                    <Button 
-                      asChild 
-                      variant="outline"
-                      className="w-full border-orange-600 text-orange-600 hover:bg-orange-50 h-12"
-                    >
-                      <Link href="/contact">Book Consultation</Link>
-                    </Button>
-                  </div>
+                <CardContent className="pt-0 flex-1">
                 </CardContent>
+                <div className="flex gap-3 p-4 pt-0">
+                  <Button 
+                    asChild 
+                    className="flex-1 bg-orange-600 hover:bg-orange-700 text-white h-12"
+                  >
+                    <Link href={`/services/${service.id}`}>{language === 'hi' ? 'विवरण देखें' : 'View Details'}</Link>
+                  </Button>
+                  <Button 
+                    asChild 
+                    variant="outline"
+                    className="flex-1 border-orange-600 text-orange-600 hover:bg-orange-50 h-12"
+                  >
+                    <Link href="tel:+917733994827">{language === 'hi' ? 'अभी कॉल करें' : 'Call Now: +917733994827'}</Link>
+                  </Button>
+                </div>
               </Card>
             ))}
           </div>
@@ -165,10 +161,10 @@ function ServicesContent() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why Clients Choose Us
+              {language === 'hi' ? 'क्यों चुनें हमें' : 'Why Clients Choose Us'}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We provide more than just predictions - we offer practical guidance to transform your life.
+              {language === 'hi' ? 'हम केवल भविष्यवाणी नहीं, बल्कि जीवन बदलने वाली व्यावहारिक सलाह भी देते हैं।' : 'We provide more than just predictions - we offer practical guidance to transform your life.'}
             </p>
           </div>
 
@@ -179,10 +175,22 @@ function ServicesContent() {
                   <benefit.icon className="w-8 h-8 text-orange-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  {benefit.title}
+                  {language === 'hi'
+                    ? (benefit.title === 'Expert Astrologers' ? 'विशेषज्ञ ज्योतिषी'
+                      : benefit.title === 'Precise Guidance' ? 'सटीक मार्गदर्शन'
+                      : benefit.title === 'Timely Reports' ? 'समय पर रिपोर्ट'
+                      : benefit.title === '100% Confidential' ? '100% गोपनीय'
+                      : benefit.title)
+                    : benefit.title}
                 </h3>
                 <p className="text-gray-600">
-                  {benefit.description}
+                  {language === 'hi'
+                    ? (benefit.title === 'Expert Astrologers' ? 'दशकों के अनुभव वाले प्रमाणित ज्योतिषी'
+                      : benefit.title === 'Precise Guidance' ? '97% क्लाइंट संतुष्टि सटीक भविष्यवाणी के साथ'
+                      : benefit.title === 'Timely Reports' ? '24-48 घंटे में व्यक्तिगत विश्लेषण प्राप्त करें'
+                      : benefit.title === '100% Confidential' ? 'आपका डेटा और सलाह पूरी तरह गोपनीय'
+                      : benefit.description)
+                    : benefit.description}
                 </p>
               </div>
             ))}
@@ -195,10 +203,10 @@ function ServicesContent() {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto bg-white/10 backdrop-blur-sm p-12 rounded-2xl">
             <h2 className="text-4xl font-bold text-white mb-6">
-              Ready for Cosmic Clarity?
+              {language === 'hi' ? 'क्या आप तैयार हैं ब्रह्मांडीय स्पष्टता के लिए?' : 'Ready for Cosmic Clarity?'}
             </h2>
             <p className="text-xl text-orange-100 mb-8">
-              Schedule your consultation today and unlock the wisdom of the stars for your life's journey.
+              {language === 'hi' ? 'आज ही अपनी सलाह शेड्यूल करें और सितारों की बुद्धि से जीवन को दिशा दें।' : "Schedule your consultation today and unlock the wisdom of the stars for your life's journey."}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -206,7 +214,7 @@ function ServicesContent() {
                 size="lg" 
                 className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-6 text-lg"
               >
-                <Link href="/contact">Book Your Session</Link>
+                <Link href="/contact">{language === 'hi' ? 'अपना सत्र बुक करें' : 'Book Your Session'}</Link>
               </Button>
               <Button 
                 asChild 
@@ -214,7 +222,7 @@ function ServicesContent() {
                 size="lg"
                 className="border-white text-white hover:bg-white hover:text-orange-600 px-8 py-6 text-lg"
               >
-                <Link href="/about">Our Methodology</Link>
+                <Link href="/about">{language === 'hi' ? 'हमारी कार्यप्रणाली' : 'Our Methodology'}</Link>
               </Button>
             </div>
           </div>

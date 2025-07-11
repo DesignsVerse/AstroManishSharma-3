@@ -8,7 +8,7 @@ import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Blog() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const posts = t('blog.posts') as any[];
 
@@ -63,7 +63,7 @@ export default function Blog() {
                   className="w-full justify-between text-orange-600 hover:text-orange-700 hover:bg-orange-50"
                 >
                   <Link href={`/blog/${post.id}`}>
-                    Read More
+                    {language === 'hi' ? 'और पढ़ें' : 'Read More'}
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </Button>
@@ -79,7 +79,7 @@ export default function Blog() {
             size="lg" 
             className="border-orange-600 text-orange-600 hover:bg-orange-50"
           >
-            <Link href="/blog">View All Articles</Link>
+            <Link href="/blog">{language === 'hi' ? 'सभी लेख देखें' : 'View All Articles'}</Link>
           </Button>
         </div>
       </div>

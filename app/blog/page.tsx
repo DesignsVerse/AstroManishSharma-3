@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 
 function BlogContent() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const posts = t('blog.posts') as any[];
 
@@ -35,7 +35,7 @@ function BlogContent() {
               <div className="relative max-w-md mx-auto">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
                 <Input 
-                  placeholder="Search articles..." 
+                  placeholder={language === 'hi' ? 'लेख खोजें...' : 'Search articles...'} 
                   className="pl-10 py-3 border-white/30 focus:border-white focus:ring-white bg-white/10 backdrop-blur-sm text-white placeholder:text-orange-200"
                 />
               </div>
@@ -46,7 +46,7 @@ function BlogContent() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-              Recent Articles
+              {language === 'hi' ? 'हाल के लेख' : 'Recent Articles'}
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {posts.map((post, index) => (
@@ -99,7 +99,7 @@ function BlogContent() {
                       className="w-full justify-between text-orange-600 hover:text-orange-700 hover:bg-orange-50"
                     >
                       <Link href={`/blog/${post.id}`}>
-                        Read More
+                        {language === 'hi' ? 'और पढ़ें' : 'Read More'}
                         <ArrowRight className="w-4 h-4" />
                       </Link>
                     </Button>
@@ -114,21 +114,21 @@ function BlogContent() {
         <section className="py-16 bg-gradient-to-r from-orange-600 to-amber-600">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold text-white mb-4">
-              Stay Updated with Astrology Insights
+              {language === 'hi' ? 'ज्योतिष अपडेट्स के लिए जुड़े रहें' : 'Stay Updated with Astrology Insights'}
             </h2>
             <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
-              Subscribe to our newsletter and receive the latest astrology articles and predictions directly in your inbox.
+              {language === 'hi' ? 'हमारे न्यूज़लेटर के लिए सब्सक्राइब करें और नवीनतम ज्योतिष लेख व भविष्यवाणियाँ सीधे अपने इनबॉक्स में पाएं।' : 'Subscribe to our newsletter and receive the latest astrology articles and predictions directly in your inbox.'}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <Input 
-                placeholder="Your email address" 
+                placeholder={language === 'hi' ? 'अपना ईमेल पता' : 'Your email address'}
                 className="flex-1 bg-white border-0 py-3"
               />
               <Button 
                 size="lg" 
                 className="bg-white text-orange-600 hover:bg-orange-50 px-8 py-3 font-semibold"
               >
-                Subscribe
+                {language === 'hi' ? 'सब्सक्राइब करें' : 'Subscribe'}
               </Button>
             </div>
           </div>

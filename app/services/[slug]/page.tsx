@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { CheckCircle, ArrowLeft } from 'lucide-react';
+import { CheckCircle, ArrowLeft, Phone, Star } from 'lucide-react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -16,7 +16,7 @@ type Service = {
   title: string;
   description: string;
   duration: string;
-  features: string[];
+  content: { heading: string; description: string }[];
   benefits: string[];
   overview: string;
   process: string;
@@ -25,7 +25,7 @@ type Service = {
 };
 
 export default function ServiceDetailContent({ params }: { params: { slug: string } }) {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const services = t('services.items') as Service[];
 
   const service = services.find(s => s.id === params.slug);
@@ -47,22 +47,19 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
             <div className="mb-8">
               <Link href="/services" className="inline-flex items-center gap-2 text-orange-100 hover:text-white transition-colors">
                 <ArrowLeft className="w-5 h-5" />
-                <span className="text-lg">All Services</span>
+                <span className="text-lg">{language === 'hi' ? 'सभी सेवाएँ' : 'All Services'}</span>
               </Link>
             </div>
             
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <Badge className="bg-orange-500/20 text-orange-100 hover:bg-orange-500/30 mb-4">
-                  {service.duration} Session
-                </Badge>
                 <h1 className="text-5xl font-bold text-white mb-6">{service.title}</h1>
                 <p className="text-xl text-orange-100 mb-8">{service.description}</p>
                 
                 <div className="flex flex-wrap gap-3">
-                  {service.features.map((feature, index) => (
+                  {service.content.map((item, index) => (
                     <Badge key={index} variant="secondary" className="bg-white/10 text-orange-50 hover:bg-white/20">
-                      {feature}
+                      {item.heading}
                     </Badge>
                   ))}
                 </div>
@@ -81,6 +78,52 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
         </div>
       </section>
 
+      {/* Mobile Booking Card - Only visible on mobile */}
+      <div className="lg:hidden container mx-auto px-4 -mt-10 mb-10">
+        <Card className="border border-orange-200 shadow-lg bg-gradient-to-r from-orange-50 to-amber-50">
+          <CardHeader className="bg-orange-50 border-b border-orange-100 flex flex-col items-center">
+            <div className="flex items-center gap-2 mb-2">
+              <Phone className="w-7 h-7 text-orange-600 animate-pulse" />
+              <CardTitle className="text-2xl font-bold text-gray-900">
+                {language === 'hi' ? 'कॉल करें' : 'Call Now'}
+              </CardTitle>
+            </div>
+            <Badge className="bg-green-100 text-green-700 mb-2 animate-pulse">
+              {language === 'hi' ? 'उपलब्ध अभी' : 'Available Now'}
+            </Badge>
+            <CardDescription className="text-gray-600 text-center text-base">
+              {language === 'hi' ? 'हमारे विशेषज्ञ ज्योतिषी से तुरंत बात करें!' : 'Talk to our expert astrologer instantly!'}
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="p-6 space-y-4 flex flex-col items-center">
+            <div className="flex flex-col items-center gap-2">
+              <span className="text-2xl font-bold text-orange-700 tracking-wide bg-orange-100 px-4 py-1 rounded-lg border border-orange-200 shadow-sm">
+                +123 456 7890
+              </span>
+              <span className="text-sm text-gray-500">{language === 'hi' ? '24x7 सहायता' : '24x7 Support'}</span>
+            </div>
+            <div className="space-y-4 w-full">
+              <Button 
+                asChild 
+                className="w-full bg-orange-600 hover:bg-orange-700 text-white h-14 text-lg animate-bounce shadow-lg"
+              >
+                <Link href="tel:+917733994827" className="flex items-center justify-center gap-2">
+                  <Phone className="w-5 h-5" />
+                  {language === 'hi' ? 'कॉल करें' : 'Call Now'}
+                </Link>
+              </Button>
+              <Button 
+                asChild 
+                variant="outline" 
+                className="w-full border-orange-600 text-orange-600 hover:bg-orange-50 h-14 text-lg"
+              >
+                <Link href="/contact">{language === 'hi' ? 'सवाल पूछें' : 'Ask Questions'}</Link>
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
       {/* Details Section */}
       <section className="py-20">
         <div className="container mx-auto px-4 max-w-6xl">
@@ -90,7 +133,7 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
               {/* Overview */}
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-                  Service Overview
+                  {language === 'hi' ? 'सेवा का अवलोकन' : 'Service Overview'}
                 </h2>
                 <p className="text-gray-700 leading-relaxed text-lg">
                   {service.overview}
@@ -99,41 +142,18 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
 
               {/* What's Included */}
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-                  What's Included
-                </h2>
-                <div className="space-y-4">
-                  {service.features.map((feature, index) => (
-                    <div key={index} className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
-                      <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
-                      <span className="text-gray-700 text-lg">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* How It Works */}
-              <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-8 pb-2 border-b border-gray-200">
-                  How It Works
-                </h2>
-                <div className="grid md:grid-cols-3 gap-6">
-                  {service.howItWorks.map((step, index) => (
-                    <div key={index} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                      <div className="bg-orange-100 p-3 rounded-full w-12 h-12 mb-4 flex items-center justify-center">
-                        <span className="text-xl font-bold text-orange-600">{index + 1}</span>
-                      </div>
-                      <h3 className="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
-                      <p className="text-gray-600">{step.description}</p>
-                    </div>
-                  ))}
-                </div>
+                {service.content.map((item, index) => (
+                  <div key={index} className="mb-8">
+                    <h3 className="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">{item.heading}</h3>
+                    <p className="text-gray-700 text-lg">{item.description}</p>
+                  </div>
+                ))}
               </div>
 
               {/* Benefits */}
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-                  Key Benefits
+                  {language === 'hi' ? 'मुख्य लाभ' : 'Key Benefits'}
                 </h2>
                 <div className="grid md:grid-cols-2 gap-4">
                   {service.benefits.map((benefit, index) => (
@@ -144,63 +164,48 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
                   ))}
                 </div>
               </div>
-
-              {/* Process */}
-              <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-                  Our Process
-                </h2>
-                <p className="text-gray-700 leading-relaxed text-lg">
-                  {service.process}
-                </p>
-              </div>
             </div>
 
-            {/* Sidebar */}
-            <div className="lg:col-span-1">
-              <Card className="sticky top-24 border border-orange-200 shadow-lg">
-                <CardHeader className="bg-orange-50 border-b border-orange-100">
-                  <CardTitle className="text-2xl font-bold text-gray-900">
-                    Book This Service
-                  </CardTitle>
-                  <CardDescription>
-                    Begin your astrological journey today
+            {/* Sidebar - Booking Card (Desktop only) */}
+            <div className="hidden lg:block lg:col-span-1">
+              <Card className="sticky top-24 border border-orange-200 shadow-lg bg-gradient-to-r from-orange-50 to-amber-50">
+                <CardHeader className="bg-orange-50 border-b border-orange-100 flex flex-col items-center">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Phone className="w-7 h-7 text-orange-600 animate-pulse" />
+                    <CardTitle className="text-2xl font-bold text-gray-900">
+                      {language === 'hi' ? 'कॉल करें' : 'Call Now'}
+                    </CardTitle>
+                  </div>
+                  <Badge className="bg-green-100 text-green-700 mb-2 animate-pulse">
+                    {language === 'hi' ? 'उपलब्ध अभी' : 'Available Now'}
+                  </Badge>
+                  <CardDescription className="text-gray-600 text-center text-base">
+                    {language === 'hi' ? 'हमारे विशेषज्ञ ज्योतिषी से तुरंत बात करें!' : 'Talk to our expert astrologer instantly!'}
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="p-6 space-y-6">
-                  <div className="text-center bg-orange-50 p-6 rounded-lg">
-                    <div className="text-3xl font-bold text-orange-600 mb-2">{service.duration}</div>
-                    <div className="text-gray-600">Personalized Consultation</div>
+                <CardContent className="p-6 space-y-4 flex flex-col items-center">
+                  <div className="flex flex-col items-center gap-2">
+                    <span className="text-2xl font-bold text-orange-700 tracking-wide bg-orange-100 px-4 py-1 rounded-lg border border-orange-200 shadow-sm">
+                      +123 456 7890
+                    </span>
+                    <span className="text-sm text-gray-500">{language === 'hi' ? '24x7 सहायता' : '24x7 Support'}</span>
                   </div>
-
-                  <div className="space-y-4 text-sm text-gray-600">
-                    {[
-                      'Detailed analysis by expert astrologer',
-                      'Comprehensive PDF report',
-                      '30-day follow-up support',
-                      '100% confidential service',
-                      'Practical remedial solutions'
-                    ].map((item, index) => (
-                      <div key={index} className="flex items-center gap-3">
-                        <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
-                        {item}
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="space-y-4">
+                  <div className="space-y-4 w-full">
                     <Button 
                       asChild 
-                      className="w-full bg-orange-600 hover:bg-orange-700 text-white h-14 text-lg"
+                      className="w-full bg-orange-600 hover:bg-orange-700 text-white h-14 text-lg animate-bounce shadow-lg"
                     >
-                      <Link href="/contact">Book Now</Link>
+                      <Link href="tel:+917733994827" className="flex items-center justify-center gap-2">
+                        <Phone className="w-5 h-5" />
+                        {language === 'hi' ? 'कॉल करें' : 'Call Now'}
+                      </Link>
                     </Button>
                     <Button 
                       asChild 
                       variant="outline" 
                       className="w-full border-orange-600 text-orange-600 hover:bg-orange-50 h-14 text-lg"
                     >
-                      <Link href="/contact">Ask Questions</Link>
+                      <Link href="/contact">{language === 'hi' ? 'सवाल पूछें' : 'Ask Questions'}</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -215,42 +220,52 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Explore More Services
+              {language === 'hi' ? 'और सेवाएँ देखें' : 'Explore More Services'}
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Discover other ways we can help guide your journey
+              {language === 'hi' ? 'जानिए हम आपकी यात्रा में और कैसे मदद कर सकते हैं' : 'Discover other ways we can help guide your journey'}
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {relatedServices.map((relatedService) => (
-              <Card key={relatedService.id} className="group hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-orange-300 overflow-hidden">
-                <div className="relative h-48">
-                  <Image
-                    src={relatedService.image}
-                    alt={relatedService.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <Card key={relatedService.id} className="group hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-orange-300 overflow-hidden flex flex-col justify-between">
+                <div>
+                  <div className="relative h-48">
+                    <Image
+                      src={relatedService.image}
+                      alt={relatedService.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  </div>
+                  
+                  <CardHeader>
+                    <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-orange-600 transition-colors">
+                      {relatedService.title}
+                    </CardTitle>
+                    <CardDescription className="text-gray-600">
+                      {relatedService.description}
+                    </CardDescription>
+                  </CardHeader>
                 </div>
-                
-                <CardHeader>
-                  <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-orange-600 transition-colors">
-                    {relatedService.title}
-                  </CardTitle>
-                  <CardDescription className="text-gray-600">
-                    {relatedService.description}
-                  </CardDescription>
-                </CardHeader>
-                
-                <CardContent>
-                  <Button 
-                    asChild 
-                    className="w-full bg-orange-600 hover:bg-orange-700 text-white"
-                  >
-                    <Link href={`/services/${relatedService.id}`}>View Details</Link>
-                  </Button>
+                <CardContent className="mt-auto">
+                  <div className="flex gap-2 w-full">
+                    <Button 
+                      asChild 
+                      className="w-1/2 bg-orange-600 hover:bg-orange-700 text-white"
+                    >
+                      <Link href={`/services/${relatedService.id}`}>{language === 'hi' ? 'विवरण देखें' : 'View More'}</Link>
+                    </Button>
+                    <Button 
+                      asChild 
+                      variant="outline" 
+                      className="w-1/2 border-orange-600 text-orange-600 hover:bg-orange-50"
+                    >
+                      <Link href="tel:+917733994827">{language === 'hi' ? 'कॉल करें' : 'Call Now'}</Link>
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             ))}

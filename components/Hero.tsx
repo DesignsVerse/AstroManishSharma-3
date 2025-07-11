@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Hero() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   return (
@@ -34,7 +34,7 @@ export default function Hero() {
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
               <Stars className="w-4 h-4" />
-              Trusted by 5000+ Happy Clients
+              {language === 'hi' ? '5000+ खुश ग्राहकों का विश्वास' : 'Trusted by 5000+ Happy Clients'}
             </div>
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
               {t('hero.title')}
@@ -54,13 +54,13 @@ export default function Hero() {
                     <Stars key={i} className="w-4 h-4 fill-current" />
                   ))}
                 </div>
-                <span className="font-medium">4.9/5 Rating</span>
+                <span className="font-medium">{language === 'hi' ? '4.9/5 रेटिंग' : '4.9/5 Rating'}</span>
               </div>
               <div className="text-sm text-gray-600">
-                <span className="font-medium">98% Accuracy</span>
+                <span className="font-medium">{language === 'hi' ? '98% सटीकता' : '98% Accuracy'}</span>
               </div>
               <div className="text-sm text-gray-600">
-                <span className="font-medium">15+ Years Experience</span>
+                <span className="font-medium">{language === 'hi' ? '15+ वर्षों का अनुभव' : '15+ Years Experience'}</span>
               </div>
             </div>
 
@@ -126,12 +126,12 @@ export default function Hero() {
               ✕
             </button>
             <div className="bg-gray-800 rounded-lg p-8 text-center">
-              <h3 className="text-white text-xl mb-4">Welcome to AstroMystic</h3>
+              <h3 className="text-white text-xl mb-4">{language === 'hi' ? 'AstroMystic में आपका स्वागत है' : 'Welcome to AstroMystic'}</h3>
               <p className="text-gray-300 mb-6">
-                Experience the power of authentic astrology guidance. Our video introduction will be available soon.
+                {language === 'hi' ? 'प्रामाणिक ज्योतिष मार्गदर्शन की शक्ति का अनुभव करें। हमारा वीडियो परिचय जल्द ही उपलब्ध होगा।' : 'Experience the power of authentic astrology guidance. Our video introduction will be available soon.'}
               </p>
               <Button onClick={() => setIsVideoPlaying(false)} className="bg-orange-600 hover:bg-orange-700">
-                Close
+                {language === 'hi' ? 'बंद करें' : 'Close'}
               </Button>
             </div>
           </div>

@@ -10,7 +10,7 @@ import { Users, Calendar, Star, TrendingUp, Award, BookOpen, Heart, Target } fro
 import Link from 'next/link';
 
 function AboutContent() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const stats = t('about.stats') as any[];
 
@@ -97,20 +97,18 @@ function AboutContent() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
                 <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                  Our Story
+                  {language === 'hi' ? 'हमारी कहानी' : 'Our Story'}
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-6 text-lg">
                   {t('about.story')}
                 </p>
-                <p className="text-gray-600 leading-relaxed mb-8 text-lg">
-                  Our journey began with a simple mission: to make authentic astrological guidance accessible to everyone. We believe that astrology is not just about predicting the future, but about understanding yourself better and making informed decisions that align with your true purpose.
-                </p>
+               
                 <Button 
                   asChild 
                   size="lg" 
                   className="bg-orange-600 hover:bg-orange-700 text-white"
                 >
-                  <Link href="/contact">Start Your Journey</Link>
+                  <Link href="/contact">{language === 'hi' ? 'अपनी यात्रा शुरू करें' : 'Start Your Journey'}</Link>
                 </Button>
               </div>
               <div className="relative">
@@ -130,10 +128,10 @@ function AboutContent() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                Our Values
+                {language === 'hi' ? 'हमारे मूल्य' : 'Our Values'}
               </h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                The principles that guide our practice and shape our relationship with every client.
+                {language === 'hi' ? 'वे सिद्धांत जो हमारे कार्य और हर ग्राहक के साथ हमारे संबंध को आकार देते हैं।' : 'The principles that guide our practice and shape our relationship with every client.'}
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -144,10 +142,22 @@ function AboutContent() {
                       <value.icon className="w-8 h-8 text-orange-600" />
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                      {value.title}
+                      {language === 'hi'
+                        ? (value.title === 'Compassionate Guidance' ? 'सहानुभूतिपूर्ण मार्गदर्शन'
+                          : value.title === 'Accurate Predictions' ? 'सटीक भविष्यवाणी'
+                          : value.title === 'Continuous Learning' ? 'निरंतर सीखना'
+                          : value.title === 'Professional Excellence' ? 'पेशेवर उत्कृष्टता'
+                          : value.title)
+                        : value.title}
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
-                      {value.description}
+                      {language === 'hi'
+                        ? (value.title === 'Compassionate Guidance' ? 'हम सहानुभूति और समझ के साथ रीडिंग्स प्रदान करते हैं, ताकि आप जीवन की चुनौतियों का सामना सहजता से कर सकें।'
+                          : value.title === 'Accurate Predictions' ? 'हमारे अनुभवी ज्योतिषी प्राचीन ज्ञान के आधार पर सटीक और अर्थपूर्ण सलाह देते हैं।'
+                          : value.title === 'Continuous Learning' ? 'हम नवीनतम ज्योतिष तकनीकों के साथ-साथ पारंपरिक विधियों को भी अपनाते हैं।'
+                          : value.title === 'Professional Excellence' ? 'ज्योतिष परामर्श और ग्राहक सेवा में उच्चतम मानकों को बनाए रखने के लिए प्रतिबद्ध।'
+                          : value.description)
+                        : value.description}
                     </p>
                   </CardContent>
                 </Card>
@@ -160,10 +170,10 @@ function AboutContent() {
         <section className="py-16 bg-gradient-to-r from-orange-600 to-amber-600">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold text-white mb-4">
-              Ready to Begin Your Astrological Journey?
+              {language === 'hi' ? 'क्या आप अपनी ज्योतिष यात्रा शुरू करने के लिए तैयार हैं?' : 'Ready to Begin Your Astrological Journey?'}
             </h2>
             <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
-              Connect with our experienced astrologers and discover the insights that can transform your life.
+              {language === 'hi' ? 'हमारे अनुभवी ज्योतिषियों से जुड़ें और वे जानकारियाँ पाएं जो आपके जीवन को बदल सकती हैं।' : 'Connect with our experienced astrologers and discover the insights that can transform your life.'}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -171,7 +181,7 @@ function AboutContent() {
                 size="lg" 
                 className="bg-white text-orange-600 hover:bg-orange-50 px-8 py-3 text-lg font-semibold"
               >
-                <Link href="/contact">Book Consultation</Link>
+                <Link href="/contact">{language === 'hi' ? 'परामर्श बुक करें' : 'Book Consultation'}</Link>
               </Button>
               <Button 
                 asChild 
@@ -179,7 +189,7 @@ function AboutContent() {
                 size="lg" 
                 className="border-white text-white hover:bg-white hover:text-orange-600 px-8 py-3 text-lg font-semibold"
               >
-                <Link href="/services">View Services</Link>
+                <Link href="/services">{language === 'hi' ? 'सेवाएँ देखें' : 'View Services'}</Link>
               </Button>
             </div>
           </div>

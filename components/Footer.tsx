@@ -8,8 +8,10 @@ import Link from 'next/link';
 
 export default function Footer() {
   const { t } = useLanguage();
-
   const currentYear = new Date().getFullYear();
+
+  // Get all footer content from translation context
+  const footer = t('footer');
 
   return (
     <footer className="bg-gray-900 text-white">
@@ -22,52 +24,67 @@ export default function Footer() {
               <h3 className="text-2xl font-bold">{t('header.logo')}</h3>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              {t('footer.description')}
+              {footer.description}
             </p>
             <div className="flex gap-4">
-              <Button variant="ghost" size="icon" className="hover:bg-orange-600 hover:text-white">
-                <Facebook className="w-5 h-5" />
+              <Button asChild variant="ghost" size="icon" className="hover:bg-orange-600 hover:text-white" title="Facebook">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                  <Facebook className="w-5 h-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="hover:bg-orange-600 hover:text-white">
-                <Instagram className="w-5 h-5" />
+              <Button asChild variant="ghost" size="icon" className="hover:bg-orange-600 hover:text-white" title="Instagram">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                  <Instagram className="w-5 h-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="hover:bg-orange-600 hover:text-white">
-                <Twitter className="w-5 h-5" />
+              <Button asChild variant="ghost" size="icon" className="hover:bg-orange-600 hover:text-white" title="Twitter">
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                  <Twitter className="w-5 h-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="hover:bg-orange-600 hover:text-white">
-                <Youtube className="w-5 h-5" />
+              <Button asChild variant="ghost" size="icon" className="hover:bg-orange-600 hover:text-white" title="Youtube">
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                  <Youtube className="w-5 h-5" />
+                </a>
               </Button>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">{t('footer.quickLinks.title')}</h4>
+            <h4 className="text-lg font-semibold mb-4">{footer.quickLinks.title}</h4>
             <ul className="space-y-2">
-              {['Home', 'Services', 'Blog', 'About', 'Contact'].map((link, index) => (
-                <li key={index}>
-                  <Link 
-                    href={index === 0 ? '/' : `/${link.toLowerCase()}`}
-                    className="text-gray-400 hover:text-orange-600 transition-colors"
-                  >
-                    {t(`header.nav.${link.toLowerCase()}`)}
-                  </Link>
-                </li>
-              ))}
+              {footer.quickLinks.links.map((link: string, index: number) => {
+                let href = '/';
+                if (index !== 0) {
+                  href = `/${link.toLowerCase().replace(/\s+/g, '-')}`;
+                }
+                // If the link is in English, try to use t('header.nav.key'), else just show the link as is (for Hindi)
+                const isEnglish = /^[A-Za-z0-9 _-]+$/.test(link);
+                let label = link;
+                if (isEnglish) {
+                  const key = link.toLowerCase().replace(/\s+/g, '');
+                  label = t(`header.nav.${key}`) || link;
+                }
+                return (
+                  <li key={index}>
+                    <Link 
+                      href={href}
+                      className="text-gray-400 hover:text-orange-600 transition-colors"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">{t('footer.services.title')}</h4>
+            <h4 className="text-lg font-semibold mb-4">{footer.services.title}</h4>
             <ul className="space-y-2">
-              {[
-                'Birth Chart',
-                'Compatibility',
-                'Career Guidance',
-                'Health Astrology',
-                'Gemstone Consultation'
-              ].map((service, index) => (
+              {footer.services.links.map((service: string, index: number) => (
                 <li key={index}>
                   <Link 
                     href="/services"
@@ -82,27 +99,27 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">{t('footer.contact.title')}</h4>
+            <h4 className="text-lg font-semibold mb-4">{footer.contact.title}</h4>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-orange-600 mt-0.5" />
                 <div>
                   <p className="text-gray-400 text-sm">Phone</p>
-                  <p className="text-white">{t('footer.contact.phone')}</p>
+                  <p className="text-white">{footer.contact.phone}</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-orange-600 mt-0.5" />
                 <div>
                   <p className="text-gray-400 text-sm">Email</p>
-                  <p className="text-white">{t('footer.contact.email')}</p>
+                  <p className="text-white">{footer.contact.email}</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-orange-600 mt-0.5" />
                 <div>
                   <p className="text-gray-400 text-sm">Address</p>
-                  <p className="text-white">{t('footer.contact.address')}</p>
+                  <p className="text-white">{footer.contact.address}</p>
                 </div>
               </div>
             </div>
@@ -112,7 +129,7 @@ export default function Footer() {
         <Separator className="my-8 bg-gray-800" />
 
         <div className="text-center text-gray-400">
-          <p>{t('footer.copyright')}</p>
+          <p>{footer.copyright.replace('2024', currentYear)}</p>
         </div>
       </div>
     </footer>

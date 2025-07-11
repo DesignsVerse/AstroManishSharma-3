@@ -8,7 +8,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { CheckCircle } from 'lucide-react';
 
 export default function ServicesPreview() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const services = t('services.items') as any[];
   const displayedServices = services.slice(0, 6); // Show first 6 services
 
@@ -53,12 +53,21 @@ export default function ServicesPreview() {
               </CardContent>
 
               <div className="px-6 pb-6">
-                <Button 
-                  asChild 
-                  className="w-full bg-orange-600 hover:bg-orange-700 text-white"
-                >
-                  <Link href={`/services/${service.id}`}>Learn More</Link>
-                </Button>
+                <div className="flex flex-row justify-between gap-2">
+                  <Button 
+                    asChild 
+                    className="w-1/2 bg-orange-600 hover:bg-orange-700 text-white"
+                  >
+                    <Link href={`/services/${service.id}`}>{language === 'hi' ? 'और जानें' : 'View More'}</Link>
+                  </Button>
+                  <Button
+                    asChild
+                    variant="outline"
+                    className="w-1/2 border-orange-600 text-orange-600 hover:bg-orange-50"
+                  >
+                    <a href="tel:+917733994827">{language === 'hi' ? 'अभी कॉल करें' : 'Call Now'}</a>
+                  </Button>
+                </div>
               </div>
             </Card>
           ))}
@@ -71,7 +80,7 @@ export default function ServicesPreview() {
             size="lg"
             className="border-orange-600 text-orange-600 hover:bg-orange-50 px-8 py-6 text-lg"
           >
-            <Link href="/services">View All Services</Link>
+            <Link href="/services">{language === 'hi' ? 'सभी सेवाएँ देखें' : 'View All Services'}</Link>
           </Button>
         </div>
       </div>

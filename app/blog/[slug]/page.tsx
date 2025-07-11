@@ -15,7 +15,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { Input } from '@/components/ui/input';
 
 function BlogPostContent() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const params = useParams();
   const slug = params.slug as string;
   const [isLoading, setIsLoading] = useState(true);
@@ -77,9 +77,10 @@ function BlogPostContent() {
           <div className="container mx-auto px-4 py-16">
             <div className="text-center">
               <h1 className="text-3xl font-bold text-gray-900 mb-4">Blog Post Not Found</h1>
-              <p className="text-gray-600 mb-8">The blog post you're looking for doesn't exist.</p>
+              <h1 className="text-3xl font-bold text-gray-900 mb-4">{language === 'hi' ? 'ब्लॉग पोस्ट नहीं मिली' : 'Blog Post Not Found'}</h1>
+              <p className="text-gray-600 mb-8">{language === 'hi' ? 'आप जो ब्लॉग पोस्ट ढूंढ रहे हैं, वह मौजूद नहीं है।' : "The blog post you're looking for doesn't exist."}</p>
               <Button asChild>
-                <Link href="/blog">Back to Blog</Link>
+                <Link href="/blog">{language === 'hi' ? 'ब्लॉग पर वापस जाएँ' : 'Back to Blog'}</Link>
               </Button>
             </div>
           </div>
@@ -99,7 +100,7 @@ function BlogPostContent() {
             <Button asChild variant="ghost" className="mb-6">
               <Link href="/blog" className="flex items-center gap-2">
                 <ArrowLeft className="w-4 h-4" />
-                Back to Blog
+                {language === 'hi' ? 'ब्लॉग पर वापस जाएँ' : 'Back to Blog'}
               </Link>
             </Button>
             
@@ -160,7 +161,7 @@ function BlogPostContent() {
                         className="flex items-center gap-2"
                       >
                         <Share2 className="w-4 h-4" />
-                        Share
+                        {language === 'hi' ? 'साझा करें' : 'Share'}
                       </Button>
                       <Button 
                         variant="outline" 
@@ -169,7 +170,7 @@ function BlogPostContent() {
                         className="flex items-center gap-2"
                       >
                         <Bookmark className="w-4 h-4" fill={isBookmarked ? "currentColor" : "none"} />
-                        {isBookmarked ? 'Bookmarked' : 'Bookmark'}
+                        {isBookmarked ? (language === 'hi' ? 'बुकमार्क किया गया' : 'Bookmarked') : (language === 'hi' ? 'बुकमार्क करें' : 'Bookmark')}
                       </Button>
                     </div>
                     
@@ -205,11 +206,11 @@ function BlogPostContent() {
                           ))}
                           
                           <div className="bg-orange-50 p-6 rounded-lg border-l-4 border-orange-500">
-                            <h3 className="text-xl font-semibold text-orange-800 mb-3">Key Takeaways</h3>
+                            <h3 className="text-xl font-semibold text-orange-800 mb-3">{language === 'hi' ? 'मुख्य बातें' : 'Key Takeaways'}</h3>
                             <ul className="list-disc pl-5 space-y-2 text-orange-700">
-                              <li>Understand the significance of planetary positions</li>
-                              <li>Learn how to interpret astrological charts</li>
-                              <li>Discover remedies for common astrological challenges</li>
+                              <li>{language === 'hi' ? 'ग्रहों की स्थिति का महत्व समझें' : 'Understand the significance of planetary positions'}</li>
+                              <li>{language === 'hi' ? 'ज्योतिषीय चार्ट को पढ़ना सीखें' : 'Learn how to interpret astrological charts'}</li>
+                              <li>{language === 'hi' ? 'आम ज्योतिषीय समस्याओं के उपाय जानें' : 'Discover remedies for common astrological challenges'}</li>
                             </ul>
                           </div>
                         </div>
@@ -227,7 +228,7 @@ function BlogPostContent() {
                 {/* Related Posts */}
                 <Card>
                   <CardHeader className="pb-3">
-                    <h3 className="text-xl font-semibold">Related Articles</h3>
+                    <h3 className="text-xl font-semibold">{language === 'hi' ? 'संबंधित लेख' : 'Related Articles'}</h3>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     {relatedPosts.map((post, index) => (
@@ -258,12 +259,12 @@ function BlogPostContent() {
                 {/* CTA Card */}
                 <Card className="bg-gradient-to-br from-orange-600 to-amber-600 text-white">
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold mb-3">Get Your Personal Reading</h3>
+                    <h3 className="text-xl font-semibold mb-3">{language === 'hi' ? 'अपनी व्यक्तिगत रीडिंग प्राप्त करें' : 'Get Your Personal Reading'}</h3>
                     <p className="mb-4 text-orange-100">
-                      Discover what the stars have in store for you with a personalized astrology reading.
+                      {language === 'hi' ? 'व्यक्तिगत ज्योतिषीय रीडिंग के साथ जानें सितारे आपके लिए क्या कहते हैं।' : 'Discover what the stars have in store for you with a personalized astrology reading.'}
                     </p>
                     <Button className="w-full bg-white text-orange-600 hover:bg-orange-50 font-medium">
-                      Book Now
+                      {language === 'hi' ? 'अभी बुक करें' : 'Book Now'}
                     </Button>
                   </CardContent>
                 </Card>
@@ -271,7 +272,7 @@ function BlogPostContent() {
                 {/* Popular Tags */}
                 <Card>
                   <CardHeader className="pb-3">
-                    <h3 className="text-xl font-semibold">Popular Tags</h3>
+                    <h3 className="text-xl font-semibold">{language === 'hi' ? 'लोकप्रिय टैग्स' : 'Popular Tags'}</h3>
                   </CardHeader>
                   <CardContent>
                     <div className="flex flex-wrap gap-2">
@@ -281,7 +282,17 @@ function BlogPostContent() {
                           href="#" 
                           className="text-sm px-3 py-1 bg-gray-100 hover:bg-orange-100 text-gray-700 hover:text-orange-700 rounded-full transition-colors"
                         >
-                          {tag}
+                          {language === 'hi'
+                            ? tag === 'Horoscope' ? 'राशिफल'
+                              : tag === 'Vedic' ? 'वैदिक'
+                              : tag === 'Zodiac' ? 'राशि'
+                              : tag === 'Planets' ? 'ग्रह'
+                              : tag === 'Remedies' ? 'उपाय'
+                              : tag === 'Kundli' ? 'कुंडली'
+                              : tag === 'Palmistry' ? 'हस्तरेखा'
+                              : tag === 'Numerology' ? 'अंक ज्योतिष'
+                              : tag
+                            : tag}
                         </Link>
                       ))}
                     </div>
@@ -297,20 +308,20 @@ function BlogPostContent() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Stay Updated with Astrology Insights
+                {language === 'hi' ? 'ज्योतिष अपडेट्स के लिए जुड़े रहें' : 'Stay Updated with Astrology Insights'}
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Subscribe to our newsletter and receive the latest astrology articles and predictions directly in your inbox.
+                {language === 'hi' ? 'हमारे न्यूज़लेटर के लिए सब्सक्राइब करें और नवीनतम ज्योतिष लेख व भविष्यवाणियाँ सीधे अपने इनबॉक्स में पाएं।' : 'Subscribe to our newsletter and receive the latest astrology articles and predictions directly in your inbox.'}
               </p>
               <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
                 <Input 
-                  placeholder="Your email address" 
+                  placeholder={language === 'hi' ? 'अपना ईमेल पता' : 'Your email address'}
                   className="flex-1 bg-white"
                 />
                 <Button 
                   className="bg-orange-600 hover:bg-orange-700 px-6"
                 >
-                  Subscribe
+                  {language === 'hi' ? 'सब्सक्राइब करें' : 'Subscribe'}
                 </Button>
               </div>
             </div>
