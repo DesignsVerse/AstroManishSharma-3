@@ -7,7 +7,7 @@ import { LanguageProvider } from '@/contexts/LanguageContext';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'AstroMystic - Professional Astrology Consultation & Guidance',
+  title: 'Maa Baglamukhi Pujan - Professional Astrology Consultation & Guidance',
   description: 'Get authentic astrology consultations with expert guidance for career, relationships, health, and life decisions. Professional Vedic astrology services.',
 };
 

@@ -28,26 +28,26 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-20">
+      <div className="container mx-auto px-4 py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-medium mb-8">
               <Stars className="w-4 h-4" />
               {language === 'hi' ? '5000+ खुश ग्राहकों का विश्वास' : 'Trusted by 5000+ Happy Clients'}
             </div>
-            <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
+            <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               {t('hero.title')}
             </h1>
-            <p className="text-xl text-orange-600 font-semibold mb-6">
+            <p className="text-xl text-orange-600 font-semibold mb-8">
               {t('hero.subtitle')}
             </p>
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl">
+            <p className="text-lg text-gray-600 mb-10 max-w-2xl">
               {t('hero.description')}
             </p>
             
             {/* Trust indicators */}
-            <div className="flex flex-wrap items-center gap-6 mb-8 justify-center lg:justify-start">
+            <div className="flex flex-wrap items-center gap-6 mb-10 justify-center lg:justify-start">
               <div className="flex items-center gap-2 text-sm text-gray-600">
                 <div className="flex text-yellow-400">
                   {[...Array(5)].map((_, i) => (
@@ -117,7 +117,7 @@ export default function Hero() {
 
       {/* Video Modal */}
       {isVideoPlaying && (
-        <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-black/80 z-40 flex items-center justify-center p-4">
           <div className="relative max-w-4xl w-full">
             <button
               onClick={() => setIsVideoPlaying(false)}
@@ -126,7 +126,7 @@ export default function Hero() {
               ✕
             </button>
             <div className="bg-gray-800 rounded-lg p-8 text-center">
-              <h3 className="text-white text-xl mb-4">{language === 'hi' ? 'AstroMystic में आपका स्वागत है' : 'Welcome to AstroMystic'}</h3>
+              <h3 className="text-white text-xl mb-4">{language === 'hi' ? 'Maa Baglamukhi Pujan में आपका स्वागत है' : 'Welcome to Maa Baglamukhi Pujan'}</h3>
               <p className="text-gray-300 mb-6">
                 {language === 'hi' ? 'प्रामाणिक ज्योतिष मार्गदर्शन की शक्ति का अनुभव करें। हमारा वीडियो परिचय जल्द ही उपलब्ध होगा।' : 'Experience the power of authentic astrology guidance. Our video introduction will be available soon.'}
               </p>

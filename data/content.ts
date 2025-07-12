@@ -8,7 +8,7 @@ import { testimonials as testimonialsHi } from './testimonials/hi';
 export const content = {
   en: {
     header: {
-      logo: "AstroMystic",
+      logo: "Maa Baglamukhi Pujan",
       nav: {
         home: "Home",
         services: "Services",
@@ -47,7 +47,7 @@ export const content = {
     },
     testimonials: testimonialsEn,
     footer: {
-      description: "AstroMystic is your trusted partner for authentic astrological guidance, spiritual growth, and personalized consultations. Join thousands who have found clarity and peace.",
+      description: "Maa Baglamukhi Pujan is your trusted partner for authentic astrological guidance, spiritual growth, and personalized consultations. Join thousands who have found clarity and peace.",
       quickLinks: {
         title: "Quick Links",
         links: ["Home", "Services", "Blog", "About", "Contact"]
@@ -75,12 +75,12 @@ export const content = {
       },
       social: {
         title: "Follow Us",
-        facebook: "https://facebook.com/astromystic",
-        instagram: "https://instagram.com/astromystic",
-        twitter: "https://twitter.com/astromystic",
-        youtube: "https://youtube.com/@astromystic"
+        facebook: "https://facebook.com/maabaglamukhipujan",
+        instagram: "https://instagram.com/maabaglamukhipujan",
+        twitter: "https://twitter.com/maabaglamukhipujan",
+        youtube: "https://youtube.com/@maabaglamukhipujan"
       },
-      copyright: `© ${new Date().getFullYear()} AstroMystic. All rights reserved.`
+      copyright: `© ${new Date().getFullYear()} Maa Baglamukhi Pujan. All rights reserved.`
     },
     contact: {
       title: "Contact Us",
@@ -142,7 +142,7 @@ export const content = {
       sunday: "Sunday"
     },
     whyChooseUs: {
-      title: "Why Choose AstroMystic?",
+      title: "Why Choose Maa Baglamukhi Pujan?",
       subtitle: "Discover what makes us the most trusted name in astrology consultation",
       reasons: [
         {
@@ -187,7 +187,7 @@ export const content = {
   },
   hi: {
     header: {
-      logo: "एस्ट्रोमिस्टिक",
+      logo: "माँ बगलामुखी पूजन",
       nav: {
         home: "मुख्य पृष्ठ",
         services: "सेवाएं",
@@ -226,7 +226,7 @@ export const content = {
     },
     testimonials: testimonialsHi,
     footer: {
-      description: "एस्ट्रोमिस्टिक आपके लिए प्रामाणिक ज्योतिषीय मार्गदर्शन, आध्यात्मिक विकास और व्यक्तिगत परामर्श का भरोसेमंद साथी है। हजारों लोगों ने यहाँ से स्पष्टता और शांति पाई है।",
+      description: "माँ बगलामुखी पूजन आपके लिए प्रामाणिक ज्योतिषीय मार्गदर्शन, आध्यात्मिक विकास और व्यक्तिगत परामर्श का भरोसेमंद साथी है। हजारों लोगों ने यहाँ से स्पष्टता और शांति पाई है।",
       quickLinks: {
         title: "त्वरित लिंक",
         links: ["मुख्य पृष्ठ", "सेवाएं", "ब्लॉग", "हमारे बारे में", "संपर्क"]
@@ -254,12 +254,12 @@ export const content = {
       },
       social: {
         title: "हमें फॉलो करें",
-        facebook: "https://facebook.com/astromystic",
-        instagram: "https://instagram.com/astromystic",
-        twitter: "https://twitter.com/astromystic",
-        youtube: "https://youtube.com/@astromystic"
+        facebook: "https://facebook.com/maabaglamukhipujan",
+        instagram: "https://instagram.com/maabaglamukhipujan",
+        twitter: "https://twitter.com/maabaglamukhipujan",
+        youtube: "https://youtube.com/@maabaglamukhipujan"
       },
-      copyright: `© ${new Date().getFullYear()} एस्ट्रोमिस्टिक। सभी अधिकार सुरक्षित।`
+      copyright: `© ${new Date().getFullYear()} माँ बगलामुखी पूजन। सभी अधिकार सुरक्षित।`
     },
     contact: {
       title: "संपर्क करें",
@@ -321,7 +321,7 @@ export const content = {
       sunday: "रविवार"
     },
     whyChooseUs: {
-      title: "एस्ट्रोमिस्टिक क्यों चुनें?",
+      title: "माँ बगलामुखी पूजन क्यों चुनें?",
       subtitle: "जानें कि ज्योतिष परामर्श में हम सबसे विश्वसनीय नाम क्यों हैं",
       reasons: [
         {
