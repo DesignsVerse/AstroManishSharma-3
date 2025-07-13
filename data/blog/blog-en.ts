@@ -10,7 +10,6 @@ export interface BlogPost {
   date: string;
   readTime: string;
   category: string;
-  image: string;
   author: string;
   content: BlogContent[];
 }
@@ -32,7 +31,6 @@ export const blogEn: Blog = {
       date: "July 11, 2025",
       readTime: "8 min read",
       category: "Spirituality",
-      image: "https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600",
       author: "Astro Manish Sharma",
       content: [
         {
@@ -79,7 +77,6 @@ export const blogEn: Blog = {
       date: "July 11, 2025",
       readTime: "8 min read",
       category: "Spirituality",
-      image: "https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600",
       author: "Astro Manish Sharma",
       content: [
         {
@@ -121,7 +118,6 @@ export const blogEn: Blog = {
       date: "July 11, 2025",
       readTime: "8 min read",
       category: "Astrology",
-      image: "https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600",
       author: "Astro Manish Sharma",
       content: [
         {
@@ -163,7 +159,6 @@ export const blogEn: Blog = {
       date: "July 11, 2025",
       readTime: "8 min read",
       category: "Tantra",
-      image: "https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600",
       author: "Astro Manish Sharma",
       content: [
         {
@@ -205,7 +200,6 @@ export const blogEn: Blog = {
       date: "July 11, 2025",
       readTime: "8 min read",
       category: "Spirituality",
-      image: "https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600",
       author: "Astro Manish Sharma",
       content: [
         {

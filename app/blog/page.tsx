@@ -10,6 +10,13 @@ import { Calendar, Clock, ArrowRight, Search } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import Link from 'next/link';
 
+// Helper function to generate image URL based on index
+const getImageUrl = (index: number) => {
+  // Use modulo to cycle through available images
+  // This will work for unlimited blog posts
+  const imageNumber = (index % 20) + 1; // 1-20 range, cycles back to 1 after 20
+  return `/images/blog/${imageNumber}.png`;
+};
 
 function BlogContent() {
   const { t, language } = useLanguage();
@@ -53,19 +60,7 @@ function BlogContent() {
                 <Card key={index} className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
                   <div className="relative h-48 overflow-hidden">
                     <img
-                      src={`https://images.pexels.com/photos/${
-                        index === 0 ? '6077329' : 
-                        index === 1 ? '6077368' : 
-                        index === 2 ? '6077334' :
-                        index === 3 ? '6077335' :
-                        index === 4 ? '6077336' : '6077337'
-                      }/pexels-photo-${
-                        index === 0 ? '6077329' : 
-                        index === 1 ? '6077368' : 
-                        index === 2 ? '6077334' :
-                        index === 3 ? '6077335' :
-                        index === 4 ? '6077336' : '6077337'
-                      }.jpeg?auto=compress&cs=tinysrgb&w=600`}
+                      src={getImageUrl(index)}
                       alt={post.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />

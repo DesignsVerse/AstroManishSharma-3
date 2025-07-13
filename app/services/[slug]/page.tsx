@@ -98,7 +98,7 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
           <CardContent className="p-6 space-y-4 flex flex-col items-center">
             <div className="flex flex-col items-center gap-2">
               <span className="text-2xl font-bold text-orange-700 tracking-wide bg-orange-100 px-4 py-1 rounded-lg border border-orange-200 shadow-sm">
-                +123 456 7890
+                +917733994827
               </span>
               <span className="text-sm text-gray-500">{language === 'hi' ? '24x7 सहायता' : '24x7 Support'}</span>
             </div>
@@ -186,7 +186,7 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
                 <CardContent className="p-6 space-y-4 flex flex-col items-center">
                   <div className="flex flex-col items-center gap-2">
                     <span className="text-2xl font-bold text-orange-700 tracking-wide bg-orange-100 px-4 py-1 rounded-lg border border-orange-200 shadow-sm">
-                      +123 456 7890
+                      +917733994827
                     </span>
                     <span className="text-sm text-gray-500">{language === 'hi' ? '24x7 सहायता' : '24x7 Support'}</span>
                   </div>

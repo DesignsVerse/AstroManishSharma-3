@@ -14,6 +14,14 @@ import { toast } from 'sonner';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Input } from '@/components/ui/input';
 
+// Helper function to generate image URL based on index
+const getImageUrl = (index: number) => {
+  // Use modulo to cycle through available images
+  // This will work for unlimited blog posts
+  const imageNumber = (index % 20) + 1; // 1-20 range, cycles back to 1 after 20
+  return `/images/blog/${imageNumber}.png`;
+};
+
 function BlogPostContent() {
   const { t, language } = useLanguage();
   const params = useParams();
@@ -35,6 +43,7 @@ function BlogPostContent() {
 
   const posts = t('blog.posts') as any[];
   const post = posts.find((p: any) => p.id === slug);
+  const postIndex = posts.findIndex((p: any) => p.id === slug);
   const relatedPosts = posts.filter(p => p.id !== slug).slice(0, 3);
 
   const handleShare = () => {
@@ -143,7 +152,7 @@ function BlogPostContent() {
                   ) : (
                     <div className="relative h-96">
                       <img
-                        src={post.image || "https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600"}
+                        src={getImageUrl(postIndex)}
                         alt={post.title}
                         className="w-full h-full object-cover"
                         loading="lazy"
@@ -236,7 +245,7 @@ function BlogPostContent() {
                         <div className="flex gap-3">
                           <div className="w-16 h-16 rounded overflow-hidden flex-shrink-0">
                             <img
-                              src={post.image || "https://images.pexels.com/photos/6077368/pexels-photo-6077368.jpeg?auto=compress&cs=tinysrgb&w=600"}
+                              src={getImageUrl(index)}
                               alt={post.title}
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                               loading="lazy"

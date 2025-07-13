@@ -2,13 +2,11 @@
 
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import { Stars, Sparkles, Play } from 'lucide-react';
+import { Stars, Sparkles } from 'lucide-react';
 import Link from 'next/link';
-import { useState } from 'react';
 
 export default function Hero() {
   const { t, language } = useLanguage();
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-orange-50 to-amber-50 flex items-center overflow-hidden">
@@ -83,25 +81,15 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Image with Video Modal */}
+          {/* Image */}
           <div className="relative">
             <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src="/images/Maa-Baglamukhi.jpg"
                 alt="Astrology consultation"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-              
-              {/* Video Play Button */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <button
-                  onClick={() => setIsVideoPlaying(true)}
-                  className="bg-white/90 hover:bg-white rounded-full p-6 shadow-lg transition-all duration-300 hover:scale-110"
-                >
-                  <Play className="w-8 h-8 text-orange-600 ml-1" />
-                </button>
-              </div>
             </div>
             
             {/* Floating elements */}
@@ -114,29 +102,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      {/* Video Modal */}
-      {isVideoPlaying && (
-        <div className="fixed inset-0 bg-black/80 z-40 flex items-center justify-center p-4">
-          <div className="relative max-w-4xl w-full">
-            <button
-              onClick={() => setIsVideoPlaying(false)}
-              className="absolute -top-12 right-0 text-white hover:text-orange-400 text-2xl"
-            >
-              ✕
-            </button>
-            <div className="bg-gray-800 rounded-lg p-8 text-center">
-              <h3 className="text-white text-xl mb-4">{language === 'hi' ? 'Maa Baglamukhi Pujan में आपका स्वागत है' : 'Welcome to Maa Baglamukhi Pujan'}</h3>
-              <p className="text-gray-300 mb-6">
-                {language === 'hi' ? 'प्रामाणिक ज्योतिष मार्गदर्शन की शक्ति का अनुभव करें। हमारा वीडियो परिचय जल्द ही उपलब्ध होगा।' : 'Experience the power of authentic astrology guidance. Our video introduction will be available soon.'}
-              </p>
-              <Button onClick={() => setIsVideoPlaying(false)} className="bg-orange-600 hover:bg-orange-700">
-                {language === 'hi' ? 'बंद करें' : 'Close'}
-              </Button>
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   );
 }

@@ -6,8 +6,32 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Calendar, Clock, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+
+// Helper function to generate image URL based on index
+const getImageUrl = (index: number, slideIndex: number = 0, postTitle?: string) => {
+  // Use post title to generate a consistent hash for each post
+  if (postTitle) {
+    // Simple hash function for post title
+    let hash = 0;
+    for (let i = 0; i < postTitle.length; i++) {
+      const char = postTitle.charCodeAt(i);
+      hash = ((hash << 5) - hash) + char;
+      hash = hash & hash; // Convert to 32-bit integer
+    }
+    const imageNumber = (Math.abs(hash) % 2) + 1;
+    console.log(`Post "${postTitle}": Image ${imageNumber} (hash: ${hash})`);
+    return `/images/blog/${imageNumber}.png`;
+  }
+  
+  // Fallback to index-based approach
+  const actualPostIndex = index + (slideIndex * 3);
+  const imageNumber = (actualPostIndex % 2) + 1;
+  console.log(`Post ${actualPostIndex}: Image ${imageNumber} (fallback)`);
+  return `/images/blog/${imageNumber}.png`;
+};
 
 export default function Blog() {
   const { t, language } = useLanguage();
@@ -86,10 +110,11 @@ export default function Blog() {
                 <div key={index} className="w-full flex-shrink-0 px-2">
                   <Card className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
                     <div className="relative h-48 overflow-hidden">
-                      <img
-                        src={post.image}
+                      <Image
+                        src={getImageUrl(index, currentIndex, post.title)}
                         alt={post.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                       <Badge className="absolute top-4 left-4 bg-orange-600 text-white">
@@ -144,10 +169,11 @@ export default function Blog() {
                 >
                   <Card className="group hover:shadow-xl transition-all duration-300 overflow-hidden h-full">
                     <div className="relative h-48 overflow-hidden">
-                      <img
-                        src={post.image}
+                      <Image
+                        src={getImageUrl(index, currentIndex, post.title)}
                         alt={post.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                       <Badge className="absolute top-4 left-4 bg-orange-600 text-white">

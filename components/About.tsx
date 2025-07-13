@@ -29,7 +29,7 @@ export default function About() {
           {/* Image - Right Side */}
           <div className="relative h-[500px] w-full rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="/images/temple-about.jpg" // Update with your image path
+              src="/images/temple.jpg" // Update with your image path
               alt={t('about.title')}
               fill
               className="object-cover"

@@ -113,7 +113,7 @@ function AboutContent() {
               </div>
               <div className="relative">
                 <img
-                  src="https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  src="/images/about.jpg"
                   alt="About us"
                   className="rounded-2xl shadow-2xl"
                 />
