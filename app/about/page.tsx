@@ -68,13 +68,13 @@ function AboutContent() {
         {/* Stats Section */}
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {stats.map((stat, index) => {
                 const Icon = iconMap[index as keyof typeof iconMap];
                 return (
                   <Card key={index} className="text-center group hover:shadow-xl transition-all duration-300 border-orange-100 hover:border-orange-200">
-                    <CardContent className="p-8">
-                      <div className="bg-orange-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:bg-orange-200 transition-colors">
+                    <CardContent className="p-5">
+                      <div className="bg-orange-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-200 transition-colors">
                         <Icon className="w-10 h-10 text-orange-600" />
                       </div>
                       <div className="text-4xl font-bold text-gray-900 mb-3">
@@ -102,7 +102,6 @@ function AboutContent() {
                 <p className="text-gray-600 leading-relaxed mb-6 text-lg">
                   {t('about.story')}
                 </p>
-               
                 <Button 
                   asChild 
                   size="lg" 
@@ -134,11 +133,11 @@ function AboutContent() {
                 {language === 'hi' ? 'वे सिद्धांत जो हमारे कार्य और हर ग्राहक के साथ हमारे संबंध को आकार देते हैं।' : 'The principles that guide our practice and shape our relationship with every client.'}
               </p>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {values.map((value, index) => (
                 <Card key={index} className="text-center group hover:shadow-xl transition-all duration-300 border-orange-100 hover:border-orange-200">
-                  <CardContent className="p-8">
-                    <div className="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 group-hover:bg-orange-200 transition-colors">
+                  <CardContent className="p-5">
+                    <div className="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-200 transition-colors">
                       <value.icon className="w-8 h-8 text-orange-600" />
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-4">
@@ -199,6 +198,7 @@ function AboutContent() {
     </div>
   );
 }
+
 export default function AboutPage() {
   return (
     <AboutContent />
