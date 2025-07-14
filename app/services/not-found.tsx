@@ -2,8 +2,8 @@
 
 import { LanguageProvider } from '@/contexts/LanguageContext';
 import { useLanguage } from '@/contexts/LanguageContext';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '@/components/home/Header';
+import Footer from '@/components/home/Footer';
 import { Button } from '@/components/ui/button';
 import { Search, Home, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';

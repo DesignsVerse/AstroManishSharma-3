@@ -1,8 +1,8 @@
 "use client";
 
 import { useLanguage } from '@/contexts/LanguageContext';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '@/components/home/Header';
+import Footer from '@/components/home/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';

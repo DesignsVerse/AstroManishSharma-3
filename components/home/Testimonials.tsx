@@ -154,20 +154,6 @@ export default function Testimonials() {
               })}
             </div>
           </div>
-
-          {/* Indicators */}
-          <div className="flex justify-center mt-10 gap-2">
-            {testimonials.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full transition-all ${
-                  index === currentIndex ? 'bg-amber-600' : 'bg-amber-200 hover:bg-amber-300'
-                }`}
-                aria-label={`Go to testimonial ${index + 1}`}
-              />
-            ))}
-          </div>
         </div>
       </div>
     </section>

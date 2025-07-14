@@ -34,7 +34,7 @@ export default function Hero() {
               <Stars className="w-4 h-4" />
               {language === 'hi' ? '5000+ खुश ग्राहकों का विश्वास' : 'Trusted by 5000+ Happy Clients'}
             </div>
-            <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight">
               {t('hero.title')}
             </h1>
             <p className="text-xl text-orange-600 font-semibold mb-8">

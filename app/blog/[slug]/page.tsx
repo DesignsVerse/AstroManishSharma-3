@@ -1,8 +1,7 @@
 "use client";
 import { LanguageProvider } from '@/contexts/LanguageContext';
 import { useLanguage } from '@/contexts/LanguageContext';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -81,7 +80,6 @@ function BlogPostContent() {
   if (!post) {
     return (
       <div className="min-h-screen">
-        <Header />
         <main className="pt-20">
           <div className="container mx-auto px-4 py-16">
             <div className="text-center">
@@ -94,14 +92,12 @@ function BlogPostContent() {
             </div>
           </div>
         </main>
-        <Footer />
       </div>
     );
   }
 
   return (
     <div className="min-h-screen">
-      <Header />
       <main className="pt-20">
         {/* Hero Section */}
         <section className="py-12 bg-gradient-to-br from-orange-50 to-amber-50">
@@ -337,7 +333,6 @@ function BlogPostContent() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }
