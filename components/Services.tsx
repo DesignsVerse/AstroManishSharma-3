@@ -58,11 +58,11 @@ export default function ServicesPreview() {
                   </CardContent>
 
                   {/* Buttons */}
-                  <div className="flex flex-row space-x-2 mt-auto">
+                  <div className="flex flex-col sm:flex-row gap-2 mt-auto">
                     <Button 
                       asChild
                       size="sm"
-                      className="w-full bg-orange-600 hover:bg-orange-700 text-white h-8 sm:h-9"
+                      className="flex-1 bg-orange-600 hover:bg-orange-700 text-white h-8 sm:h-9"
                     >
                       <a
                         href={`https://wa.me/7733994827?text=${encodeURIComponent(
@@ -82,7 +82,7 @@ export default function ServicesPreview() {
                       asChild
                       variant="outline"
                       size="sm"
-                      className="w-full border-orange-600 text-orange-600 hover:bg-orange-50 h-8 sm:h-9"
+                      className="flex-1 border-orange-600 text-orange-600 hover:bg-orange-50 h-8 sm:h-9"
                     >
                       <a href="tel:+917733994827" onClick={e => e.stopPropagation()}>
                         {language === 'hi' ? 'कॉल करें' : 'Call Now'}
