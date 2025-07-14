@@ -49,7 +49,6 @@ export default function ContactPage() {
   const { language } = useLanguage();
   return (
     <div className="min-h-screen">
-      <Header />
       {/* Hero Section */}
       <section className="pt-24 py-16 bg-gradient-to-b from-orange-500 to-orange-600">
         <div className="container mx-auto px-4">
@@ -120,7 +119,6 @@ export default function ContactPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

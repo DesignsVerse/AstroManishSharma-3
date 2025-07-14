@@ -88,7 +88,6 @@ function AboutContent() {
 
   return (
     <div className="min-h-screen">
-      <Header />
       <main className="pt-20">
         {/* Hero Section */}
         <section className="py-16 bg-gradient-to-b from-orange-500 to-orange-600">
@@ -236,7 +235,6 @@ function AboutContent() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

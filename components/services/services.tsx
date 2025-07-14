@@ -93,7 +93,6 @@ function ServicesContent() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-orange-50">
-      <Header />
       
       {/* Hero Section */}
       <section className="pt-24 pb-16 md:pt-32 md:pb-20 bg-gradient-to-b from-orange-500 to-orange-600">
@@ -294,7 +293,6 @@ function ServicesContent() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

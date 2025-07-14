@@ -66,7 +66,6 @@ function BlogContent() {
 
   return (
     <div className="min-h-screen">
-      <Header />
       <main className="pt-20">
         {/* Hero Section */}
         <section className="py-12 md:py-16 bg-gradient-to-b from-orange-500 to-orange-600">
@@ -169,7 +168,6 @@ function BlogContent() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }
