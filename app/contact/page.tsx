@@ -13,7 +13,7 @@ export default function ContactPage() {
     <div className="min-h-screen">
       <Header />
       {/* Hero Section */}
-      <section className="pt-20 py-16 bg-gradient-to-b from-orange-500 to-orange-600">
+      <section className="pt-24 py-16 bg-gradient-to-b from-orange-500 to-orange-600">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-5xl font-bold text-white mb-6">

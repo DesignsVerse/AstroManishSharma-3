@@ -129,7 +129,8 @@ export const content = {
         address: "Maa Baglamukhi Mataji, Nalkheda, MadhyaPradesh",
         hours: "Working Hours",
         hoursValue: "9:00 AM - 8:00 PM",
-        callNow: "Call Now!! +917733994827"
+        callNow: "Call Now!! +917733994827",
+        location: "Our Location"
       }
     },
     days: {
@@ -308,7 +309,8 @@ export const content = {
         address: "माँ बगलामुखी माताजी, नलखेड़ा, मध्य प्रदेश",
         hours: "कार्य समय",
         hoursValue: "सुबह 9:00 - शाम 8:00",
-        callNow: "अभी कॉल करें!!"
+        callNow: "अभी कॉल करें!!",
+        location: "हमारा स्थान"
       }
     },
     days: {
