@@ -8,7 +8,7 @@ import { testimonials as testimonialsHi } from './testimonials/hi';
 export const content = {
   en: {
     header: {
-      logo: "Maa Baglamukhi Pujan",
+      logo: "Maa",
       nav: {
         home: "Home",
         services: "Services",
@@ -187,7 +187,7 @@ export const content = {
   },
   hi: {
     header: {
-      logo: "माँ बगलामुखी पूजन",
+      logo: "माँ",
       nav: {
         home: "मुख्य पृष्ठ",
         services: "सेवाएं",

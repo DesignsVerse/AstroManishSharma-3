@@ -16,7 +16,7 @@ export const servicesEn = {
     search_placeholder_hi: "ज्योतिष सेवाओं के लिए खोजें..."
   },
   items: [
-    {
+   {
       id: "lakshmi-prapti-pooja",
       title: "Lakshmi Prapti Puja",
       description: "When a person’s income is low and expenses are high, it directly impacts their finances, leading to a clear shortage of money. Sometimes, due to personal habits, an individual faces financial distress and falls into debt. The Lakshmi Prapti Puja, performed with the blessings of Maa Baglamukhi, is the best solution to overcome these situations.",
@@ -26,7 +26,7 @@ export const servicesEn = {
         { heading: "Detailed puja ritual", description: "Manish Sharma Astrologer conducts the Lakshmi Prapti Puja with precise Vedic mantras dedicated to Maa Baglamukhi. The ritual includes offerings and chants to align cosmic energies, fostering financial growth and stability." },
         { heading: "Blessings of Maa Baglamukhi", description: "With the divine blessings of Maa Baglamukhi, guided by Manish Sharma Astrologer, this puja brings spiritual and material abundance. Her grace helps clear debts and enhances wealth, ensuring a prosperous future." }
       ],
-      image: "https://images.pexels.com/photos/6077336/pexels-photo-6077336.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/1.avif",
       overview: "Lakshmi Prapti Puja is for those facing financial difficulties, debts, or lack of money due to low income and high expenses. This puja, with the grace of Maa Baglamukhi, attracts wealth and prosperity, improving the individual’s financial situation.",
       benefits: [
         "Relief from financial distress and debt",
@@ -45,7 +45,7 @@ export const servicesEn = {
         { heading: "Mantra chanting for victory", description: "Guided by Manish Sharma Astrologer, powerful mantras of Maa Baglamukhi are chanted during the puja. These sacred chants neutralize negative energies and enhance your chances of success in court proceedings." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s divine blessings, facilitated by Manish Sharma Astrologer, empower you to overcome legal disputes. Her energy protects you from adversaries and ensures favorable outcomes in court cases." }
       ],
-      image: "https://images.pexels.com/photos/6077334/pexels-photo-6077334.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/2.avif",
       overview: "This puja is for those stuck in court cases or legal disputes and facing disappointment. With the grace of Maa Baglamukhi, the goddess of victory, you can achieve success in legal matters.",
       benefits: [
         "Victory in court cases",
@@ -64,7 +64,7 @@ export const servicesEn = {
         { heading: "Shanti havan", description: "Under Manish Sharma Astrologer’s supervision, a shanti havan is performed with Maa Baglamukhi’s mantras. This sacred ritual pacifies planetary doshas, bringing peace and balance to your personal and professional life." },
         { heading: "Blessings of Maa Baglamukhi", description: "With Maa Baglamukhi’s blessings, guided by Manish Sharma Astrologer, this puja removes planetary obstacles. Her divine energy fosters stability and progress in all aspects of life." }
       ],
-      image: "https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/18.avif",
       overview: "Navgrah Shanti Puja mitigates the negative effects of the nine planets and brings peace and happiness to life. It helps improve both personal and professional aspects of life.",
       benefits: [
         "Relief from negative planetary effects",
@@ -83,7 +83,7 @@ export const servicesEn = {
         { heading: "Mantra chanting", description: "Guided by Manish Sharma Astrologer, specific mantras of Maa Baglamukhi are chanted to amplify your attraction power. These chants align cosmic energies to enhance your influence and presence." },
         { heading: "Special remedies", description: "Manish Sharma Astrologer provides tailored remedies alongside Maa Baglamukhi’s blessings. These remedies strengthen your personality, helping you achieve your goals through enhanced attraction." }
       ],
-      image: "https://images.pexels.com/photos/6077337/pexels-photo-6077337.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/4.avif",
       overview: "Attraction Power Enhancement Puja empowers you to attract people in your field, whether you are a politician, shopkeeper, or service provider. This puja enhances your personality and opens doors to success.",
       benefits: [
         "Increased attraction power",
@@ -102,7 +102,7 @@ export const servicesEn = {
         { heading: "Protective shield", description: "Through Maa Baglamukhi’s divine energy, guided by Manish Sharma Astrologer, this puja creates a spiritual shield. It safeguards you from physical and mental harm caused by enemies." },
         { heading: "Blessings of Maa Baglamukhi", description: "With Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, this puja ensures freedom from adversaries. Her divine grace promotes peace and security in your life." }
       ],
-      image: "https://images.pexels.com/photos/6077335/pexels-photo-6077335.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/12.avif",
       overview: "Enemy Destruction Puja removes obstacles caused by enemies, providing physical and mental peace and protecting you from harm.",
       benefits: [
         "Freedom from enemies",
@@ -121,7 +121,7 @@ export const servicesEn = {
         { heading: "Victory mantra chanting", description: "Under Manish Sharma Astrologer’s guidance, Maa Baglamukhi’s mantras are chanted to secure electoral success. These chants neutralize opponents’ energies and create a favorable political environment." },
         { heading: "Electoral success", description: "With Maa Baglamukhi’s divine grace, facilitated by Manish Sharma Astrologer, this puja ensures victory in elections. It enhances your influence and popularity in political circles." }
       ],
-      image: "https://images.pexels.com/photos/6077334/pexels-photo-6077334.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/6.avif",
       overview: "Political Victory Puja is for politicians seeking success in elections and political progress. With Maa Baglamukhi’s grace, you can create a favorable environment and triumph over rivals.",
       benefits: [
         "Victory in elections",
@@ -140,7 +140,7 @@ export const servicesEn = {
         { heading: "Peace havan", description: "Guided by Manish Sharma Astrologer, a peace havan is performed with Maa Baglamukhi’s mantras. This ritual fosters understanding and resolves disputes among family members." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, bring peace to your home. This puja strengthens family bonds and ensures lasting harmony." }
       ],
-      image: "https://images.pexels.com/photos/6077368/pexels-photo-6077368.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/7.avif",
       overview: "Family Dispute Resolution Puja eliminates conflicts between husband and wife or mother-in-law and daughter-in-law, bringing peace and harmony to the household.",
       benefits: [
         "Resolution of family disputes",
@@ -159,7 +159,7 @@ export const servicesEn = {
         { heading: "Mantra chanting", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s mantras are chanted to remove mental blockages. These sacred chants promote clarity and focus in your thoughts." },
         { heading: "Mental clarity", description: "With Maa Baglamukhi’s blessings, guided by Manish Sharma Astrologer, this puja enhances mental clarity. It empowers you to make confident decisions and progress in life." }
       ],
-      image: "https://images.pexels.com/photos/6077335/pexels-photo-6077335.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/8.avif",
       overview: "Mental Obstacle Removal Puja eliminates mental barriers and provides clarity in thinking and decision-making with the grace of Maa Baglamukhi.",
       benefits: [
         "Freedom from mental obstacles",
@@ -178,7 +178,7 @@ export const servicesEn = {
         { heading: "Conception havan", description: "Guided by Manish Sharma Astrologer, a havan is performed with Maa Baglamukhi’s mantras. This ritual aligns cosmic energies to support conception and family happiness." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, help overcome childlessness. This puja brings hope and joy to couples seeking to start a family." }
       ],
-      image: "https://images.pexels.com/photos/6077368/pexels-photo-6077368.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/9.avif",
       overview: "Child Conception Puja is for couples struggling with childlessness. With Maa Baglamukhi’s grace, this puja helps fulfill the desire for a child.",
       benefits: [
         "Relief from childlessness",
@@ -197,7 +197,7 @@ export const servicesEn = {
         { heading: "Vidveshan mantras", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s vidveshan mantras are chanted. These powerful chants create discord among enemies, freeing you from their influence." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure freedom from enemies or toxic relationships. This puja restores peace and harmony in your life." }
       ],
-      image: "https://images.pexels.com/photos/6077335/pexels-photo-6077335.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/10.avif",
       overview: "Vidveshan Puja is used to make enemies fight among themselves or to free someone from bad company or unwanted romantic relationships. It is effective in resolving such issues.",
       benefits: [
         "Freedom from enemies",
@@ -216,7 +216,7 @@ export const servicesEn = {
         { heading: "Vashikaran mantras", description: "Guided by Manish Sharma Astrologer, Maa Baglamukhi’s vashikaran mantras are chanted to attract your beloved. These chants foster love and harmony in genuine relationships." },
         { heading: "Blessings of Maa Baglamukhi", description: "With Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, this puja ensures success in love. It strengthens bonds and paves the way for a happy relationship." }
       ],
-      image: "https://images.pexels.com/photos/6077368/pexels-photo-6077368.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/11.avif",
       overview: "Lover Vashikaran Puja helps in attaining true love and strengthening relationships, provided the love is genuine.",
       benefits: [
         "Attainment of true love",
@@ -235,7 +235,7 @@ export const servicesEn = {
         { heading: "Mantra chanting", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s mantras are chanted to foster love and acceptance. These chants align energies for a successful love marriage." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure societal and familial acceptance. This puja paves the way for a harmonious love marriage." }
       ],
-      image: "https://images.pexels.com/photos/6077368/pexels-photo-6077368.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/12.avif",
       overview: "Desired Love Marriage Puja is for those who want to marry their beloved but face social, familial, or caste-related obstacles. This puja makes love marriage possible.",
       benefits: [
         "Success in love marriage",
@@ -254,7 +254,7 @@ export const servicesEn = {
         { heading: "Stambhan mantras", description: "Guided by Manish Sharma Astrologer, Maa Baglamukhi’s stambhan mantras are chanted to disrupt enemies’ intellect. These powerful chants halt their actions and ensure your safety." },
         { heading: "Blessings of Maa Baglamukhi", description: "With Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, this puja creates a protective barrier. It ensures enemies cannot harm you, promoting peace and security." }
       ],
-      image: "https://images.pexels.com/photos/6077335/pexels-photo-6077335.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/13.avif",
       overview: "Enemy Stambhan Puja weakens the intellect and power of enemies, preventing them from acting against you. It is effective in protecting you from adversaries.",
       benefits: [
         "Weakening of enemies’ power",
@@ -273,7 +273,7 @@ export const servicesEn = {
         { heading: "Wealth mantras", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s wealth mantras are chanted to attract prosperity. These chants align cosmic energies to restore financial health." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, help recover financial losses. This puja ensures wealth and stability for a prosperous future." }
       ],
-      image: "https://images.pexels.com/photos/6077336/pexels-photo-6077336.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/14.avif",
       overview: "Financial Loss Recovery Puja helps recover from financial crises and losses, bringing wealth, prosperity, and stability to life.",
       benefits: [
         "Recovery from financial losses",
@@ -292,7 +292,7 @@ export const servicesEn = {
         { heading: "Disease cure mantras", description: "Guided by Manish Sharma Astrologer, Maa Baglamukhi’s mantras are chanted to cure diseases. These sacred chants align energies to restore health and ensure longevity." },
         { heading: "Blessings of Maa Baglamukhi", description: "With Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, this puja alleviates health issues. It promotes physical and mental well-being for a vibrant life." }
       ],
-      image: "https://images.pexels.com/photos/6077335/pexels-photo-6077335.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/15.avif",
       overview: "Disease Cure Puja is for those suffering from recurring illnesses and health issues. This puja provides longevity and a healthy life.",
       benefits: [
         "Relief from health issues",
@@ -311,7 +311,7 @@ export const servicesEn = {
         { heading: "Peace mantras", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s peace mantras are chanted at Mangalnath Temple. These chants pacify Mars’ negative influence for marital harmony." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, remove Mangal Dosh. This puja ensures a happy and successful marital life." }
       ],
-      image: "https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/16.avif",
       overview: "Mangal Dosh Puja is for those facing obstacles in marriage due to the negative influence of Mars. Performed in Ujjain, it ensures marital happiness.",
       benefits: [
         "Relief from Mangal Dosh",
@@ -330,7 +330,7 @@ export const servicesEn = {
         { heading: "Vashikaran mantras", description: "Guided by Manish Sharma Astrologer, Maa Baglamukhi’s vashikaran mantras are chanted to strengthen your influence. These chants promote mutual respect in your marriage." },
         { heading: "Blessings of Maa Baglamukhi", description: "With Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, this puja enhances marital happiness. It ensures a loving and cooperative relationship with your husband." }
       ],
-      image: "https://images.pexels.com/photos/6077368/pexels-photo-6077368.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/17.avif",
       overview: "Husband Vashikaran Puja helps women improve their relationship with their husbands and bring happiness to their marital life.",
       benefits: [
         "Increased marital happiness",
@@ -349,7 +349,7 @@ export const servicesEn = {
         { heading: "Vashikaran mantras", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s vashikaran mantras are chanted to influence employees positively. These chants foster diligence and teamwork." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure employee cooperation. This puja promotes business growth and a harmonious workplace." }
       ],
-      image: "https://images.pexels.com/photos/6077334/pexels-photo-6077334.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/18.avif",
       overview: "Employee Vashikaran Puja helps bring employees onto the right path and enhances workplace efficiency, ensuring business progress and peace.",
       benefits: [
         "Employee cooperation",
@@ -364,14 +364,14 @@ export const servicesEn = {
       description: "Maa Baglamukhi Tantra Havan Puja is performed to resolve various life problems. It addresses issues like business, intellect, wealth, enemy elimination, political progress, and other obstacles through this powerful ritual.",
       duration: "60 minutes",
       content: [
-        { heading: "Tantra analysis", description: "Manish Sharma Astrologer evaluates your life challenges and horoscope. Maa Baglamukhi’s divine energy guides this puja to address issues in business, wealth, and personal life." },
-        { heading: "Havan ritual", description: "Guided by Manish Sharma Astrologer, a havan is performed with Maa Baglamukhi’s mantras. This sacred ritual purifies energies and resolves obstacles for overall progress." },
-        { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure resolution of life’s problems. This puja promotes peace, prosperity, and protection from obstacles." }
+        { heading: "Tantra analysis", description: "Manish Sharma Astrologer evaluates your life challenges and horoscope. Maa Baglamukhi's divine energy guides this puja to address issues in business, wealth, and personal life." },
+        { heading: "Havan ritual", description: "Guided by Manish Sharma Astrologer, a havan is performed with Maa Baglamukhi's mantras. This sacred ritual purifies energies and resolves obstacles for overall progress." },
+        { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi's blessings, facilitated by Manish Sharma Astrologer, ensure resolution of life's problems. This puja promotes peace, prosperity, and protection from obstacles." }
       ],
-      image: "https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/20.avif",
       overview: "Tantra Havan Puja addresses various life issues such as business, enemies, and financial crises, providing overall progress and peace.",
       benefits: [
-        "Resolution of life’s problems",
+        "Resolution of life's problems",
         "Economic and social progress",
         "Protection from enemies",
         "Mental peace"
@@ -383,11 +383,11 @@ export const servicesEn = {
       description: "Special Anushthan (mantra chanting) is performed for varying durations and purposes, including 3.6 million, 1.1 million, 125,000, 51,000, or 36,000 chants, followed by a Dashansh Havan. Baglamukhi Jap Anushthan is conducted to fulfill specific life goals.",
       duration: "120 minutes",
       content: [
-        { heading: "Mantra chanting", description: "Manish Sharma Astrologer oversees the chanting of millions of Maa Baglamukhi’s mantras. This intense ritual aligns cosmic energies to fulfill your specific life goals." },
-        { heading: "Dashansh havan", description: "Guided by Manish Sharma Astrologer, a Dashansh havan is performed with Maa Baglamukhi’s mantras. This sacred offering amplifies the puja’s power for significant achievements." },
-        { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure the success of your goals. This puja brings spiritual and material progress in life." }
+        { heading: "Mantra chanting", description: "Manish Sharma Astrologer oversees the chanting of millions of Maa Baglamukhi's mantras. This intense ritual aligns cosmic energies to fulfill your specific life goals." },
+        { heading: "Dashansh havan", description: "Guided by Manish Sharma Astrologer, a Dashansh havan is performed with Maa Baglamukhi's mantras. This sacred offering amplifies the puja's power for significant achievements." },
+        { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi's blessings, facilitated by Manish Sharma Astrologer, ensure the success of your goals. This puja brings spiritual and material progress in life." }
       ],
-      image: "https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/19.avif",
       overview: "Anushthan Puja is performed to achieve specific goals, involving millions of mantra chants and a Dashansh Havan, effective for significant life accomplishments.",
       benefits: [
         "Achievement of specific goals",
@@ -402,11 +402,11 @@ export const servicesEn = {
       description: "When someone casts a tantric spell, it causes various problems like inability to focus, work failures, business losses, irritability, or setbacks in every field. Maa Baglamukhi Tantra Obstacle Removal Puja addresses issues like inability to complete tasks or physical weakness, ensuring freedom from tantric obstacles for a peaceful life.",
       duration: "45 minutes",
       content: [
-        { heading: "Tantra analysis", description: "Manish Sharma Astrologer evaluates tantric influences through horoscope analysis. Maa Baglamukhi’s divine energy guides this puja to remove obstacles and restore balance." },
-        { heading: "Obstacle removal mantras", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s mantras are chanted to eliminate tantric spells. These chants neutralize negative energies for a peaceful life." },
-        { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure freedom from tantric obstacles. This puja promotes success and happiness in all endeavors." }
+        { heading: "Tantra analysis", description: "Manish Sharma Astrologer evaluates tantric influences through horoscope analysis. Maa Baglamukhi's divine energy guides this puja to remove obstacles and restore balance." },
+        { heading: "Obstacle removal mantras", description: "Under Manish Sharma Astrologer's supervision, Maa Baglamukhi's mantras are chanted to eliminate tantric spells. These chants neutralize negative energies for a peaceful life." },
+        { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi's blessings, facilitated by Manish Sharma Astrologer, ensure freedom from tantric obstacles. This puja promotes success in endeavors." }
       ],
-      image: "https://images.pexels.com/photos/6077335/pexels-photo-6077335.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/21.avif",
       overview: "Tantra Obstacle Removal Puja helps those facing problems due to tantric spells, providing peace, happiness, and success in endeavors.",
       benefits: [
         "Freedom from tantric obstacles",
@@ -425,7 +425,7 @@ export const servicesEn = {
         { heading: "Peace havan", description: "Guided by Manish Sharma Astrologer, a peace havan is performed in Ujjain with Maa Baglamukhi’s mantras. This ritual pacifies ancestral energies for harmony." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, remove Pitru Dosh. This puja ensures spiritual peace and family well-being." }
       ],
-      image: "https://images.pexels.com/photos/6077329/pexels-photo-6077329.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/15.avif",
       overview: "Pitru Dosh Puja is for families facing problems due to ancestral doshas. Performed in Ujjain, it ensures family peace.",
       benefits: [
         "Freedom from Pitru Dosh",
@@ -444,7 +444,7 @@ export const servicesEn = {
         { heading: "Relief mantras", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s relief mantras are chanted to alleviate financial burdens. These chants attract prosperity and reduce debts." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure freedom from debts. This puja promotes financial stability and mental peace." }
       ],
-      image: "https://images.pexels.com/photos/6077336/pexels-photo-6077336.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/23.avif",
       overview: "Debt Relief Puja is for those struggling with debts, business loans, or financial complications, providing financial stability and mental peace.",
       benefits: [
         "Freedom from debt",
@@ -463,7 +463,7 @@ export const servicesEn = {
         { heading: "Mantra chanting", description: "Guided by Manish Sharma Astrologer, Maa Baglamukhi’s mantras are chanted to eliminate marital doshas. These chants align energies for a successful marriage." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure a happy marital life. This puja removes astrological barriers and promotes harmony." }
       ],
-      image: "https://images.pexels.com/photos/6077368/pexels-photo-6077368.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/24.avif",
       overview: "Marital Obstacle Removal Puja is for those facing delays or obstacles in marriage. It removes astrological doshas and ensures a happy marital life.",
       benefits: [
         "Freedom from marriage obstacles",
@@ -482,7 +482,7 @@ export const servicesEn = {
         { heading: "Uchchatan mantras", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s uchchatan mantras are chanted to create disinterest. These chants guide individuals back to the right path." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure freedom from toxic relationships. This puja promotes peace and progress in life." }
       ],
-      image: "https://images.pexels.com/photos/6077335/pexels-photo-6077335.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/25.avif",
       overview: "Uchchatan Puja frees individuals from bad company or unwanted romantic relationships, guiding them to the right path.",
       benefits: [
         "Freedom from bad company",
@@ -501,7 +501,7 @@ export const servicesEn = {
         { heading: "Defeat mantras", description: "Guided by Manish Sharma Astrologer, Maa Baglamukhi’s defeat mantras are chanted to weaken competitors. These chants ensure your progress remains unhindered." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, promote victory over enemies. This puja ensures steady progress and confidence in your endeavors." }
       ],
-      image: "https://images.pexels.com/photos/6077335/pexels-photo-6077335.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/26.avif",
       overview: "Enemy Defeat Puja ensures victory over competitors and enemies, promoting progress in any field of life.",
       benefits: [
         "Victory over competitors",
@@ -520,7 +520,7 @@ export const servicesEn = {
         { heading: "Victory mantras", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s victory mantras are chanted to resolve legal issues. These chants align energies for favorable outcomes." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure success in legal disputes. This puja protects your social standing and promotes peace." }
       ],
-      image: "https://images.pexels.com/photos/6077334/pexels-photo-6077334.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/27.avif",
       overview: "Baglamukhi Puja for Legal Matters is for those facing property disputes, false accusations, or other legal issues. It ensures victory and protects social standing.",
       benefits: [
         "Victory in legal disputes",
@@ -539,7 +539,7 @@ export const servicesEn = {
         { heading: "Vashikaran mantras", description: "Guided by Manish Sharma Astrologer, Maa Baglamukhi’s vashikaran mantras are chanted to draw customers. These chants enhance your business’s appeal and profitability." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure business success. This puja attracts customers and promotes financial prosperity." }
       ],
-      image: "https://images.pexels.com/photos/6077334/pexels-photo-6077334.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/28.avif",
       overview: "Customer Vashikaran Puja helps attract customers and boost business success, ensuring profitability and growth.",
       benefits: [
         "Customer attraction",
@@ -558,7 +558,7 @@ export const servicesEn = {
         { heading: "Vashikaran mantras", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s vashikaran mantras are chanted to foster cooperation. These chants promote a positive workplace relationship." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure career progress. This puja fosters harmony with your boss for a successful career." }
       ],
-      image: "https://images.pexels.com/photos/6077334/pexels-photo-6077334.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/29.avif",
       overview: "Boss Vashikaran Puja improves relationships with your boss or senior, ensuring career progress and workplace cooperation.",
       benefits: [
         "Improved boss relationships",
@@ -577,7 +577,7 @@ export const servicesEn = {
         { heading: "Success mantras", description: "Guided by Manish Sharma Astrologer, Maa Baglamukhi’s success mantras are chanted to align energies for career success. These chants enhance your professional prospects." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure career advancement. This puja promotes financial stability and professional growth." }
       ],
-      image: "https://images.pexels.com/photos/6077334/pexels-photo-6077334.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/images/puja/30.avif",
       overview: "Career and Job Puja is for those seeking a desired job or career advancement. It helps achieve your career goals.",
       benefits: [
         "Attainment of desired job",
