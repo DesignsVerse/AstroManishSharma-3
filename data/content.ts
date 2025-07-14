@@ -22,8 +22,8 @@ export const content = {
       title: "Shri Baglamukhi Siddhapeeth, Nalkheda - Guided by Pandit Manish Sharma",
       subtitle: "Experience the Divine Power of Maa Baglamukhi",
       description: "Seek blessings at one of only three sacred Baglamukhi Siddhapeeths in the world, under the expert guidance of Pandit Manish Sharma. Discover spiritual peace and overcome obstacles through the divine grace of Maa Baglamukhi Puja, the Goddess who controls all negative energies at Maa Baglamukhi Mandir.",
-      cta: "Book Maa Baglamukhi Puja Now",
-      secondary: "Call Now: +917733994827",
+      cta: "Book Puja Now",
+      secondary: "Call Now",
       features: [
         "One of three sacred Baglamukhi Siddhapeeths by Best Maa Baglamukhi Pandit",
         "Ancient temple with powerful spiritual energy guided by Baglamukhi Pandit Manish Sharma",
@@ -201,8 +201,8 @@ export const content = {
       title: "श्री बगलामुखी सिद्धपीठ, नलखेड़ा - पंडित मनीष शर्मा के मार्गदर्शन में",
       subtitle: "माँ बगलामुखी की दिव्य शक्ति का अनुभव करें",
       description: "दुनिया के केवल तीन पवित्र बगलामुखी सिद्धपीठों में से एक में आशीर्वाद प्राप्त करें, पंडित मनीष शर्मा के विशेष मार्गदर्शन में। माँ बगलामुखी पूजा के माध्यम से नकारात्मक ऊर्जाओं को नियंत्रित करने वाली देवी की दिव्य कृपा से आध्यात्मिक शांति प्राप्त करें और बाधाओं को दूर करें।",
-      cta: "माँ बगलामुखी पूजा बुक करें",
-      secondary: "अभी कॉल करें: +917733994827",
+      cta: "पूजा बुक करें",
+      secondary: "अभी कॉल करें",
       features: [
         "तीन पवित्र बगलामुखी सिद्धपीठों में से एक - सर्वश्रेष्ठ माँ बगलामुखी पंडित द्वारा",
         "शक्तिशाली आध्यात्मिक ऊर्जा वाला प्राचीन मंदिर - बगलामुखी पंडित मनीष शर्मा के मार्गदर्शन में",

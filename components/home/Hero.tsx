@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-orange-50 to-amber-50 flex items-center overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10 pointer-events-none">
         <div className="absolute top-20 left-10 animate-pulse">
           <Stars className="w-8 h-8 text-orange-600" />
         </div>
@@ -68,7 +68,17 @@ export default function Hero() {
                 size="lg" 
                 className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 text-lg"
               >
-                <Link href="/contact">{t('hero.cta')}</Link>
+                <a
+                  href={`https://wa.me/7733994827?text=${encodeURIComponent(
+                    language === 'hi'
+                      ? 'नमस्ते, मुझे माँ बगलामुखी पूजा बुक करनी है'
+                      : 'Namaste, I want to book Maa Baglamukhi Puja'
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {language === 'hi' ? 'पुजा बुक करें' : 'Book Puja'}
+                </a>
               </Button>
               <Button 
                 asChild 
@@ -76,7 +86,9 @@ export default function Hero() {
                 size="lg" 
                 className="border-orange-600 text-orange-600 hover:bg-orange-50 px-8 py-3 text-lg"
               >
-                <Link href="/about">{t('hero.secondary')}</Link>
+                <a href="tel:+917733994827">
+                  {language === 'hi' ? 'कॉल करें' : 'Call Now'}
+                </a>
               </Button>
             </div>
           </div>
