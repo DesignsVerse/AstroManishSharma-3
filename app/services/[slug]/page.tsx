@@ -92,7 +92,7 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
               {language === 'hi' ? 'उपलब्ध अभी' : 'Available Now'}
             </Badge>
             <CardDescription className="text-gray-600 text-center text-base">
-              {language === 'hi' ? 'हमारे विशेषज्ञ ज्योतिषी से तुरंत बात करें!' : 'Talk to our expert astrologer instantly!'}
+              {language === 'hi' ? 'हमारे विशेषज्ञ पंडित जी से तुरंत बात करें!' : 'Talk to our expert astrologer instantly!'}
             </CardDescription>
           </CardHeader>
           <CardContent className="p-6 space-y-4 flex flex-col items-center">
@@ -180,7 +180,7 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
                     {language === 'hi' ? 'उपलब्ध अभी' : 'Available Now'}
                   </Badge>
                   <CardDescription className="text-gray-600 text-center text-base">
-                    {language === 'hi' ? 'हमारे विशेषज्ञ ज्योतिषी से तुरंत बात करें!' : 'Talk to our expert astrologer instantly!'}
+                    {language === 'hi' ? 'हमारे विशेषज्ञ पंडित जी से तुरंत बात करें!' : 'Talk to our expert astrologer instantly!'}
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="p-6 space-y-4 flex flex-col items-center">

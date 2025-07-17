@@ -22,7 +22,7 @@ export const servicesEn = {
       description: "When a person’s income is low and expenses are high, it directly impacts their finances, leading to a clear shortage of money. Sometimes, due to personal habits, an individual faces financial distress and falls into debt. The Lakshmi Prapti Puja, performed with the blessings of Maa Baglamukhi, is the best solution to overcome these situations.",
       duration: "60 minutes",
       content: [
-        { heading: "Wealth attraction remedies", description: "Under the guidance of Manish Sharma Astrologer, this puja employs powerful Vedic remedies to attract wealth. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, removes financial obstacles and ensures prosperity at Maa Baglamukhi Mandir." },
+        { heading: "Wealth attraction remedies", description: "Under the guidance of Pandit Manish Sharma, this puja employs powerful Vedic remedies to attract wealth. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, removes financial obstacles and ensures prosperity at Maa Baglamukhi Mandir." },
         { heading: "Detailed puja ritual", description: "Manish Sharma Astrologer conducts the Lakshmi Prapti Puja with precise Vedic mantras dedicated to Maa Baglamukhi. The ritual includes offerings and chants to align cosmic energies, fostering financial growth and stability with Maa Baglamukhi Puja." },
         { heading: "Blessings of Maa Baglamukhi", description: "With the divine blessings of Maa Baglamukhi, guided by Manish Sharma Astrologer, this puja brings spiritual and material abundance. Her grace, offered by the Best Maa Baglamukhi Pandit, clears debts and enhances wealth for a prosperous future." },
         { heading: "Personalized Consultation", description: "Pandit Manish Sharma provides tailored advice post-puja to maximize the benefits of Maa Baglamukhi Pujan, ensuring long-term financial success." }
@@ -43,7 +43,7 @@ export const servicesEn = {
       description: "When a person is entangled in a court case and faces disappointment from all sides, constantly dealing with the hassles of court proceedings, they should seek the refuge of Maa Baglamukhi, the goddess of victory, and perform the Court Case Victory Puja to receive her blessings and achieve success in legal matters.",
       duration: "45 minutes",
       content: [
-        { heading: "Legal analysis", description: "Manish Sharma Astrologer examines your legal situation and horoscope to identify obstacles. With Maa Baglamukhi’s blessings, this analysis, led by Baglamukhi Pandit Manish Sharma, guides the puja to address specific legal challenges at Maa Baglamukhi Mandir." },
+        { heading: "Legal analysis", description: "With the experience and guidance of Pandit Manish Sharma, this puja is performed to resolve legal problems. Maa Baglamukhi’s blessings, invoked by Baglamukhi Pandit Manish Sharma, pave the way for victory at Maa Baglamukhi Mandir." },
         { heading: "Mantra chanting for victory", description: "Guided by Manish Sharma Astrologer, powerful mantras of Maa Baglamukhi are chanted during the puja. These sacred chants, performed by the Best Maa Baglamukhi Pandit, neutralize negative energies and enhance your chances of success in court proceedings." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s divine blessings, facilitated by Manish Sharma Astrologer, empower you to overcome legal disputes. Her energy, offered through Maa Baglamukhi Puja, protects you from adversaries and ensures favorable outcomes." },
         { heading: "Post-Puja Support", description: "Pandit Manish Sharma provides ongoing guidance to navigate legal complexities, ensuring sustained victory with Maa Baglamukhi Pujan." }
@@ -64,7 +64,7 @@ export const servicesEn = {
       description: "The nine planets hold significant importance in a person’s life. The good and bad times in one’s life are influenced by these planets. Sometimes, a person gets trapped in the negative effects of the planets, leading to difficult times. To eliminate all negative planetary influences and bring peace and happiness to life, one must perform the Navgrah Shanti Puja at Maa Baglamukhi Temple to enhance both personal and professional life.",
       duration: "60 minutes",
       content: [
-        { heading: "Planetary analysis", description: "Manish Sharma Astrologer assesses the planetary positions in your horoscope to identify negative influences. Maa Baglamukhi’s divine guidance, led by Baglamukhi Pandit Manish Sharma, ensures the puja targets these effects for a harmonious life at Maa Baglamukhi Mandir." },
+        { heading: "Planetary analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to remove the negative effects of the planets. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, brings harmony to life at Maa Baglamukhi Mandir." },
         { heading: "Shanti havan", description: "Under Manish Sharma Astrologer’s supervision, a shanti havan is performed with Maa Baglamukhi’s mantras. This sacred ritual, conducted by the Best Maa Baglamukhi Pandit, pacifies planetary doshas, bringing peace and balance." },
         { heading: "Blessings of Maa Baglamukhi", description: "With Maa Baglamukhi’s blessings, guided by Manish Sharma Astrologer, this puja removes planetary obstacles. Her divine energy, offered through Maa Baglamukhi Puja, fosters stability and progress in all aspects of life." },
         { heading: "Spiritual Cleansing", description: "Pandit Manish Sharma enhances the puja with additional rituals to cleanse negative energies, ensuring long-term peace with Maa Baglamukhi Pujan." }
@@ -85,7 +85,7 @@ export const servicesEn = {
       description: "The most essential power for success in any field is the power of attraction. Whether you are a politician, shopkeeper, or service provider, if you cannot attract people, you cannot progress in any field. Through the attraction ritual, anyone can attract others and achieve their desired goals, attainable through Maa Baglamukhi’s first tantric ritual of attraction.",
       duration: "30 minutes",
       content: [
-        { heading: "Attraction enhancement", description: "Manish Sharma Astrologer conducts this puja to boost your charisma with Maa Baglamukhi’s tantric rituals. This enhances your ability to attract people, fostering success in social and professional endeavors at Maa Baglamukhi Mandir." },
+        { heading: "Attraction enhancement", description: "With the guidance of Pandit Manish Sharma, this puja uses tantric rituals to enhance your attraction power. This puja at Maa Baglamukhi Mandir fosters success in social and professional endeavors." },
         { heading: "Mantra chanting", description: "Guided by Manish Sharma Astrologer, specific mantras of Maa Baglamukhi are chanted to amplify your attraction power. These chants, led by Baglamukhi Pandit Manish Sharma, align cosmic energies to enhance your influence." },
         { heading: "Special remedies", description: "Manish Sharma Astrologer provides tailored remedies alongside Maa Baglamukhi’s blessings. These remedies, offered by the Best Maa Baglamukhi Pandit, strengthen your personality, helping you achieve your goals through Maa Baglamukhi Pujan." },
         { heading: "Ongoing Support", description: "Pandit Manish Sharma offers continuous guidance to maintain your enhanced attraction power, ensuring sustained success." }
@@ -106,7 +106,7 @@ export const servicesEn = {
       description: "Enemy Destruction Puja is performed to remove obstacles caused by enemies. When life becomes difficult due to enemies, causing physical and mental distress, this puja can keep enemies at bay. It protects the individual and ensures no harm or pain is caused by adversaries.",
       duration: "45 minutes",
       content: [
-        { heading: "Enemy elimination", description: "Manish Sharma Astrologer analyzes your adversaries and performs this puja with Maa Baglamukhi’s powerful mantras. This ritual, led by Baglamukhi Pandit Manish Sharma, neutralizes enemies, ensuring they cannot harm you at Maa Baglamukhi Mandir." },
+        { heading: "Enemy elimination", description: "With the guidance of Pandit Manish Sharma, this puja is performed to remove obstacles caused by enemies. With Maa Baglamukhi’s powerful mantras, this puja at Maa Baglamukhi Mandir neutralizes enemies." },
         { heading: "Protective shield", description: "Through Maa Baglamukhi’s divine energy, guided by Manish Sharma Astrologer, this puja creates a spiritual shield. It safeguards you from physical and mental harm, enhanced by the Best Maa Baglamukhi Pandit." },
         { heading: "Blessings of Maa Baglamukhi", description: "With Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, this puja ensures freedom from adversaries. Her divine grace, offered through Maa Baglamukhi Puja, promotes peace and security." },
         { heading: "Spiritual Protection", description: "Pandit Manish Sharma adds protective rituals to strengthen your defense against enemies, ensuring long-term safety with Maa Baglamukhi Pujan." }
@@ -127,7 +127,7 @@ export const servicesEn = {
       description: "This puja is performed for progress in political life. Many politicians perform Maa Baglamukhi’s puja to win elections and advance in their political careers. Maa Baglamukhi is the goddess of politics. Through her puja, one can secure election tickets and create a favorable environment. This puja is highly effective in neutralizing opponents’ negative energies.",
       duration: "60 minutes",
       content: [
-        { heading: "Political analysis", description: "Manish Sharma Astrologer evaluates your political situation and horoscope to identify challenges. Maa Baglamukhi’s blessings, led by Baglamukhi Pandit Manish Sharma, guide this puja to ensure success in political endeavors at Maa Baglamukhi Mandir." },
+        { heading: "Political analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed for success in political life. Maa Baglamukhi’s blessings, invoked by Baglamukhi Pandit Manish Sharma, guide your political efforts at Maa Baglamukhi Mandir." },
         { heading: "Victory mantra chanting", description: "Under Manish Sharma Astrologer’s guidance, Maa Baglamukhi’s mantras are chanted to secure electoral success. These chants, performed by the Best Maa Baglamukhi Pandit, neutralize opponents’ energies and create a favorable political environment." },
         { heading: "Electoral success", description: "With Maa Baglamukhi’s divine grace, facilitated by Manish Sharma Astrologer, this puja ensures victory in elections. It enhances your influence and popularity in political circles through Maa Baglamukhi Puja." },
         { heading: "Ongoing Support", description: "Pandit Manish Sharma provides continuous guidance to maintain political success, ensuring long-term influence with Maa Baglamukhi Pujan." }
@@ -148,7 +148,7 @@ export const servicesEn = {
       description: "Family disputes often arise due to differences of opinion between husband and wife or mother-in-law and daughter-in-law. Sometimes, these disputes escalate to the point where family members contemplate extreme steps like suicide. To resolve such family conflicts, the Maa Baglamukhi Family Dispute Resolution Puja is a highly effective remedy.",
       duration: "45 minutes",
       content: [
-        { heading: "Family analysis", description: "Manish Sharma Astrologer examines family dynamics and horoscopes to identify conflict causes. Maa Baglamukhi’s divine energy, led by Baglamukhi Pandit Manish Sharma, guides this puja to restore harmony at Maa Baglamukhi Mandir." },
+        { heading: "Family analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to resolve family disputes and restore harmony at home. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, brings peace to your home at Maa Baglamukhi Mandir." },
         { heading: "Peace havan", description: "Guided by Manish Sharma Astrologer, a peace havan is performed with Maa Baglamukhi’s mantras. This ritual, conducted by the Best Maa Baglamukhi Pandit, fosters understanding and resolves disputes among family members." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, bring peace to your home. This puja, enhanced by Maa Baglamukhi Puja, strengthens family bonds and ensures lasting harmony." },
         { heading: "Family Counseling", description: "Pandit Manish Sharma offers post-puja counseling to sustain family peace, ensuring long-term harmony with Maa Baglamukhi Pujan." }
@@ -169,7 +169,7 @@ export const servicesEn = {
       description: "The Baglamukhi Mental Obstacle Removal Puja is a sacred experience performed in the presence of Goddess Baglamukhi to remove mental obstacles and ensure clarity in thought processes. Through this puja, all rituals and practices are fulfilled, seeking the blessings of Maa Baglamukhi.",
       duration: "30 minutes",
       content: [
-        { heading: "Mental analysis", description: "Manish Sharma Astrologer assesses your mental state and horoscope to identify barriers. Maa Baglamukhi’s divine guidance, led by Baglamukhi Pandit Manish Sharma, ensures this puja clears mental obstacles at Maa Baglamukhi Mandir." },
+        { heading: "Mental analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to remove mental obstacles and bring clarity. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, enhances mental clarity and confidence at Maa Baglamukhi Mandir." },
         { heading: "Mantra chanting", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s mantras are chanted to remove mental blockages. These sacred chants, performed by the Best Maa Baglamukhi Pandit, promote clarity and focus in your thoughts." },
         { heading: "Mental clarity", description: "With Maa Baglamukhi’s blessings, guided by Manish Sharma Astrologer, this puja enhances mental clarity. It empowers you to make confident decisions through Maa Baglamukhi Puja." },
         { heading: "Emotional Support", description: "Pandit Manish Sharma provides emotional guidance post-puja to maintain mental peace with Maa Baglamukhi Pujan." }
@@ -190,7 +190,7 @@ export const servicesEn = {
       description: "Childlessness is one of life’s greatest sorrows. Sometimes, due to weaknesses in either the woman or the man, or both, conception does not occur. If you are tired of visiting hospitals without results, perform the Child Conception Puja at Maa Baglamukhi Temple to help childless couples conceive.",
       duration: "60 minutes",
       content: [
-        { heading: "Horoscope analysis", description: "Manish Sharma Astrologer analyzes the couple’s horoscopes to identify conception barriers. Maa Baglamukhi’s divine energy, led by Baglamukhi Pandit Manish Sharma, guides this puja to fulfill the desire for a child at Maa Baglamukhi Mandir." },
+        { heading: "Horoscope analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to fulfill the desire for a child. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, guides this puja for child happiness at Maa Baglamukhi Mandir." },
         { heading: "Conception havan", description: "Guided by Manish Sharma Astrologer, a havan is performed with Maa Baglamukhi’s mantras. This ritual, conducted by the Best Maa Baglamukhi Pandit, aligns cosmic energies to support conception and family happiness." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, help overcome childlessness. This puja, enhanced by Maa Baglamukhi Puja, brings hope and joy to couples seeking to start a family." },
         { heading: "Post-Puja Guidance", description: "Pandit Manish Sharma offers advice to sustain the puja’s benefits, ensuring family happiness with Maa Baglamukhi Pujan." }
@@ -211,7 +211,7 @@ export const servicesEn = {
       description: "Vidveshan Puja is used to make enemies fight among themselves. When you face multiple enemies, this puja can make them turn against each other, helping you resolve your issues. It is also used to separate someone from bad company or an unwanted romantic relationship.",
       duration: "45 minutes",
       content: [
-        { heading: "Enemy analysis", description: "Manish Sharma Astrologer evaluates your adversaries or harmful relationships. Maa Baglamukhi’s divine guidance, led by Baglamukhi Pandit Manish Sharma, ensures this puja effectively resolves conflicts at Maa Baglamukhi Mandir." },
+        { heading: "Enemy analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to resolve issues with enemies or harmful relationships. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, ensures peace and security at Maa Baglamukhi Mandir." },
         { heading: "Vidveshan mantras", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s vidveshan mantras are chanted. These powerful chants, performed by the Best Maa Baglamukhi Pandit, create discord among enemies, freeing you from their influence." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure freedom from enemies or toxic relationships. This puja, enhanced by Maa Baglamukhi Puja, restores peace and harmony in your life." },
         { heading: "Protective Rituals", description: "Pandit Manish Sharma adds protective rituals to maintain freedom from adversaries with Maa Baglamukhi Pujan." }
@@ -232,7 +232,7 @@ export const servicesEn = {
       description: "Often, a woman loves a man and wishes to marry him, but for some reason, the relationship does not work out. Through Vashikaran Puja, you can win over your beloved, provided the love is true.",
       duration: "30 minutes",
       content: [
-        { heading: "Love analysis", description: "Manish Sharma Astrologer assesses your relationship and horoscope to identify challenges. Maa Baglamukhi’s divine energy, led by Baglamukhi Pandit Manish Sharma, guides this puja to strengthen true love and resolve issues at Maa Baglamukhi Mandir." },
+        { heading: "Love analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to strengthen true love and resolve relationship issues. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, guides this puja for success in love at Maa Baglamukhi Mandir." },
         { heading: "Vashikaran mantras", description: "Guided by Manish Sharma Astrologer, Maa Baglamukhi’s vashikaran mantras are chanted to attract your beloved. These chants, performed by the Best Maa Baglamukhi Pandit, foster love and harmony in genuine relationships." },
         { heading: "Blessings of Maa Baglamukhi", description: "With Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, this puja ensures success in love. It strengthens bonds and paves the way for a happy relationship through Maa Baglamukhi Puja." },
         { heading: "Post-Puja Support", description: "Pandit Manish Sharma provides ongoing guidance to sustain love and harmony with Maa Baglamukhi Pujan." }
@@ -253,7 +253,7 @@ export const servicesEn = {
       description: "If you wish to marry someone you love but face obstacles, such as family disapproval or societal issues like caste differences, the Desired Love Marriage Puja at Maa Baglamukhi Temple can help you achieve your dream marriage.",
       duration: "60 minutes",
       content: [
-        { heading: "Love marriage analysis", description: "Manish Sharma Astrologer examines obstacles to your love marriage through horoscope analysis. Maa Baglamukhi’s guidance, led by Baglamukhi Pandit Manish Sharma, ensures this puja removes barriers to your desired union at Maa Baglamukhi Mandir." },
+        { heading: "Love marriage analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to remove obstacles in love marriage. Maa Baglamukhi’s blessings, invoked by Baglamukhi Pandit Manish Sharma, pave the way for a harmonious union at Maa Baglamukhi Mandir." },
         { heading: "Mantra chanting", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s mantras are chanted to foster love and acceptance. These chants, performed by the Best Maa Baglamukhi Pandit, align energies for a successful love marriage." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure societal and familial acceptance. This puja, enhanced by Maa Baglamukhi Puja, paves the way for a harmonious love marriage." },
         { heading: "Family Mediation", description: "Pandit Manish Sharma offers mediation to gain family support, ensuring lasting harmony with Maa Baglamukhi Pujan." }
@@ -274,7 +274,7 @@ export const servicesEn = {
       description: "Stambhan Puja disrupts the intellect and strength of enemies, rendering them unable to make decisions or distinguish right from wrong. Through Maa Baglamukhi’s Enemy Stambhan Puja, you can halt your enemies’ actions and stop their progress.",
       duration: "45 minutes",
       content: [
-        { heading: "Enemy analysis", description: "Manish Sharma Astrologer evaluates your enemies’ actions and influences. Maa Baglamukhi’s divine energy, led by Baglamukhi Pandit Manish Sharma, guides this puja to weaken adversaries and protect you from harm at Maa Baglamukhi Mandir." },
+        { heading: "Enemy analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to weaken the influence of enemies and ensure your protection. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, protects you at Maa Baglamukhi Mandir." },
         { heading: "Stambhan mantras", description: "Guided by Manish Sharma Astrologer, Maa Baglamukhi’s stambhan mantras are chanted to disrupt enemies’ intellect. These powerful chants, performed by the Best Maa Baglamukhi Pandit, halt their actions and ensure your safety." },
         { heading: "Blessings of Maa Baglamukhi", description: "With Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, this puja creates a protective barrier. It ensures enemies cannot harm you, promoting peace and security through Maa Baglamukhi Puja." },
         { heading: "Protective Rituals", description: "Pandit Manish Sharma adds protective rituals to maintain safety from enemies with Maa Baglamukhi Pujan." }
@@ -295,7 +295,7 @@ export const servicesEn = {
       description: "Money is a fundamental necessity of life, without which daily needs cannot be met. Wealth brings happiness, health, and success in work, while financial loss or economic crises adversely affect one’s job, business, or career, disrupting life. When clear results begin to show from life improvements, this puja proves effective in addressing financial issues.",
       duration: "45 minutes",
       content: [
-        { heading: "Financial analysis", description: "Manish Sharma Astrologer assesses your financial losses and horoscope to identify causes. Maa Baglamukhi’s divine guidance, led by Baglamukhi Pandit Manish Sharma, ensures this puja targets financial recovery and stability at Maa Baglamukhi Mandir." },
+        { heading: "Financial analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to recover from financial losses and ensure prosperity. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, brings financial stability at Maa Baglamukhi Mandir." },
         { heading: "Wealth mantras", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s wealth mantras are chanted to attract prosperity. These chants, performed by the Best Maa Baglamukhi Pandit, align cosmic energies to restore financial health." },
         { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, help recover financial losses. This puja, enhanced by Maa Baglamukhi Puja, ensures wealth and stability for a prosperous future." },
         { heading: "Financial Planning", description: "Pandit Manish Sharma provides advice on financial management to sustain wealth with Maa Baglamukhi Pujan." }
@@ -316,7 +316,7 @@ export const servicesEn = {
       description: "A healthy body is essential for earning wealth. If your health is poor, you become a burden to your family. If you are constantly afflicted by diseases and medical treatments fail to help, seek refuge in Maa Bhagwati Baglamukhi to receive blessings for longevity and good health.",
       duration: "30 minutes",
       content: [
-        { heading: "Health analysis", description: "Manish Sharma Astrologer evaluates your health issues and horoscope to identify causes. Maa Baglamukhi’s divine energy, led by Baglamukhi Pandit Manish Sharma, guides this puja to promote healing and vitality at Maa Baglamukhi Mandir." },
+        { heading: "Health analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed for relief from health issues and to ensure longevity. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, brings health benefits at Maa Baglamukhi Mandir." },
         { heading: "Disease cure mantras", description: "Guided by Manish Sharma Astrologer, Maa Baglamukhi’s mantras are chanted to cure diseases. These sacred chants, performed by the Best Maa Baglamukhi Pandit, align energies to restore health and ensure longevity." },
         { heading: "Blessings of Maa Baglamukhi", description: "With Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, this puja alleviates health issues. It promotes physical and mental well-being through Maa Baglamukhi Puja." },
         { heading: "Health Maintenance", description: "Pandit Manish Sharma offers guidance on maintaining health post-puja with Maa Baglamukhi Pujan." }
@@ -337,7 +337,7 @@ export const servicesEn = {
         description: "Mangal Puja is performed in Ujjain when a person faces marriage-related issues. The Mangalnath Temple, renowned for this puja, is associated with the planet Mars, which represents self-esteem, temperament, ego, and conflict. Its influence creates problems in marriage, resolved through this puja with the guidance of Pandit Manish Sharma.",
         duration: "60 minutes",
         content: [
-          { heading: "Mangal Dosh analysis", description: "Manish Sharma Astrologer analyzes your horoscope to identify Mangal Dosh effects. Maa Baglamukhi’s divine guidance, led by Baglamukhi Pandit Manish Sharma, ensures this puja resolves marriage-related obstacles at Mangalnath Temple." },
+          { heading: "Mangal Dosh analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to remove the effects of Mangal Dosh and ensure marital happiness. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, brings success in marriage at Mangalnath Temple." },
           { heading: "Peace mantras", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s peace mantras are chanted at Mangalnath Temple. These chants, performed by the Best Maa Baglamukhi Pandit, pacify Mars’ negative influence for marital harmony." },
           { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, remove Mangal Dosh. This puja, enhanced by Maa Baglamukhi Puja, ensures a happy and successful marital life." },
           { heading: "Post-Puja Counseling", description: "Pandit Manish Sharma provides ongoing support to maintain marital harmony with Maa Baglamukhi Pujan." }
@@ -358,7 +358,7 @@ export const servicesEn = {
         description: "A common issue for women is that their husbands ignore their words, affecting their marital life and causing disputes. If you want your husband to listen to you and follow your guidance, perform the Maa Baglamukhi Husband Vashikaran Puja, led by Pandit Manish Sharma, to achieve this.",
         duration: "30 minutes",
         content: [
-          { heading: "Relationship analysis", description: "Manish Sharma Astrologer evaluates your marital relationship and horoscope. Maa Baglamukhi’s divine energy, guided by Baglamukhi Pandit Manish Sharma, fosters understanding and harmony with your husband at Maa Baglamukhi Mandir." },
+          { heading: "Relationship analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to bring harmony and love in marital life. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, brings happiness in marriage at Maa Baglamukhi Mandir." },
           { heading: "Vashikaran mantras", description: "Guided by Manish Sharma Astrologer, Maa Baglamukhi’s vashikaran mantras are chanted to strengthen your influence. These chants, performed by the Best Maa Baglamukhi Pandit, promote mutual respect in your marriage." },
           { heading: "Blessings of Maa Baglamukhi", description: "With Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, this puja enhances marital happiness. It ensures a loving and cooperative relationship with your husband through Maa Baglamukhi Puja." },
           { heading: "Marital Guidance", description: "Pandit Manish Sharma offers advice to sustain a harmonious marriage with Maa Baglamukhi Pujan." }
@@ -379,7 +379,7 @@ export const servicesEn = {
         description: "Teamwork is essential for running and growing a business successfully. If an employee does not listen or perform well, it creates numerous business challenges. Performing Employee Vashikaran Puja, led by Pandit Manish Sharma, ensures employees work diligently and follow instructions, allowing you to expand your business and work effectively.",
         duration: "30 minutes",
         content: [
-          { heading: "Employee analysis", description: "Manish Sharma Astrologer assesses employee performance and business challenges. Maa Baglamukhi’s divine guidance, led by Baglamukhi Pandit Manish Sharma, enhances workplace cooperation and efficiency." },
+          { heading: "Employee analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to ensure employee cooperation and business progress. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, brings success at the workplace." },
           { heading: "Vashikaran mantras", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s vashikaran mantras are chanted to influence employees positively. These chants, performed by the Best Maa Baglamukhi Pandit, foster diligence and teamwork." },
           { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure employee cooperation. This puja, enhanced by Maa Baglamukhi Puja, promotes business growth and a harmonious workplace." },
           { heading: "Workplace Support", description: "Pandit Manish Sharma provides strategies to maintain a productive team with Maa Baglamukhi Pujan." }
@@ -400,7 +400,7 @@ export const servicesEn = {
         description: "Maa Baglamukhi Tantra Havan Puja is performed to resolve various life problems. It addresses issues like business, intellect, wealth, enemy elimination, political progress, and other obstacles through this powerful ritual, guided by Pandit Manish Sharma.",
         duration: "60 minutes",
         content: [
-          { heading: "Tantra analysis", description: "Manish Sharma Astrologer evaluates your life challenges and horoscope. Maa Baglamukhi's divine energy, led by Baglamukhi Pandit Manish Sharma, guides this puja to address issues in business, wealth, and personal life at Maa Baglamukhi Mandir." },
+          { heading: "Tantra analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to resolve life’s challenges and obstacles. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, brings overall progress at Maa Baglamukhi Mandir." },
           { heading: "Havan ritual", description: "Guided by Manish Sharma Astrologer, a havan is performed with Maa Baglamukhi's mantras. This sacred ritual, conducted by the Best Maa Baglamukhi Pandit, purifies energies and resolves obstacles for overall progress." },
           { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi's blessings, facilitated by Manish Sharma Astrologer, ensure resolution of life's problems. This puja, enhanced by Maa Baglamukhi Puja, promotes peace, prosperity, and protection from obstacles." },
           { heading: "Ritual Follow-up", description: "Pandit Manish Sharma offers follow-up guidance to sustain the benefits of Maa Baglamukhi Pujan." }
@@ -421,7 +421,7 @@ export const servicesEn = {
         description: "Special Anushthan (mantra chanting) is performed for varying durations and purposes, including 3.6 million, 1.1 million, 125,000, 51,000, or 36,000 chants, followed by a Dashansh Havan. Baglamukhi Jap Anushthan, led by Pandit Manish Sharma, is conducted to fulfill specific life goals.",
         duration: "120 minutes",
         content: [
-          { heading: "Mantra chanting", description: "Manish Sharma Astrologer oversees the chanting of millions of Maa Baglamukhi's mantras. This intense ritual, performed by the Best Maa Baglamukhi Pandit, aligns cosmic energies to fulfill your specific life goals." },
+          { heading: "Mantra chanting", description: "With the guidance of Pandit Manish Sharma, this puja is performed with special mantra chanting and rituals to achieve life goals. Maa Baglamukhi’s blessings, invoked by Baglamukhi Pandit Manish Sharma, guide you towards progress in life." },
           { heading: "Dashansh havan", description: "Guided by Manish Sharma Astrologer, a Dashansh havan is performed with Maa Baglamukhi's mantras. This sacred offering amplifies the puja's power for significant achievements." },
           { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi's blessings, facilitated by Manish Sharma Astrologer, ensure the success of your goals. This puja, enhanced by Maa Baglamukhi Puja, brings spiritual and material progress in life." },
           { heading: "Goal Tracking", description: "Pandit Manish Sharma provides support to monitor progress toward your goals with Maa Baglamukhi Pujan." }
@@ -442,7 +442,7 @@ export const servicesEn = {
         description: "When someone casts a tantric spell, it causes various problems like inability to focus, work failures, business losses, irritability, or setbacks in every field. Maa Baglamukhi Tantra Obstacle Removal Puja, led by Pandit Manish Sharma, addresses issues like inability to complete tasks or physical weakness, ensuring freedom from tantric obstacles for a peaceful life.",
         duration: "45 minutes",
         content: [
-          { heading: "Tantra analysis", description: "Manish Sharma Astrologer evaluates tantric influences through horoscope analysis. Maa Baglamukhi's divine energy, guided by Baglamukhi Pandit Manish Sharma, removes obstacles and restores balance at Maa Baglamukhi Mandir." },
+          { heading: "Tantra analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to remove tantric obstacles and restore balance in life. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, brings peace and happiness at Maa Baglamukhi Mandir." },
           { heading: "Obstacle removal mantras", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi's mantras are chanted to eliminate tantric spells. These chants, performed by the Best Maa Baglamukhi Pandit, neutralize negative energies for a peaceful life." },
           { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi's blessings, facilitated by Manish Sharma Astrologer, ensure freedom from tantric obstacles. This puja, enhanced by Maa Baglamukhi Puja, promotes success in endeavors." },
           { heading: "Protection Support", description: "Pandit Manish Sharma offers ongoing protection advice with Maa Baglamukhi Pujan." }
@@ -463,7 +463,7 @@ export const servicesEn = {
         description: "Pitru Dosh Puja removes all ancestral doshas. If a person’s last rites are not performed properly or they die an untimely death, it causes Pitru Dosh, affecting the family for generations. This puja, performed in Ujjain and led by Pandit Manish Sharma, provides relief from such doshas.",
         duration: "60 minutes",
         content: [
-          { heading: "Pitru Dosh analysis", description: "Manish Sharma Astrologer examines your horoscope for ancestral doshas. Maa Baglamukhi’s divine guidance, led by Baglamukhi Pandit Manish Sharma, resolves Pitru Dosh for family peace in Ujjain." },
+          { heading: "Pitru Dosh analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to remove Pitru Dosh and ensure family peace. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, brings family welfare in Ujjain." },
           { heading: "Peace havan", description: "Guided by Manish Sharma Astrologer, a peace havan is performed in Ujjain with Maa Baglamukhi’s mantras. This ritual, conducted by the Best Maa Baglamukhi Pandit, pacifies ancestral energies for harmony." },
           { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, remove Pitru Dosh. This puja, enhanced by Maa Baglamukhi Puja, ensures spiritual peace and family well-being." },
           { heading: "Family Harmony", description: "Pandit Manish Sharma provides guidance to maintain family peace with Maa Baglamukhi Pujan." }
@@ -484,7 +484,7 @@ export const servicesEn = {
         description: "In business, there are profits and losses. Sometimes, losses lead to debt, causing deep mental distress and a troubled life. Business loans or EMIs can create further complications. To resolve these issues, perform the Maa Baglamukhi Debt Relief Puja, led by Pandit Manish Sharma.",
         duration: "45 minutes",
         content: [
-          { heading: "Debt analysis", description: "Manish Sharma Astrologer assesses your financial debts and horoscope. Maa Baglamukhi’s divine energy, guided by Baglamukhi Pandit Manish Sharma, provides solutions for debt relief and stability." },
+          { heading: "Debt analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to remove debts and ensure financial stability. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, brings relief from debts at Maa Baglamukhi Mandir." },
           { heading: "Relief mantras", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s relief mantras are chanted to alleviate financial burdens. These chants, performed by the Best Maa Baglamukhi Pandit, attract prosperity and reduce debts." },
           { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure freedom from debts. This puja, enhanced by Maa Baglamukhi Puja, promotes financial stability and mental peace." },
           { heading: "Financial Advice", description: "Pandit Manish Sharma offers guidance on managing finances with Maa Baglamukhi Pujan." }
@@ -505,7 +505,7 @@ export const servicesEn = {
         description: "Sometimes, a person crosses the marriageable age while seeking a perfect match, leading to delays and mental distress. Astrological doshas can worsen the situation. The Marital Obstacle Removal Puja, led by Pandit Manish Sharma, is considered the best remedy for such issues.",
         duration: "60 minutes",
         content: [
-          { heading: "Marital obstacle analysis", description: "Manish Sharma Astrologer evaluates marriage delays and horoscope doshas. Maa Baglamukhi’s divine guidance, led by Baglamukhi Pandit Manish Sharma, removes obstacles for a happy marriage at Maa Baglamukhi Mandir." },
+          { heading: "Marital obstacle analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to remove obstacles in marriage and ensure happiness. Maa Baglamukhi’s blessings, invoked by Baglamukhi Pandit Manish Sharma, bring marital bliss at Maa Baglamukhi Mandir." },
           { heading: "Mantra chanting", description: "Guided by Manish Sharma Astrologer, Maa Baglamukhi’s mantras are chanted to eliminate marital doshas. These chants, performed by the Best Maa Baglamukhi Pandit, align energies for a successful marriage." },
           { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure a happy marital life. This puja, enhanced by Maa Baglamukhi Puja, removes astrological barriers and promotes harmony." },
           { heading: "Matchmaking Support", description: "Pandit Manish Sharma assists in finding a suitable match with Maa Baglamukhi Pujan." }
@@ -526,7 +526,7 @@ export const servicesEn = {
         description: "Uchchatan Puja uses tantric methods to separate two people living harmoniously or to free a person from an unwanted romantic relationship. It creates disinterest in a person, place, or thing, guiding them back to the right path, led by Pandit Manish Sharma.",
         duration: "30 minutes",
         content: [
-          { heading: "Relationship analysis", description: "Manish Sharma Astrologer assesses harmful relationships or bad company through horoscope analysis. Maa Baglamukhi’s guidance, led by Baglamukhi Pandit Manish Sharma, frees you from unwanted influences." },
+          { heading: "Relationship analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to remove bad company or unwanted relationships and guide you to the right path. Maa Baglamukhi’s blessings, invoked by Baglamukhi Pandit Manish Sharma, bring peace and progress in life." },
           { heading: "Uchchatan mantras", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s uchchatan mantras are chanted to create disinterest. These chants, performed by the Best Maa Baglamukhi Pandit, guide individuals back to the right path." },
           { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure freedom from toxic relationships. This puja, enhanced by Maa Baglamukhi Puja, promotes peace and progress in life." },
           { heading: "Guidance Support", description: "Pandit Manish Sharma offers advice to stay on the right path with Maa Baglamukhi Pujan." }
@@ -547,7 +547,7 @@ export const servicesEn = {
         description: "In every field of life, as progress increases, so do enemies, whether in business, politics, or other areas. To protect yourself from destruction, the Enemy Defeat Puja, led by Pandit Manish Sharma, helps you surpass competitors and maintain steady progress in life.",
         duration: "45 minutes",
         content: [
-          { heading: "Enemy analysis", description: "Manish Sharma Astrologer evaluates competitors and their impact on your life. Maa Baglamukhi’s divine energy, guided by Baglamukhi Pandit Manish Sharma, ensures victory over adversaries at Maa Baglamukhi Mandir." },
+          { heading: "Enemy analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to ensure victory over competitors and enemies. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, brings success at Maa Baglamukhi Mandir." },
           { heading: "Defeat mantras", description: "Guided by Manish Sharma Astrologer, Maa Baglamukhi’s defeat mantras are chanted to weaken competitors. These chants, performed by the Best Maa Baglamukhi Pandit, ensure your progress remains unhindered." },
           { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, promote victory over enemies. This puja, enhanced by Maa Baglamukhi Puja, ensures steady progress and confidence in your endeavors." },
           { heading: "Competitor Strategy", description: "Pandit Manish Sharma provides tactics to stay ahead of competitors with Maa Baglamukhi Pujan." }
@@ -568,7 +568,7 @@ export const servicesEn = {
         description: "Legal disputes or judicial cases cause stress, financial loss, wasted time, and enmity. Legal issues, such as family, social, economic, property disputes, business conflicts, false accusations, defamation, or arrests, can destroy a person’s social standing and life if not resolved timely. Maa Baglamukhi’s special puja, led by Pandit Manish Sharma, is highly effective in resolving such issues.",
         duration: "60 minutes",
         content: [
-          { heading: "Legal analysis", description: "Manish Sharma Astrologer assesses your legal disputes and horoscope to identify challenges. Maa Baglamukhi’s divine guidance, led by Baglamukhi Pandit Manish Sharma, targets victory in legal matters." },
+          { heading: "Legal analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed for victory and resolution in legal matters. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, brings solutions to legal problems." },
           { heading: "Victory mantras", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s victory mantras are chanted to resolve legal issues. These chants, performed by the Best Maa Baglamukhi Pandit, align energies for favorable outcomes." },
           { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure success in legal disputes. This puja, enhanced by Maa Baglamukhi Puja, protects your social standing and promotes peace." },
           { heading: "Legal Support", description: "Pandit Manish Sharma offers advice on managing legal proceedings with Maa Baglamukhi Pujan." }
@@ -589,7 +589,7 @@ export const servicesEn = {
         description: "Sometimes, despite great efforts, a business fails to attract customers, leading to stagnation. Through the tantric ritual of vashikaran, this puja, led by Pandit Manish Sharma, attracts customers and ensures business success.",
         duration: "30 minutes",
         content: [
-          { heading: "Customer analysis", description: "Manish Sharma Astrologer evaluates your business and customer challenges. Maa Baglamukhi’s divine energy, guided by Baglamukhi Pandit Manish Sharma, attracts a loyal customer base for growth." },
+          { heading: "Customer analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to attract customers and ensure business success. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, brings business growth at Maa Baglamukhi Mandir." },
           { heading: "Vashikaran mantras", description: "Guided by Manish Sharma Astrologer, Maa Baglamukhi’s vashikaran mantras are chanted to draw customers. These chants, performed by the Best Maa Baglamukhi Pandit, enhance your business’s appeal and profitability." },
           { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure business success. This puja, enhanced by Maa Baglamukhi Puja, attracts customers and promotes financial prosperity." },
           { heading: "Business Strategy", description: "Pandit Manish Sharma provides tips to sustain customer loyalty with Maa Baglamukhi Pujan." }
@@ -610,7 +610,7 @@ export const servicesEn = {
         description: "To advance your career after securing a good job, a supportive boss is essential for optimal performance and progress. If you face issues with your boss or senior, Boss Vashikaran Puja, led by Pandit Manish Sharma, can foster a positive relationship between you and your boss.",
         duration: "30 minutes",
         content: [
-          { heading: "Relationship analysis", description: "Manish Sharma Astrologer assesses your workplace dynamics and horoscope. Maa Baglamukhi’s divine guidance, led by Baglamukhi Pandit Manish Sharma, improves your relationship with your boss at Maa Baglamukhi Mandir." },
+          { heading: "Relationship analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to improve workplace relationships and ensure career progress. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, brings success in your career." },
           { heading: "Vashikaran mantras", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s vashikaran mantras are chanted to foster cooperation. These chants, performed by the Best Maa Baglamukhi Pandit, promote a positive workplace relationship." },
           { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure career progress. This puja, enhanced by Maa Baglamukhi Puja, fosters harmony with your boss for a successful career." },
           { heading: "Career Advice", description: "Pandit Manish Sharma offers career-enhancing tips with Maa Baglamukhi Pujan." }
@@ -631,7 +631,7 @@ export const servicesEn = {
         description: "A good job and successful career are vital for fulfilling needs like housing, vehicles, or travel, and for supporting your family. If you aspire to achieve a desired job or career, the Career and Job Puja, led by Pandit Manish Sharma at Maa Baglamukhi Temple, can help you succeed.",
         duration: "45 minutes",
         content: [
-          { heading: "Career analysis", description: "Manish Sharma Astrologer evaluates your career goals and horoscope. Maa Baglamukhi’s divine energy, guided by Baglamukhi Pandit Manish Sharma, removes obstacles and ensures job attainment at Maa Baglamukhi Mandir." },
+          { heading: "Career analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed for career success and attainment of your desired job. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, brings progress in your career." },
           { heading: "Success mantras", description: "Guided by Manish Sharma Astrologer, Maa Baglamukhi’s success mantras are chanted to align energies for career success. These chants, performed by the Best Maa Baglamukhi Pandit, enhance your professional prospects." },
           { heading: "Blessings of Maa Baglamukhi", description: "Maa Baglamukhi’s blessings, facilitated by Manish Sharma Astrologer, ensure career advancement. This puja, enhanced by Maa Baglamukhi Puja, promotes financial stability and professional growth." },
           { heading: "Job Support", description: "Pandit Manish Sharma provides guidance on job interviews with Maa Baglamukhi Pujan." }

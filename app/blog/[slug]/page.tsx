@@ -210,14 +210,14 @@ function BlogPostContent() {
                             </div>
                           ))}
                           
-                          <div className="bg-orange-50 p-6 rounded-lg border-l-4 border-orange-500">
+                          {/* <div className="bg-orange-50 p-6 rounded-lg border-l-4 border-orange-500">
                             <h3 className="text-xl font-semibold text-orange-800 mb-3">{language === 'hi' ? 'मुख्य बातें' : 'Key Takeaways'}</h3>
                             <ul className="list-disc pl-5 space-y-2 text-orange-700">
                               <li>{language === 'hi' ? 'ग्रहों की स्थिति का महत्व समझें' : 'Understand the significance of planetary positions'}</li>
                               <li>{language === 'hi' ? 'ज्योतिषीय चार्ट को पढ़ना सीखें' : 'Learn how to interpret astrological charts'}</li>
                               <li>{language === 'hi' ? 'आम ज्योतिषीय समस्याओं के उपाय जानें' : 'Discover remedies for common astrological challenges'}</li>
                             </ul>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     )}
@@ -293,7 +293,6 @@ function BlogPostContent() {
                               : tag === 'Zodiac' ? 'राशि'
                               : tag === 'Planets' ? 'ग्रह'
                               : tag === 'Remedies' ? 'उपाय'
-                              : tag === 'Kundli' ? 'कुंडली'
                               : tag === 'Palmistry' ? 'हस्तरेखा'
                               : tag === 'Numerology' ? 'अंक ज्योतिष'
                               : tag

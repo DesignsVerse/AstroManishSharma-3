@@ -41,7 +41,7 @@ export const testimonials = {
       name: "Rohan Mehta",
       location: "Jaipur, India",
       rating: 5,
-      text: "The Baglamukhi Pandit Manish Sharma ensured a harmonious MARRIAGE for my daughter with accurate compatibility.",
+      text: "The Baglamukhi Pandit Manish Sharma ensured a harmonious MARRIAGE for my daughter with his wise guidance.",
       service: "Baglamukhi Pandit Manish Sharma"
     },
     {
@@ -76,7 +76,7 @@ export const testimonials = {
       name: "Lata Verma",
       location: "Patna, India",
       rating: 5,
-      text: "The Best Maa Baglamukhi Pandit guided me to a better CAREER choice with number-based wisdom.",
+      text: "The Best Maa Baglamukhi Pandit guided me to a better CAREER choice with practical wisdom.",
       service: "Best Maa Baglamukhi Pandit"
     },
     {
@@ -90,7 +90,7 @@ export const testimonials = {
       name: "Sunita Choudhary",
       location: "Indore, India",
       rating: 5,
-      text: "The Baglamukhi Pandit Manish Sharma analysis saved me from FINANCIAL loss with timely predictions.",
+      text: "The Baglamukhi Pandit Manish Sharma's guidance saved me from FINANCIAL loss with timely advice.",
       service: "Baglamukhi Pandit Manish Sharma"
     },
     {
@@ -195,7 +195,7 @@ export const testimonials = {
       name: "Nitin Sharma",
       location: "Amritsar, India",
       rating: 5,
-      text: "The Best Maa Baglamukhi Pandit helped me plan my INVESTMENTS wisely with predictions.",
+      text: "The Best Maa Baglamukhi Pandit helped me plan my INVESTMENTS wisely with his practical advice.",
       service: "Best Maa Baglamukhi Pandit"
     },
     {

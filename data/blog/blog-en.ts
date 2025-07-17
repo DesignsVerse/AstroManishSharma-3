@@ -35,7 +35,7 @@ export const blogEn: Blog = {
       content: [
         {
           heading: "Maa Baglamukhi Temple: A Sacred Powerhouse",
-          description: "Maa Baglamukhi, the eighth of the ten Mahavidyas, is revered as the goddess of victory and control. Located on the banks of the Lakundar River in Nalkheda, Agar Malwa, Madhya Pradesh, the **Maa Baglamukhi Mandir** is an ancient Shakti Peeth. Legend has it that the Pandavas established this temple during the Mahabharata era under Lord Krishna’s guidance. **Pandit Manish Sharma**, a renowned astrologer and Tantric expert, explains that the temple’s self-manifested idol embodies Maa Baglamukhi, Mahalakshmi, and Saraswati, making it unique. The temple’s yellow decor and turmeric-based rituals amplify its Tantric potency, attracting devotees seeking protection and success through **Maa Baglamukhi Puja**. This sacred site is renowned for eliminating negative energies, enemy obstacles, and legal disputes.",
+          description: "Maa Baglamukhi, the eighth of the ten Mahavidyas, is revered as the goddess of victory and control. Located on the banks of the Lakundar River in Nalkheda, Agar Malwa, Madhya Pradesh, the **Maa Baglamukhi Mandir** is an ancient Shakti Peeth. Legend has it that the Pandavas established this temple during the Mahabharata era under Lord Krishna’s guidance. **Pandit Manish Sharma**, a renowned spiritual guide and Tantric expert, explains that the temple’s self-manifested idol embodies Maa Baglamukhi, Mahalakshmi, and Saraswati, making it unique. The temple’s yellow decor and turmeric-based rituals amplify its Tantric potency, attracting devotees seeking protection and success through **Maa Baglamukhi Puja**. This sacred site is renowned for eliminating negative energies, enemy obstacles, and legal disputes.",
         },
         {
           heading: "The Miraculous Powers of the Temple",
@@ -49,7 +49,7 @@ export const blogEn: Blog = {
         },
         {
           heading: "Significance of Maa Baglamukhi Puja",
-          description: "**Maa Baglamukhi Puja** is a powerful Tantric ritual that liberates devotees from spiritual and material problems. **Pandit Manish Sharma** advises performing this puja with accurate mantras and offerings. The ritual involves yellow attire, turmeric, and yellow sweets, which attract Maa’s divine energy. This puja defeats enemies and mitigates negative planetary influences. As a **Maa Baglamukhi Pandit**, Pandit Manish Sharma analyzes devotees’ birth charts to determine the optimal time and method, ensuring enhanced results. The puja fosters mental clarity and confidence, aiding success in personal and professional life.",
+          description: "**Maa Baglamukhi Puja** is a powerful Tantric ritual that liberates devotees from spiritual and material problems. **Pandit Manish Sharma** advises performing this puja with accurate mantras and offerings. The ritual involves yellow attire, turmeric, and yellow sweets, which attract Maa’s divine energy. This puja defeats enemies and mitigates negative influences. As a spiritual guide, Pandit Manish Sharma determines the optimal time and method, ensuring enhanced results. The puja fosters mental clarity and confidence, aiding success in personal and professional life.",
         },
         {
           heading: "Steps to Perform Maa Baglamukhi Puja",
@@ -155,7 +155,7 @@ export const blogEn: Blog = {
         },
         {
           heading: "Common Mistakes and Solutions",
-          description: "Many devotees mispronounce mantras or choose incorrect timings. **Pandit Manish Sharma** advises astrological consultation before the puja. He analyzes birth charts to recommend optimal methods and timings, ensuring maximum benefits.",
+          description: "Many devotees mispronounce mantras or choose incorrect timings. **Pandit Manish Sharma** advises consultation before the puja. He recommends optimal methods and timings based on personal information, ensuring maximum benefits.",
         },
         {
           heading: "Pandit Manish Sharma’s Expertise",
@@ -187,7 +187,7 @@ export const blogEn: Blog = {
         },
         {
           heading: "Pandit Manish Sharma’s Role",
-          description: "**Baglamukhi Pandit Manish Sharma** offers personalized guidance based on devotees’ issues. His astrological calculations and Tantric methods ensure Maa’s blessings. As the **Best Maa Baglamukhi Pandit**, he provides tailored rituals for each devotee.",
+          description: "**Baglamukhi Pandit Manish Sharma** offers personalized guidance based on devotees’ issues. His calculations and Tantric methods ensure Maa’s blessings. As the **Best Maa Baglamukhi Pandit**, he provides tailored rituals for each devotee.",
         },
         {
           heading: "The Secret of the Temple’s Power",

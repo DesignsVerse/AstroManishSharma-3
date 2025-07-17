@@ -239,7 +239,7 @@ function ServicesContent() {
                 </div>
                 <h3 className="text-base md:text-lg lg:text-xl font-semibold text-gray-900 mb-1 md:mb-2 lg:mb-3">
                   {language === 'hi'
-                    ? (benefit.title === 'Expert Astrologers' ? 'विशेषज्ञ ज्योतिषी'
+                    ? (benefit.title === 'Expert Astrologers' ? 'विशेषज्ञ पंडित जी'
                       : benefit.title === 'Precise Guidance' ? 'सटीक मार्गदर्शन'
                       : benefit.title === 'Timely Reports' ? 'समय पर रिपोर्ट'
                       : benefit.title === '100% Confidential' ? '100% गोपनीय'
@@ -248,7 +248,7 @@ function ServicesContent() {
                 </h3>
                 <p className="text-xs md:text-sm lg:text-base text-gray-600">
                   {language === 'hi'
-                    ? (benefit.title === 'Expert Astrologers' ? 'दशकों के अनुभव वाले प्रमाणित ज्योतिषी'
+                    ? (benefit.title === 'Expert Astrologers' ? 'दशकों के अनुभव वाले प्रमाणित पंडित जी'
                       : benefit.title === 'Precise Guidance' ? '97% क्लाइंट संतुष्टि सटीक भविष्यवाणी के साथ'
                       : benefit.title === 'Timely Reports' ? '24-48 घंटे में व्यक्तिगत विश्लेषण प्राप्त करें'
                       : benefit.title === '100% Confidential' ? 'आपका डेटा और सलाह पूरी तरह गोपनीय'

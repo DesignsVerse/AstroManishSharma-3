@@ -193,7 +193,7 @@ function AboutContent() {
                     <p className="text-gray-600 leading-relaxed">
                       {language === 'hi'
                         ? (value.title === 'Compassionate Guidance' ? 'हम सहानुभूति और समझ के साथ रीडिंग्स प्रदान करते हैं, ताकि आप जीवन की चुनौतियों का सामना सहजता से कर सकें।'
-                          : value.title === 'Accurate Predictions' ? 'हमारे अनुभवी ज्योतिषी प्राचीन ज्ञान के आधार पर सटीक और अर्थपूर्ण सलाह देते हैं।'
+                          : value.title === 'Accurate Predictions' ? 'हमारे अनुभवी पंडित जी प्राचीन ज्ञान के आधार पर सटीक और अर्थपूर्ण सलाह देते हैं।'
                           : value.title === 'Continuous Learning' ? 'हम नवीनतम ज्योतिष तकनीकों के साथ-साथ पारंपरिक विधियों को भी अपनाते हैं।'
                           : value.title === 'Professional Excellence' ? 'ज्योतिष परामर्श और ग्राहक सेवा में उच्चतम मानकों को बनाए रखने के लिए प्रतिबद्ध।'
                           : value.description)
