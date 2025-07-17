@@ -98,7 +98,7 @@ export default function Hero() {
           <div className="relative">
             <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/images/Maa-Baglamukhi.jpg"
+                src="/maa.webp"
                 alt="Astrology consultation"
                 className="w-full h-full object-cover"
               />

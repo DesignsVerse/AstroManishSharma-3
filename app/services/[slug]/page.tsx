@@ -6,7 +6,7 @@ import Footer from '@/components/home/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { CheckCircle, ArrowLeft, Phone, Star } from 'lucide-react';
+import { CheckCircle, ArrowLeft, Phone, Star, MessageCircle } from 'lucide-react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -112,12 +112,24 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
                   {language === 'hi' ? 'कॉल करें' : 'Call Now'}
                 </Link>
               </Button>
-              <Button 
-                asChild 
-                variant="outline" 
-                className="w-full border-orange-600 text-orange-600 hover:bg-orange-50 h-14 text-lg"
+              {/* New WhatsApp Button - Orange Style, now dynamic */}
+              <Button
+                asChild
+                className="w-full bg-orange-600 hover:bg-orange-700 text-white h-14 text-lg flex items-center justify-center gap-2 shadow-lg"
               >
-                <Link href="/contact">{language === 'hi' ? 'सवाल पूछें' : 'Ask Questions'}</Link>
+                <a
+                  href={`https://wa.me/7733994827?text=${encodeURIComponent(
+                    language === 'hi'
+                      ? `नमस्ते, मुझे ${service.title} करानी है`
+                      : `Namaste, Mujko ${service.title} Karani Hai`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2"
+                >
+                  <MessageCircle className="w-5 h-5 text-white" />
+                  WhatsApp
+                </a>
               </Button>
             </div>
           </CardContent>
@@ -200,12 +212,24 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
                         {language === 'hi' ? 'कॉल करें' : 'Call Now'}
                       </Link>
                     </Button>
-                    <Button 
-                      asChild 
-                      variant="outline" 
-                      className="w-full border-orange-600 text-orange-600 hover:bg-orange-50 h-14 text-lg"
+                    {/* New WhatsApp Button - Orange Style, now dynamic */}
+                    <Button
+                      asChild
+                      className="w-full bg-orange-600 hover:bg-orange-700 text-white h-14 text-lg flex items-center justify-center gap-2 shadow-lg"
                     >
-                      <Link href="/contact">{language === 'hi' ? 'सवाल पूछें' : 'Ask Questions'}</Link>
+                      <a
+                        href={`https://wa.me/7733994827?text=${encodeURIComponent(
+                          language === 'hi'
+                            ? `नमस्ते, मुझे ${service.title} करानी है`
+                            : `Namaste, Mujko ${service.title} Karani Hai`
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center gap-2"
+                      >
+                        <MessageCircle className="w-5 h-5 text-white" />
+                        WhatsApp
+                      </a>
                     </Button>
                   </div>
                 </CardContent>

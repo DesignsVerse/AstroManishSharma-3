@@ -164,27 +164,6 @@ export const servicesEn = {
       ]
     },
     {
-      id: "vaicharik-badha-nivaran-pooja",
-      title: "Mental Obstacle Removal Puja by Pandit Manish Sharma",
-      description: "The Baglamukhi Mental Obstacle Removal Puja is a sacred experience performed in the presence of Goddess Baglamukhi to remove mental obstacles and ensure clarity in thought processes. Through this puja, all rituals and practices are fulfilled, seeking the blessings of Maa Baglamukhi.",
-      duration: "30 minutes",
-      content: [
-        { heading: "Mental analysis", description: "With the guidance of Pandit Manish Sharma, this puja is performed to remove mental obstacles and bring clarity. Maa Baglamukhi’s divine energy, invoked by Baglamukhi Pandit Manish Sharma, enhances mental clarity and confidence at Maa Baglamukhi Mandir." },
-        { heading: "Mantra chanting", description: "Under Manish Sharma Astrologer’s supervision, Maa Baglamukhi’s mantras are chanted to remove mental blockages. These sacred chants, performed by the Best Maa Baglamukhi Pandit, promote clarity and focus in your thoughts." },
-        { heading: "Mental clarity", description: "With Maa Baglamukhi’s blessings, guided by Manish Sharma Astrologer, this puja enhances mental clarity. It empowers you to make confident decisions through Maa Baglamukhi Puja." },
-        { heading: "Emotional Support", description: "Pandit Manish Sharma provides emotional guidance post-puja to maintain mental peace with Maa Baglamukhi Pujan." }
-      ],
-      image: "/images/puja/8.avif",
-      overview: "Mental Obstacle Removal Puja, led by Pandit Manish Sharma at Maa Baglamukhi Mandir, eliminates mental barriers and provides clarity in thinking and decision-making with the grace of Maa Baglamukhi Puja.",
-      benefits: [
-        "Freedom from mental obstacles with Best Maa Baglamukhi Pandit",
-        "Clear thinking and decision-making at Maa Baglamukhi Mandir",
-        "Increased confidence through Pandit Manish Sharma",
-        "Progress in life with Maa Baglamukhi Pujan",
-        "Enhanced mental well-being"
-      ]
-    },
-    {
       id: "santan-prapti-pooja",
       title: "Child Conception Puja at Maa Baglamukhi Mandir",
       description: "Childlessness is one of life’s greatest sorrows. Sometimes, due to weaknesses in either the woman or the man, or both, conception does not occur. If you are tired of visiting hospitals without results, perform the Child Conception Puja at Maa Baglamukhi Temple to help childless couples conceive.",
