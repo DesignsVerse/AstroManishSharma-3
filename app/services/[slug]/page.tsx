@@ -1,8 +1,6 @@
 "use client";
 
 import { useLanguage } from '@/contexts/LanguageContext';
-import Header from '@/components/home/Header';
-import Footer from '@/components/home/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -38,7 +36,7 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-orange-50">
-      <Header />
+     
 
       {/* Hero Section */}
       <section className="pt-28 pb-20 bg-gradient-to-b from-orange-600 to-amber-600">
@@ -115,7 +113,7 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
               {/* New WhatsApp Button - Orange Style, now dynamic */}
               <Button
                 asChild
-                className="w-full bg-orange-600 hover:bg-orange-700 text-white h-14 text-lg flex items-center justify-center gap-2 shadow-lg"
+                className="w-full bg-orange-600 hover:bg-orange-700 text-white h-14 text-lg animate-bounce flex items-center justify-center gap-2 shadow-lg"
               >
                 <a
                   href={`https://wa.me/7733994827?text=${encodeURIComponent(
@@ -215,7 +213,7 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
                     {/* New WhatsApp Button - Orange Style, now dynamic */}
                     <Button
                       asChild
-                      className="w-full bg-orange-600 hover:bg-orange-700 text-white h-14 text-lg flex items-center justify-center gap-2 shadow-lg"
+                      className="w-full bg-orange-600 hover:bg-orange-700 text-white h-14 text-lg animate-bounce flex items-center justify-center gap-2 shadow-lg"
                     >
                       <a
                         href={`https://wa.me/7733994827?text=${encodeURIComponent(
@@ -297,7 +295,7 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
         </div>
       </section>
 
-      <Footer />
+
     </div>
   );
 }

@@ -84,13 +84,13 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">{footer.services.title}</h4>
             <ul className="space-y-2">
-              {footer.services.links.map((service: string, index: number) => (
+              {(t('services.items') as any[]).slice(0, 10).map((service, index) => (
                 <li key={index}>
                   <Link 
-                    href="/services"
+                    href={`/services/${service.id}`}
                     className="text-gray-400 hover:text-orange-600 transition-colors"
                   >
-                    {service}
+                    {service.title}
                   </Link>
                 </li>
               ))}
