@@ -14,7 +14,8 @@ export const content = {
         services: "Services",
         blog: "Blog",
         about: "About",
-        contact: "Contact"
+        contact: "Contact",
+        gallery: "Gallery"
       },
       cta: "Call Now"
     },
@@ -193,7 +194,8 @@ export const content = {
         services: "सेवाएं",
         blog: "ब्लॉग",
         about: "हमारे बारे में",
-        contact: "संपर्क"
+        contact: "संपर्क",
+        gallery: "गैलरी"
       },
       cta: "अभी कॉल करें"
     },
