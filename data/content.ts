@@ -184,7 +184,8 @@ export const content = {
       subtitle: "Meet Manish Sharma, Spiritual Guide",
       description: `I am Pandit Manish Sharma. I have learned Vedic Havan and Tantra-Mantra Puja from Sarva Siddha Peeth Maa Baglamukhi Mandir Nalkheda since childhood from the ashram located in the courtyard of Mata Rani and studied them deeply and from the very beginning had faith and unwavering faith in Mata Rani. Along with being born in the court of Mata Rani, I have started my work rituals and havan worship rituals with her blessings as a Maa Baglamukhi Pandit. Being born in a Brahmin clan, I have also inherited this work. I am doing havan puja and rituals to fulfill the wishes of all the guests with Maa Baglamukhi Puja. With the blessings of Mata Rani, the wishes of all the guests are also being fulfilled at Maa Baglamukhi Mandir. There is a famous saying that *Whoever comes to Bagla Dwara, no one goes empty handed*. We are blessed by Mata Rani Maa Baglamukhi. May Jai Maa Baglamukhi be always on everyone!`,
       image: "/images/about/astrologer.jpg"
-    }
+    },
+    viewMore: "View More"
   },
   hi: {
     header: {
@@ -364,6 +365,7 @@ export const content = {
       subtitle: "मनीष शर्मा आध्यात्मिक मार्गदर्शक से मिलें",
       description: `मैं पंडित मनीष शर्मा सर्व सिद्ध पीठ मां बगलामुखी मंदिर नलखेड़ा से मैं बचपन से ही माता रानी के प्रांगण में स्थित आश्रम से वैदिक हवन एवं तंत्र-मंत्र पूजा सीखी है एवं उनका गहन अध्ययन किया और शुरुआत से ही माता रानी के प्रति आस्था एवं अटूट विश्वास होने के साथ ही मैंने अपने कार्य कर्मकांड एवं हवन पूजन अनुष्ठान को माता रानी के दरबार में उन्हीं के आशीर्वाद से प्रारंभ किया है बगलामुखी पंडित के रूप में। ब्राह्मण कुल में जन्म लेने के नाते यह कार्य मुझे विरासत में भी मिला है मैं पिछले 10 वर्षों से यजमान की मनोकामना को पूर्ण करने हेतु हवन पूजन एवं अनुष्ठान का कार्य कर रहा हूं माँ बगलामुखी पूजा के साथ। माता रानी के आशीर्वाद से सभी यजमानो की मनोकामना भी माँ बगलामुखी मंदिर में पूर्ण हो रही है। एक कहावत प्रसिद्ध है की *बगला द्वारे जो भी आता खाली हाथ कोई नहीं जाता*। हम माता रानी मां बगलामुखी का आशीर्वाद प्राप्त हैं। जय मां बगलामुखी हमेशा सभी पर बनी रहे!`,
       image: "/images/about/astrologer.jpg"
-    }
+    },
+    viewMore: "और देखें"
   }
 };

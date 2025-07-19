@@ -84,17 +84,23 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">{footer.services.title}</h4>
             <ul className="space-y-2">
-              {(t('services.items') as any[]).slice(0, 10).map((service, index) => (
+              {(t('services.items') as any[]).slice(0, 15).map((service, index) => (
                 <li key={index}>
                   <Link 
                     href={`/services/${service.id}`}
                     className="text-gray-400 hover:text-orange-600 transition-colors"
                   >
                     {service.title}
+                  
                   </Link>
                 </li>
               ))}
             </ul>
+            <div className="mt-4 text-center">
+              <Button asChild className="bg-orange-600 hover:bg-orange-700 text-white w-full">
+                <Link href="/services">{t('viewMore')}</Link>
+              </Button>
+            </div>
           </div>
 
           {/* Contact Info */}
