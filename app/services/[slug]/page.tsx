@@ -63,7 +63,7 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
                 </div>
               </div>
               
-              <div className="relative h-80 md:h-96 rounded-xl overflow-hidden shadow-2xl">
+              <div className="relative h-96 md:h-[500px] rounded-xl overflow-hidden shadow-2xl">
                 <Image
                   src={service.image}
                   alt={service.title}

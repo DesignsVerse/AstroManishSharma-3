@@ -266,10 +266,10 @@ function ServicesContent() {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto bg-white/10 backdrop-blur-sm p-6 md:p-8 lg:p-12 rounded-xl lg:rounded-2xl">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 md:mb-4 lg:mb-6">
-              {language === 'hi' ? 'क्या आप तैयार हैं ब्रह्मांडीय स्पष्टता के लिए?' : 'Ready for Cosmic Clarity?'}
+              {language === 'hi' ? 'क्या आप तैयार हैं अपनी समस्या से छुटकारा पाने के लिए' : 'Ready to Transform Your Life?'}
             </h2>
             <p className="text-sm sm:text-base md:text-xl text-orange-100 mb-4 md:mb-6 lg:mb-8">
-              {language === 'hi' ? 'आज ही अपनी सलाह शेड्यूल करें और सितारों की बुद्धि से जीवन को दिशा दें।' : "Schedule your consultation today and unlock the wisdom of the stars for your life's journey."}
+              {language === 'hi' ? 'आज ही अपनी पूजा बुक करें और अपने जीवन को नई दिशा दे।' : "Book your puja today and get divine guidance for your life's journey."}
             </p>
             <div className="flex flex-col sm:flex-row gap-2 md:gap-3 lg:gap-4 justify-center">
               <Button 
