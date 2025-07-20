@@ -52,12 +52,12 @@ export default function Hero() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white text-center">
-                <h3 className="text-xl font-bold">
+                {/* <h3 className="text-xl font-bold">
                   {language === 'hi' ? 'पंडित जी शर्मा' : 'Pandit Ji Sharma'}
                 </h3>
                 <p className="text-orange-200">
                   {language === 'hi' ? '25+ वर्षों का अनुभव' : '25+ Years Experience'}
-                </p>
+                </p> */}
               </div>
             </div>
             
