@@ -135,7 +135,7 @@ export const servicesEn = {
           description: "Pandit Manish Sharma provides tips to overcome travel obstacles and achieve success, which is complemented by Maa Baglamukhi worship."
         }
       ],
-      image: "/images/puja/32.avif",
+      image: "/images/puja/15.avif",
       overview: "Videsh Yatra Pooja, conducted by Pandit Manish Sharma, removes obstacles in your foreign travel and fulfills your desires quickly. This pooja, with the blessings of Maa Baglamukhi, ensures success in your journey.",
       benefits: [
         "Freedom from travel obstacles with the best Maa Baglamukhi Pandit",
