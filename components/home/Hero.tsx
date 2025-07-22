@@ -41,7 +41,7 @@ export default function Hero() {
       </div>
 
       <div className="container mx-auto px-2 py-4 lg:px-4 lg:py-32 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-2 lg:gap-20 items-center pt-8 lg:pt-10">
+        <div className="grid lg:grid-cols-2 gap-2 lg:gap-20 items-center pt-20 lg:pt-10">
           {/* Image */}
           <div className="relative order-1 lg:order-1">
             <div className="relative w-full h-80 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl border-4 border-orange-200">
