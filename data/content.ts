@@ -4,6 +4,8 @@ import { blogEn } from './blog/blog-en';
 import { blogHi } from './blog/blog-hi';
 import { testimonials as testimonialsEn } from './testimonials/en';
 import { testimonials as testimonialsHi } from './testimonials/hi';
+import { productsEn } from './products/products-en';
+import { productsHi } from './products/products-hi';
 
 export const content = {
   en: {
@@ -33,6 +35,7 @@ export const content = {
       ]
     },
     services: servicesEn,
+    products: productsEn,
     blog: blogEn,
     about: {
       title: "About Maa Baglamukhi Temple, Nalkheda - Home of Pandit Manish Sharma",
@@ -214,6 +217,7 @@ export const content = {
       ]
     },
     services: servicesHi,
+    products:productsHi,
     blog: blogHi,
     about: {
       title: "माँ बगलामुखी मंदिर, नलखेड़ा के बारे में - पंडित मनीष शर्मा का निवास",
