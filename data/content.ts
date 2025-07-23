@@ -44,7 +44,7 @@ export const content = {
       description: "The Bagalamukhi Temple in Nalkheda is a revered shrine located on the banks of the Lakhundar River in Madhya Pradesh, dedicated to Goddess Bagalamukhi, one of the ten Mahavidyas in Hinduism. Led by the expertise of Maa Baglamukhi Pandit Manish Sharma, this Maa Baglamukhi Mandir offers authentic spiritual guidance.",
       stats: [
         { number: "3", label: "Major Temples in India" },
-        { number: "200+", label: "Years of History" },
+        { number: "5500+", label: "Years of History" },
         { number: "Siddhapeeth", label: "Divine Status" },
         { number: "Year-Round", label: "Devotees Visit" }
       ],
@@ -227,7 +227,7 @@ export const content = {
       description: "नलखेड़ा स्थित बगलामुखी मंदिर मध्य प्रदेश में लक्ष्मणा नदी के तट पर स्थित एक पूजनीय स्थल है, जो हिंदू धर्म की दस महाविद्याओं में से एक देवी बगलामुखी को समर्पित है। मां बगलामुखी पंडित मनीष शर्मा इस मंदिर की विशेषज्ञता से परिपूर्ण है और मंदिर में होने वाली पूजाओं का कई वर्षों का अनुभव रखते हैं।",
       stats: [
         { number: "3", label: "भारत में प्रमुख मंदिर" },
-        { number: "200+", label: "वर्षों का इतिहास" },
+        { number: "5500+", label: "वर्षों का इतिहास" },
         { number: "सिद्धपीठ", label: "दिव्य स्थिति" },
         { number: "साल भर", label: "भक्तों का आगमन" }
       ],

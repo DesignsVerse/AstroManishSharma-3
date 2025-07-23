@@ -73,9 +73,6 @@ export default function Hero() {
             <h1 className="text-2xl lg:text-5xl font-bold text-white mb-3 lg:mb-6 leading-tight">
               {language === 'hi' ? 'तंत्र-मंत्र के माध्यम से जीवन को सकारात्मक बनाएं' : 'Transform Your Life Through Astrology & Vastu'}
             </h1>
-            <p className="text-base lg:text-xl text-orange-300 font-semibold mb-3 lg:mb-8">
-              {language === 'hi' ? 'तंत्र और मंत्र के माध्यम से जीवन को सकारात्मक बनाएं।' : 'Harness Planetary Power to Alter Your Destiny'}
-            </p>
             <p className="text-sm lg:text-lg text-gray-200 mb-3 lg:mb-10 max-w-2xl">
               {language === 'hi' 
                 ? 'हमारे अनुभवी तंत्र आचार्य पंडित मनीष शर्मा जी से पाए तंत्र और मंत्र के माध्यम से अपने जीवन से जुड़ी सभी समस्याओं के शीघ्र समाधान।'
