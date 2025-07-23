@@ -56,20 +56,20 @@ export default function ContactComponent() {
   };
 
   return (
-    <section className="py-16">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-16 items-stretch">
-          {/* Contact Form */}
-          <Card className="shadow-xl border-orange-100">
+    <section className="py-4 md:py-8 overflow-x-hidden">
+      <div className="container mx-auto w-full max-w-2xl px-2">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8">
+          {/* Contact Form - moved first for better mobile flow */}
+          <Card className="shadow-xl border-orange-100 w-full max-w-lg mx-auto order-1 lg:order-none">
             <CardHeader>
-              <CardTitle className="text-2xl text-gray-900">
+              <CardTitle className="text-lg md:text-xl text-gray-900">
                 {t('contact.formTitle')}
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2 md:space-y-4">
+                <div className="grid md:grid-cols-2 gap-2 md:gap-3">
+                  <div className="space-y-1">
                     <Label htmlFor="name">{t('contact.formLabels.name')}</Label>
                     <Input 
                       id="name" 
@@ -77,14 +77,14 @@ export default function ContactComponent() {
                       {...form.register('name', { 
                         required: t('contact.formErrors.name') 
                       })} 
-                      className="border-orange-200 focus:border-orange-500" 
+                      className="border-orange-200 focus:border-orange-500 py-2 px-2 text-sm" 
                       placeholder={t('contact.formPlaceholders.name')}
                     />
                     {form.formState.errors.name && (
-                      <p className="text-red-500 text-sm mt-1">{form.formState.errors.name.message}</p>
+                      <p className="text-red-500 text-xs mt-1">{form.formState.errors.name.message}</p>
                     )}
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-1">
                     <Label htmlFor="email">{t('contact.formLabels.email')}</Label>
                     <Input 
                       id="email" 
@@ -96,17 +96,17 @@ export default function ContactComponent() {
                           message: t('contact.formErrors.email')
                         }
                       })} 
-                      className="border-orange-200 focus:border-orange-500" 
+                      className="border-orange-200 focus:border-orange-500 py-2 px-2 text-sm" 
                       placeholder={t('contact.formPlaceholders.email')}
                     />
                     {form.formState.errors.email && (
-                      <p className="text-red-500 text-sm mt-1">{form.formState.errors.email.message}</p>
+                      <p className="text-red-500 text-xs mt-1">{form.formState.errors.email.message}</p>
                     )}
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
+                <div className="grid md:grid-cols-2 gap-2 md:gap-3">
+                  <div className="space-y-1">
                     <Label htmlFor="phone">{t('contact.formLabels.phone')}</Label>
                     <Input 
                       id="phone" 
@@ -118,20 +118,20 @@ export default function ContactComponent() {
                           message: t('contact.formErrors.phone')
                         }
                       })} 
-                      className="border-orange-200 focus:border-orange-500" 
+                      className="border-orange-200 focus:border-orange-500 py-2 px-2 text-sm" 
                       placeholder={t('contact.formPlaceholders.phone')}
                     />
                     {form.formState.errors.phone && (
-                      <p className="text-red-500 text-sm mt-1">{form.formState.errors.phone.message}</p>
+                      <p className="text-red-500 text-xs mt-1">{form.formState.errors.phone.message}</p>
                     )}
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-1">
                     <Label htmlFor="service">{t('contact.formLabels.service')}</Label>
                     <Select 
                       value={form.watch('service')} 
                       onValueChange={val => form.setValue('service', val, { shouldValidate: true })}
                     >
-                      <SelectTrigger className="border-orange-200 focus:border-orange-500">
+                      <SelectTrigger className="border-orange-200 focus:border-orange-500 py-2 px-2 text-sm">
                         <SelectValue placeholder={t('contact.formPlaceholders.service')} />
                       </SelectTrigger>
                       <SelectContent>
@@ -141,15 +141,15 @@ export default function ContactComponent() {
                       </SelectContent>
                     </Select>
                     {form.formState.errors.service && (
-                      <p className="text-red-500 text-sm mt-1">
+                      <p className="text-red-500 text-xs mt-1">
                         {t('contact.formErrors.service')}
                       </p>
                     )}
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-4">
-                  <div className="space-y-2">
+                <div className="grid md:grid-cols-3 gap-2 md:gap-3">
+                  <div className="space-y-1">
                     <Label htmlFor="birthDate">{t('contact.formLabels.birthDate')}</Label>
                     <Input 
                       id="birthDate" 
@@ -157,13 +157,13 @@ export default function ContactComponent() {
                       {...form.register('birthDate', { 
                         required: t('contact.formErrors.name') 
                       })} 
-                      className="border-orange-200 focus:border-orange-500" 
+                      className="border-orange-200 focus:border-orange-500 py-2 px-2 text-sm" 
                     />
                     {form.formState.errors.birthDate && (
-                      <p className="text-red-500 text-sm mt-1">{form.formState.errors.birthDate.message}</p>
+                      <p className="text-red-500 text-xs mt-1">{form.formState.errors.birthDate.message}</p>
                     )}
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-1">
                     <Label htmlFor="birthTime">{t('contact.formLabels.birthTime')}</Label>
                     <Input 
                       id="birthTime" 
@@ -171,13 +171,13 @@ export default function ContactComponent() {
                       {...form.register('birthTime', { 
                         required: t('contact.formErrors.name') 
                       })} 
-                      className="border-orange-200 focus:border-orange-500" 
+                      className="border-orange-200 focus:border-orange-500 py-2 px-2 text-sm" 
                     />
                     {form.formState.errors.birthTime && (
-                      <p className="text-red-500 text-sm mt-1">{form.formState.errors.birthTime.message}</p>
+                      <p className="text-red-500 text-xs mt-1">{form.formState.errors.birthTime.message}</p>
                     )}
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-1">
                     <Label htmlFor="birthPlace">{t('contact.formLabels.birthPlace')}</Label>
                     <Input 
                       id="birthPlace" 
@@ -185,20 +185,20 @@ export default function ContactComponent() {
                       {...form.register('birthPlace', { 
                         required: t('contact.formErrors.name') 
                       })} 
-                      className="border-orange-200 focus:border-orange-500" 
+                      className="border-orange-200 focus:border-orange-500 py-2 px-2 text-sm" 
                       placeholder={t('contact.formPlaceholders.birthPlace')}
                     />
                     {form.formState.errors.birthPlace && (
-                      <p className="text-red-500 text-sm mt-1">{form.formState.errors.birthPlace.message}</p>
+                      <p className="text-red-500 text-xs mt-1">{form.formState.errors.birthPlace.message}</p>
                     )}
                   </div>
                 </div>
 
-                <div className="space-y-2">
+                <div className="space-y-1">
                   <Label htmlFor="message">{t('contact.formLabels.message')}</Label>
                   <Textarea 
                     id="message" 
-                    rows={4} 
+                    rows={3} 
                     {...form.register('message', { 
                       required: t('contact.formErrors.message'),
                       minLength: {
@@ -206,20 +206,20 @@ export default function ContactComponent() {
                         message: t('contact.formErrors.message')
                       }
                     })} 
-                    className="border-orange-200 focus:border-orange-500" 
+                    className="border-orange-200 focus:border-orange-500 text-sm" 
                     placeholder={t('contact.formPlaceholders.message')} 
                   />
                   {form.formState.errors.message && (
-                    <p className="text-red-500 text-sm mt-1">{form.formState.errors.message.message}</p>
+                    <p className="text-red-500 text-xs mt-1">{form.formState.errors.message.message}</p>
                   )}
                 </div>
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-orange-600 hover:bg-orange-700 text-white py-3 text-lg transition-colors duration-300"
+                  className="w-full bg-orange-600 hover:bg-orange-700 text-white py-2 text-base md:text-lg transition-colors duration-300"
                   disabled={form.formState.isSubmitting}
                 >
-                  <Send className="w-5 h-5 mr-2" />
+                  <Send className="w-4 h-4 md:w-5 md:h-5 mr-2" />
                   {form.formState.isSubmitting 
                     ? t('contact.form.submitting') 
                     : t('contact.submitButton')}
@@ -229,33 +229,33 @@ export default function ContactComponent() {
           </Card>
 
           {/* Contact Information and Map */}
-          <div className="space-y-8">
+          <div className="space-y-2 md:space-y-4 order-0 lg:order-none">
             <Card className="shadow-xl border-orange-100">
               <CardHeader>
-                <CardTitle className="text-2xl text-gray-900">
+                <CardTitle className="text-xl md:text-2xl text-gray-900">
                   {t('contact.infoTitle')}
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="bg-orange-100 p-3 rounded-lg">
-                    <Phone className="w-6 h-6 text-orange-600" />
+              <CardContent className="space-y-4 md:space-y-6">
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="bg-orange-100 p-2 md:p-3 rounded-lg">
+                    <Phone className="w-5 h-5 md:w-6 md:h-6 text-orange-600" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">
+                    <h4 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">
                       {t('contact.phoneLabel')}
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-sm md:text-base">
                       {t('contact.info.phone')}
                     </p>
                     <div className="flex gap-2 mt-2">
                       <Button
                         asChild
                         size="sm"
-                        className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2"
+                        className="bg-orange-600 hover:bg-orange-700 text-white px-3 py-1 md:px-4 md:py-2 text-xs md:text-sm"
                       >
                         <a href="tel:+917733994827" className="flex items-center gap-1">
-                          <Phone className="w-4 h-4" />
+                          <Phone className="w-3 h-3 md:w-4 md:h-4" />
                           {t('contact.info.callNow') || (language === 'hi' ? 'कॉल करें' : 'Call')}
                         </a>
                       </Button>
@@ -263,7 +263,7 @@ export default function ContactComponent() {
                         asChild
                         size="sm"
                         variant="outline"
-                        className="border-orange-600 text-orange-600 hover:bg-orange-50 px-4 py-2"
+                        className="border-orange-600 text-orange-600 hover:bg-orange-50 px-3 py-1 md:px-4 md:py-2 text-xs md:text-sm"
                       >
                         <a
                           href={`https://wa.me/7733994827?text=${encodeURIComponent(
@@ -275,7 +275,7 @@ export default function ContactComponent() {
                           rel="noopener noreferrer"
                           className="flex items-center gap-1"
                         >
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-3 h-3 md:w-4 md:h-4">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M20.52 3.48A11.94 11.94 0 0012 0C5.37 0 0 5.37 0 12c0 2.12.55 4.11 1.52 5.82L0 24l6.18-1.52A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-2.12-.55-4.11-1.52-5.82zM12 22c-1.85 0-3.63-.5-5.18-1.44l-.37-.22-3.67.9.9-3.67-.22-.37A9.96 9.96 0 012 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm4.29-7.71l-1.42-1.42a1 1 0 00-1.42 0l-.29.29a8.01 8.01 0 01-3.18-3.18l.29-.29a1 1 0 000-1.42l-1.42-1.42a1 1 0 00-1.42 0l-.71.71a2.99 2.99 0 00-.29 3.18c1.13 2.26 3.13 4.26 5.39 5.39a2.99 2.99 0 003.18-.29l.71-.71a1 1 0 000-1.42z" />
                           </svg>
                           WhatsApp
@@ -285,43 +285,43 @@ export default function ContactComponent() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="bg-orange-100 p-3 rounded-lg">
-                    <Mail className="w-6 h-6 text-orange-600" />
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="bg-orange-100 p-2 md:p-3 rounded-lg">
+                    <Mail className="w-5 h-5 md:w-6 md:h-6 text-orange-600" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">
+                    <h4 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">
                       {t('contact.emailLabel')}
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-sm md:text-base">
                       {t('contact.info.email')}
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="bg-orange-100 p-3 rounded-lg">
-                    <MapPin className="w-6 h-6 text-orange-600" />
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="bg-orange-100 p-2 md:p-3 rounded-lg">
+                    <MapPin className="w-5 h-5 md:w-6 md:h-6 text-orange-600" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">
+                    <h4 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">
                       {t('contact.addressLabel')}
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-sm md:text-base">
                       {t('contact.info.address')}
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="bg-orange-100 p-3 rounded-lg">
-                    <Clock className="w-6 h-6 text-orange-600" />
+                <div className="flex items-start gap-3 md:gap-4">
+                  <div className="bg-orange-100 p-2 md:p-3 rounded-lg">
+                    <Clock className="w-5 h-5 md:w-6 md:h-6 text-orange-600" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">
+                    <h4 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">
                       {t('contact.hoursTitle')}
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-sm md:text-base">
                       {t('contact.info.hoursValue')}
                     </p>
                   </div>
@@ -330,24 +330,24 @@ export default function ContactComponent() {
             </Card>
 
             {/* Map Section */}
-<Card className="shadow-xl border-orange-100 h-[380px]">
-  <CardHeader>
-    <CardTitle className="text-2xl text-gray-900">
-      {t('contact.info.location') || 'Maa Baglamukhi Mandir'}
-    </CardTitle>
-  </CardHeader>
-  <CardContent className="p-0 h-[350px]">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7137.147730209316!2d76.22609230654193!3d23.841389699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3964b97a0576ae97%3A0x45323f30be84261c!2sBaglamukhi%20Mandir%20Nalkheda!5e1!3m2!1sen!2sin!4v1753252051245!5m2!1sen!2sin"
-      width="100%"
-      height="100%"
-      style={{ border: 0 }}
-      allowFullScreen
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-    ></iframe>
-  </CardContent>
-</Card>
+            <Card className="shadow-xl border-orange-100 h-[300px] md:h-[380px]">
+              <CardHeader>
+                <CardTitle className="text-xl md:text-2xl text-gray-900">
+                  {t('contact.info.location') || 'Maa Baglamukhi Mandir'}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="p-0 h-[250px] md:h-[350px]">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7137.147730209316!2d76.22609230654193!3d23.841389699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3964b97a0576ae97%3A0x45323f30be84261c!2sBaglamukhi%20Mandir%20Nalkheda!5e1!3m2!1sen!2sin!4v1753252051245!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
