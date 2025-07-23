@@ -21,6 +21,15 @@ export default function GalleryPage() {
         file.toLowerCase().endsWith(ext)
       )
     )
+    .sort((a, b) => {
+      // Extract numbers from filenames for natural sort
+      const numA = parseInt(a, 10);
+      const numB = parseInt(b, 10);
+      if (!isNaN(numA) && !isNaN(numB)) {
+        return numA - numB;
+      }
+      return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
+    })
     .map((file) => ({
       src: `/gallery/${file}`,
       alt: `Gallery image ${file}`,
