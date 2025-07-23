@@ -13,6 +13,7 @@ export const content = {
       logo: "Maa Baglamukhi",
       nav: {
         home: "Home",
+        products: "Products",
         services: "Services",
         blog: "Blog",
         about: "About",
@@ -195,6 +196,7 @@ export const content = {
       logo: "माँ बगलामुखी",
       nav: {
         home: "मुख्य पृष्ठ",
+        products: "उत्पाद",
         services: "सेवाएं",
         blog: "ब्लॉग",
         about: "हमारे बारे में",

@@ -40,7 +40,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1">
-            {["home", "services", "blog", "about", "contact", "gallery"].map((item) => (
+            {["home", "products", "services", "blog", "about", "contact", "gallery"].map((item) => (
               <Link 
                 key={item}
                 href={`/${item === "home" ? "" : item}`}
@@ -120,7 +120,7 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden mt-3 pb-4 animate-fade-in">
             <nav className="flex flex-col space-y-3 border-t border-gray-100 pt-4">
-              {["home", "services", "blog", "about", "contact", "gallery"].map((item) => (
+              {["home", "products", "services", "blog", "about", "contact", "gallery"].map((item) => (
                 <Link 
                   key={item}
                   href={`/${item === "home" ? "" : item}`}
