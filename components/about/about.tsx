@@ -153,7 +153,7 @@ function AboutContent() {
               </div>
               <div className="relative">
                 <img
-                  src="/images/about.jpg"
+                  src="/images/about-image.jpg"
                   alt="About us"
                   className="rounded-2xl shadow-2xl"
                 />

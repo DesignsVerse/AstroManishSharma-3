@@ -13,7 +13,26 @@ interface GalleryClientProps {
 }
 
 export default function GalleryClient({ images }: GalleryClientProps) {
-  const [selectedImage, setSelectedImage] = useState<ImageType | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+
+  const selectedImage =
+    selectedIndex !== null && selectedIndex >= 0 && selectedIndex < images.length
+      ? images[selectedIndex]
+      : null;
+
+  const handlePrev = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (selectedIndex !== null && selectedIndex > 0) {
+      setSelectedIndex(selectedIndex - 1);
+    }
+  };
+
+  const handleNext = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (selectedIndex !== null && selectedIndex < images.length - 1) {
+      setSelectedIndex(selectedIndex + 1);
+    }
+  };
 
   return (
     <main className="container mx-auto px-4 py-12 pt-40 bg-white min-h-screen">
@@ -25,7 +44,7 @@ export default function GalleryClient({ images }: GalleryClientProps) {
           <div
             key={idx}
             className="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
-            onClick={() => setSelectedImage(image)}
+            onClick={() => setSelectedIndex(idx)}
           >
             <Image
               src={image.src}
@@ -48,17 +67,35 @@ export default function GalleryClient({ images }: GalleryClientProps) {
       {selectedImage && (
         <div
           className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 animate-fade-in overflow-auto"
-          onClick={() => setSelectedImage(null)}
+          onClick={() => setSelectedIndex(null)}
         >
           <div
-            className="relative max-w-5xl w-full mx-4"
+            className="relative max-w-5xl w-full mx-4 flex flex-col items-center"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               className="absolute top-4 right-4 text-white text-3xl font-bold bg-gray-800/50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-800 transition"
-              onClick={() => setSelectedImage(null)}
+              onClick={() => setSelectedIndex(null)}
             >
               &times;
+            </button>
+            {/* Prev Button */}
+            <button
+              className="absolute left-0 top-1/2 -translate-y-1/2 text-white text-4xl bg-gray-800/50 rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-800 transition disabled:opacity-50"
+              onClick={handlePrev}
+              disabled={selectedIndex === 0}
+              aria-label="Previous image"
+            >
+              &#8592;
+            </button>
+            {/* Next Button */}
+            <button
+              className="absolute right-0 top-1/2 -translate-y-1/2 text-white text-4xl bg-gray-800/50 rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-800 transition disabled:opacity-50"
+              onClick={handleNext}
+              disabled={selectedIndex === images.length - 1}
+              aria-label="Next image"
+            >
+              &#8594;
             </button>
             <Image
               src={selectedImage.src}

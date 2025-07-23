@@ -71,7 +71,7 @@ export default function Hero() {
               {language === 'hi' ? '5000+ खुश ग्राहकों का विश्वास' : 'Trusted by 5000+ Happy Clients'}
             </div>
             <h1 className="text-2xl lg:text-5xl font-bold text-white mb-3 lg:mb-6 leading-tight">
-              {language === 'hi' ? 'ज्योतिष और वास्तु के माध्यम से जीवन को सकारात्मक बनाएं' : 'Transform Your Life Through Astrology & Vastu'}
+              {language === 'hi' ? 'तंत्र-मंत्र के माध्यम से जीवन को सकारात्मक बनाएं' : 'Transform Your Life Through Astrology & Vastu'}
             </h1>
             <p className="text-base lg:text-xl text-orange-300 font-semibold mb-3 lg:mb-8">
               {language === 'hi' ? 'तंत्र और मंत्र के माध्यम से जीवन को सकारात्मक बनाएं।' : 'Harness Planetary Power to Alter Your Destiny'}

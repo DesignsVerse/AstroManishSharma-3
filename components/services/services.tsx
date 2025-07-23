@@ -219,6 +219,24 @@ function ServicesContent() {
         </div>
       </section>
 
+      {/* Call/WhatsApp Bar - Increased Height */}
+      <div className="w-full bg-orange-600 flex justify-center items-center py-3 md:py-4 gap-4 md:gap-8 mb-4 md:mb-8">
+        <a
+          href="tel:+917733994827"
+          className="inline-flex items-center px-6 py-2 md:px-8 md:py-3 text-sm md:text-lg font-semibold text-orange-600 bg-white rounded-lg hover:bg-orange-50 border border-orange-200 transition-colors shadow-sm"
+        >
+          {language === 'hi' ? 'कॉल करें' : 'Call Now'}
+        </a>
+        <a
+          href={`https://wa.me/7733994827?text=${encodeURIComponent('नमस्ते पंडित मनीष शर्मा जी मुझे मां बगलामुखी पूजा के बारे में और अधिक जानना है।\nNamaste Pandit Manish Sharma ji, I want to know more about Maa Baglamukhi Puja.')}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-6 py-2 md:px-8 md:py-3 text-sm md:text-lg font-semibold text-white bg-green-500 rounded-lg hover:bg-green-600 transition-colors shadow-sm"
+        >
+          {language === 'hi' ? 'व्हाट्सएप' : 'WhatsApp'}
+        </a>
+      </div>
+
       {/* Benefits Section */}
       <section className="py-8 md:py-12 lg:py-20 bg-white">
         <div className="container mx-auto px-4">

@@ -28,6 +28,7 @@ type ServiceItem = {
 
 export default function ContactComponent() {
   const { t } = useLanguage();
+  const { language } = useLanguage();
   const services = t('services.items') as ServiceItem[];
   
   const form = useForm<FormValues>({
@@ -247,6 +248,40 @@ export default function ContactComponent() {
                     <p className="text-gray-600">
                       {t('contact.info.phone')}
                     </p>
+                    <div className="flex gap-2 mt-2">
+                      <Button
+                        asChild
+                        size="sm"
+                        className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2"
+                      >
+                        <a href="tel:+917733994827" className="flex items-center gap-1">
+                          <Phone className="w-4 h-4" />
+                          {t('contact.info.callNow') || (language === 'hi' ? 'कॉल करें' : 'Call')}
+                        </a>
+                      </Button>
+                      <Button
+                        asChild
+                        size="sm"
+                        variant="outline"
+                        className="border-orange-600 text-orange-600 hover:bg-orange-50 px-4 py-2"
+                      >
+                        <a
+                          href={`https://wa.me/7733994827?text=${encodeURIComponent(
+                            language === 'hi'
+                              ? 'नमस्ते पंडित मनीष शर्मा जी मुझे मां बगलामुखी पूजा करवानी है।'
+                              : 'Hello, I need astrology consultation'
+                          )}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-1"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M20.52 3.48A11.94 11.94 0 0012 0C5.37 0 0 5.37 0 12c0 2.12.55 4.11 1.52 5.82L0 24l6.18-1.52A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-2.12-.55-4.11-1.52-5.82zM12 22c-1.85 0-3.63-.5-5.18-1.44l-.37-.22-3.67.9.9-3.67-.22-.37A9.96 9.96 0 012 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm4.29-7.71l-1.42-1.42a1 1 0 00-1.42 0l-.29.29a8.01 8.01 0 01-3.18-3.18l.29-.29a1 1 0 000-1.42l-1.42-1.42a1 1 0 00-1.42 0l-.71.71a2.99 2.99 0 00-.29 3.18c1.13 2.26 3.13 4.26 5.39 5.39a2.99 2.99 0 003.18-.29l.71-.71a1 1 0 000-1.42z" />
+                          </svg>
+                          WhatsApp
+                        </a>
+                      </Button>
+                    </div>
                   </div>
                 </div>
 
@@ -295,24 +330,24 @@ export default function ContactComponent() {
             </Card>
 
             {/* Map Section */}
-            <Card className="shadow-xl border-orange-100 h-30%">
-              <CardHeader>
-                <CardTitle className="text-2xl text-gray-900">
-                  {t('contact.info.location') || 'Our Location'}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="p-0 h-30%">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.716068979762!2d76.2141693153845!3d23.10903541899178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDA2JzMyLjUiTiA3NsKwMTInNTUuMyJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </CardContent>
-            </Card>
+<Card className="shadow-xl border-orange-100 h-[380px]">
+  <CardHeader>
+    <CardTitle className="text-2xl text-gray-900">
+      {t('contact.info.location') || 'Maa Baglamukhi Mandir'}
+    </CardTitle>
+  </CardHeader>
+  <CardContent className="p-0 h-[350px]">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7137.147730209316!2d76.22609230654193!3d23.841389699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3964b97a0576ae97%3A0x45323f30be84261c!2sBaglamukhi%20Mandir%20Nalkheda!5e1!3m2!1sen!2sin!4v1753252051245!5m2!1sen!2sin"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </CardContent>
+</Card>
           </div>
         </div>
       </div>

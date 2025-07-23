@@ -21,7 +21,7 @@ export default function Testimonials() {
         if (nextIndex >= testimonials.length) return 0;
         return nextIndex;
       });
-    }, 4000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, [testimonials.length]);
