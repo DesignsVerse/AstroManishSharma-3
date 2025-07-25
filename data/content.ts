@@ -55,7 +55,7 @@ export const content = {
       description: "Maa Baglamukhi Pujan, led by Pandit Manish Sharma, is your trusted partner for authentic astrological guidance, spiritual growth, and personalized consultations with Maa Baglamukhi Puja. Join thousands who have found clarity and peace at Maa Baglamukhi Mandir.",
       quickLinks: {
         title: "Quick Links",
-        links: ["Home", "Services", "Blog", "About", "Contact", "Gallery"]
+        links: ["Home","Products", "Services", "Blog", "About", "Contact", "Gallery"]
       },
       services: {
         title: "Our Services",
@@ -238,7 +238,7 @@ export const content = {
       description: "माँ बगलामुखी पूजन, पंडित मनीष शर्मा के नेतृत्व में, आध्यात्मिक विकास और माँ बगलामुखी पूजा के साथ व्यक्तिगत परामर्श का भरोसेमंद साथी है। माँ बगलामुखी मंदिर में हजारों लोगों ने स्पष्टता और शांति पाई है।",
       quickLinks: {
         title: "त्वरित लिंक",
-        links: ["Home", "Services", "Blog", "About", "Contact", "Gallery"]
+        links: ["Home","Products", "Services", "Blog", "About", "Contact", "Gallery"]
       },
       services: {
         title: "हमारी सेवाएं",

@@ -8,7 +8,8 @@ import WhyChooseUs from '@/components/home/WhyChooseUs';
 import Testimonials from '@/components/home/Testimonials';
 import ContactComponent from '@/components/home/contact';
 import AboutAstrologer from '@/components/home/AboutAstrologer';
-
+import FooterProducts from '@/components/home/products';
+import { productsEn } from '@/data/products/products-en';
 export const metadata = {
   title: 'Maa Baglamukhi Puja & Vedic Astrology Services By Pandit Manish Sharma -',
   description: 'Discover expert astrology services and Maa Baglamukhi Puja by Pandit Manish Sharma at Maa Baglamukhi Mandir. Get personalized Vedic readings and spiritual guidance.',
@@ -47,6 +48,7 @@ export const metadata = {
   },
 };
 
+
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -54,11 +56,9 @@ export default function Home() {
         <Hero />
         <Services />
         <About />
+        <FooterProducts products={productsEn.slice(0, 6)} />
+
         <Testimonials />
-        {/* <FeaturedServices /> */}
-        {/* <DailyHoroscope /> */}
-        
-        {/* <LiveConsultation /> */}
         <AboutAstrologer />
         <Blog />
         <WhyChooseUs />
