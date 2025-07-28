@@ -93,7 +93,7 @@ export default function Hero() {
                 <span className="font-medium">{language === 'hi' ? '98% संतुष्टि दर' : '98% Satisfaction Rate'}</span>
               </div>
               <div className="text-xs lg:text-sm text-gray-200">
-                <span className="font-medium">{language === 'hi' ? '25+ वर्षों का अनुभव' : '25+ Years Experience'}</span>
+                <span className="font-medium">{language === 'hi' ? '10+ वर्षों का अनुभव' : '10+ Years Experience'}</span>
               </div>
             </div>
 

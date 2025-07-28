@@ -210,7 +210,7 @@ function AboutContent() {
         <section className="py-16 bg-gradient-to-r from-orange-600 to-amber-600">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold text-white mb-4">
-              {language === 'hi' ? 'क्या आप अपनी ज्योतिष यात्रा शुरू करने के लिए तैयार हैं?' : 'Ready to Begin Your Astrological Journey?'}
+              {language === 'hi' ? 'क्या आप अपनी आध्यात्मिक यात्रा करने के लिए तैयार हैं' : 'Ready to Begin Your Astrological Journey?'}
             </h2>
             <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
               {language === 'hi' ? 'हमारे अनुभवी ज्योतिषियों से जुड़ें और वे जानकारियाँ पाएं जो आपके जीवन को बदल सकती हैं।' : 'Connect with our experienced astrologers and discover the insights that can transform your life.'}

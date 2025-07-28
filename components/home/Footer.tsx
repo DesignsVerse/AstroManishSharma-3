@@ -9,7 +9,7 @@ import Link from 'next/link';
 export default function Footer() {
   const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
-
+  
   // Get all footer content from translation context
   const footer = t('footer');
 
