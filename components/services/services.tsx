@@ -160,7 +160,7 @@ function ServicesContent() {
               <Link href={`/services/${service.id}`} key={index} className="block group">
                 <Card className="hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-orange-300 overflow-hidden flex flex-col h-full cursor-pointer">
                   {/* Image Section */}
-                  <div className="relative h-40 sm:h-48 md:h-52">
+                  <div className="relative h-[200px] sm:h-48 md:h-[400px]">
                     <Image
                       src={service.image}
                       alt={service.title}

@@ -31,17 +31,15 @@ export default function ServicesPreview() {
                 className="hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-orange-300 overflow-hidden h-full flex flex-col cursor-pointer"
               >
                 {/* Image with fixed aspect ratio */}
-                <div className="relative aspect-video w-full">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
-                    priority={index < 3} // Only prioritize first 3 images
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                </div>
+                <div className="relative h-[200px] sm:h-48 md:h-[400px]">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                  </div>  
                 
                 {/* Card Content */}
                 <div className="flex-1 p-3 sm:p-4 flex flex-col">
