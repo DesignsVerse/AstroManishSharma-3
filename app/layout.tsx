@@ -51,9 +51,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className='notranslate'
-    translate="no"
->
+    // <html lang="en" className='notranslate'
+    // translate="no"
+// >
       <body className={inter.className}>       
         <LanguageProvider>
           <Header/>
@@ -61,6 +61,6 @@ export default function RootLayout({
           <Footer/>
         </LanguageProvider>
       </body>
-    </html>
+    // </html>
   );
 }
