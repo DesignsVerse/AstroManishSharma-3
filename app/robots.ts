@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = 'https://astro-manish-sharma-3.vercel.app/' // Replace with your actual domain
+  const baseUrl = 'https://www.maabaglamukhipujan.in'
   
   return {
     rules: {

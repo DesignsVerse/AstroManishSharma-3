@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://astro-manish-sharma-3.vercel.app/' // Replace with your actual domain
+  const baseUrl = 'https://www.maabaglamukhipujan.in'
   
   // Static routes
   const staticRoutes: MetadataRoute.Sitemap = [
