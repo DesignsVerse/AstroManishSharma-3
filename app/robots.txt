@@ -6,4 +6,4 @@ Disallow: /admin/    # Block admin panel (if exists)
 Allow: /
 
 # Specify the sitemap location
-Sitemap: https://www.ujjainkalsarp.com/sitemap.xml
+Sitemap: https://www.maabaglamukhipujan.in/sitemap.xml
