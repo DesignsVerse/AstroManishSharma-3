@@ -192,7 +192,7 @@ export default function ProductsPage() {
                       callNumber="+917733994827"
                       whatsappText={currentContent.whatsapp}
                       callText={currentContent.callNow}
-                      message={`I'm interested in ${product.name}`}
+                      message={`मैं ${product.name} में रुचि रखता हूँ`}
                       className="mt-2"
                     />
                   </div>
@@ -230,28 +230,37 @@ export default function ProductsPage() {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-orange-800 text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">{currentContent.guidanceTitle}</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            {currentContent.guidanceSubtitle}
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button 
-              onClick={() => {}}
-              className="bg-white text-orange-800 hover:bg-orange-100 px-8 py-6 text-lg font-semibold"
-            >
-              <MessageCircle className="mr-2 h-5 w-5" /> {currentContent.chatWhatsapp}
-            </Button>
-            <Button 
-              onClick={() => {}}
-              className="bg-transparent border-2 border-white hover:bg-orange-700 px-8 py-6 text-lg font-semibold"
-            >
-              <Phone className="mr-2 h-5 w-5" /> {currentContent.callConsultation}
-            </Button>
-          </div>
-        </div>
-      </div>
+<div className="bg-orange-800 text-white py-16">
+  <div className="container mx-auto px-4 text-center">
+    <h2 className="text-3xl font-bold mb-4">{currentContent.guidanceTitle}</h2>
+    <p className="text-xl mb-8 max-w-2xl mx-auto">
+      {currentContent.guidanceSubtitle}
+    </p>
+    <div className="flex flex-col sm:flex-row justify-center gap-4">
+      {/* WhatsApp Button */}
+      <Link
+        href="https://wa.me/917733994827?text=नमस्ते%2C%20मुझे%20सही%20उत्पाद%20के%20लिए%20मार्गदर्शन%20चाहिए"
+        target="_blank"
+      >
+        <Button
+          className="bg-white text-orange-800 hover:bg-orange-100 px-8 py-6 text-lg font-semibold"
+        >
+          <MessageCircle className="mr-2 h-5 w-5" /> व्हाट्सएप पर चैट करें
+        </Button>
+      </Link>
+
+      {/* Call Button */}
+      <Link href="tel:+917733994827">
+        <Button
+          className="bg-transparent border-2 border-white hover:bg-orange-700 px-8 py-6 text-lg font-semibold"
+        >
+          <Phone className="mr-2 h-5 w-5" /> परामर्श के लिए कॉल करें
+        </Button>
+      </Link>
+    </div>
+  </div>
+</div>
+
     </div>
   );
 }

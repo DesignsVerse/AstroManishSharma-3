@@ -30,6 +30,10 @@ function BlogPostContent() {
   const [isBookmarked, setIsBookmarked] = useState(false);
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [slug]);
+
+  useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
       setViews(Math.floor(Math.random() * 1000) + 500);
@@ -39,6 +43,7 @@ function BlogPostContent() {
 
     return () => clearTimeout(timer);
   }, [slug]);
+
 
   const posts = t('blog.posts') as any[];
   const post = posts.find((p: any) => p.id === slug);
@@ -261,18 +266,48 @@ function BlogPostContent() {
                   </CardContent>
                 </Card>
 
-                {/* CTA Card */}
-                <Card className="bg-gradient-to-br from-orange-600 to-amber-600 text-white">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold mb-3">{language === 'hi' ? 'अपनी व्यक्तिगत रीडिंग प्राप्त करें' : 'Get Your Personal Reading'}</h3>
-                    <p className="mb-4 text-orange-100">
-                      {language === 'hi' ? 'व्यक्तिगत ज्योतिषीय रीडिंग के साथ जानें सितारे आपके लिए क्या कहते हैं।' : 'Discover what the stars have in store for you with a personalized astrology reading.'}
-                    </p>
-                    <Button className="w-full bg-white text-orange-600 hover:bg-orange-50 font-medium">
-                      {language === 'hi' ? 'अभी बुक करें' : 'Book Now'}
-                    </Button>
-                  </CardContent>
-                </Card>
+              {/* CTA Card */}
+<Card className="bg-gradient-to-br from-orange-600 to-amber-600 text-white">
+  <CardContent className="p-6">
+    <h3 className="text-xl font-semibold mb-3">
+      {language === "hi"
+        ? "अपनी व्यक्तिगत रीडिंग प्राप्त करें"
+        : "Get Your Personal Reading"}
+    </h3>
+
+    <p className="mb-4 text-orange-100">
+      {language === "hi"
+        ? "व्यक्तिगत ज्योतिषीय रीडिंग के साथ जानें सितारे आपके लिए क्या कहते हैं।"
+        : "Discover what the stars have in store for you with a personalized astrology reading."}
+    </p>
+
+    {/* Book Now → Call */}
+    <a href="tel:+917733994827">
+      <Button className="w-full bg-white text-orange-600 hover:bg-orange-50 font-medium mb-3">
+        {language === "hi" ? "अभी बुक करें" : "Book Now"}
+      </Button>
+    </a>
+
+    {/* WhatsApp Button */}
+    <a
+      href="https://wa.me/917733994827?text=मुझे%20व्यक्तिगत%20रीडिंग%20बुक%20करनी%20है"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Button className="w-full bg-green-500 text-white hover:bg-green-600 font-medium mb-3">
+        {language === "hi" ? "व्हाट्सएप करें" : "Chat on WhatsApp"}
+      </Button>
+    </a>
+
+    {/* Call Now Button */}
+    <a href="tel:+917733994827">
+      <Button className="w-full bg-white text-orange-600 font-medium">
+        {language === "hi" ? "अभी कॉल करें" : "Call Now"}
+      </Button>
+    </a>
+  </CardContent>
+</Card>
+
 
                 {/* Popular Tags */}
                 <Card>

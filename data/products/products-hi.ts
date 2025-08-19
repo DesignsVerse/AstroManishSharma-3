@@ -29,7 +29,7 @@ export const productsHi = [
     {
       id: 2,
       slug: "rudraksh-mala",
-      name: "माँ बगलामुखी रुद्राक्ष माला",
+      name: "रुद्राक्ष माला",
       price: 1100,
       originalPrice: 1500,
       image: `/images/products/2.avif`,

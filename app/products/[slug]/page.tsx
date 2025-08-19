@@ -279,18 +279,7 @@ function ProductPage({ params }: { params: { slug: string } }) {
           </div>
         </div>
         
-        {/* FAQ Section */}
-        <div className="mt-16 sm:mt-20 max-w-3xl mx-auto px-2 sm:px-0">
-          <h2 className="text-xl md:text-2xl font-bold text-center text-orange-800 mb-8">{t.frequentlyAsked}</h2>
-          <div className="space-y-4">
-            {faqList.map((faq, i: number) => (
-              <Card key={i} className="p-6 bg-white">
-                <h3 className="font-semibold text-orange-800 mb-2">{faq.question}</h3>
-                <p className="text-gray-700">{faq.answer}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
+  
       </div>
     </div>
   );

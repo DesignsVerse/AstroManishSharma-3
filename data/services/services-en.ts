@@ -5,7 +5,7 @@ export const servicesEn = {
     title_en: "Transform Your Life With Cosmic Wisdom by Best Maa Baglamukhi Pandit",
     title_hi: "ब्रह्मांडीय ज्ञान से अपने जीवन को बदलें - सर्वश्रेष्ठ माँ बगलामुखी पंडित के साथ",
     desc_en: "Our premium astrology services, led by Pandit Manish Sharma, combine ancient Vedic techniques with modern interpretation to provide life-changing guidance through Maa Baglamukhi Puja.",
-    desc_hi: "हमारी प्रीमियम ज्योतिष सेवाएँ, पंडित मनीष शर्मा के नेतृत्व में, प्राचीन वैदिक तकनीकों को आधुनिक व्याख्या के साथ जोड़ती हैं, जो माँ बगलामुखी पूजा के माध्यम से जीवन बदलने वाली मार्गदर्शना प्रदान करती हैं।",
+    desc_hi: "मां बगलामुखी मंदिर में आप अपनी मनोकामना से संबंधित जैसे लक्ष्मी प्राप्ति पूजा, राजनीतिक विजय पूजा, शत्रु पराजय पूजा, व्यापार वृद्धि पूजा, कोर्ट केस विजय प्राप्ति पूजा, कर्ज मुक्ति पूजा, संतान प्राप्ति पूजा, वैवाहिक बाधा निवारण पूजा, प्रेम विवाह,जमीनी विवाद से छुटकारा, शेयर मार्केट प्रॉफिट पूजा, विदेश यात्रा पूजा, सर्विस प्राप्ति पूजा, वशीकरण पूजा,नौकरी में प्रमोशन आदि मनोकामनाओं को पूरा करने के लिए मां बगलामुखी अनुष्ठान पूजा करवा सकते हैं और अपनी मनोकामना को शीघ्र पूरा कर सकते हैं।",
     badge1_en: "Personalized Readings by Maa Baglamukhi Pandit",
     badge1_hi: "माँ बगलामुखी पंडित द्वारा व्यक्तिगत पाठ",
     badge2_en: "Remedial Solutions with Maa Baglamukhi Pujan",

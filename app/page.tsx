@@ -61,7 +61,7 @@ export default function Home() {
         <Testimonials />
         <AboutAstrologer />
         <Blog />
-        <WhyChooseUs />
+        {/* <WhyChooseUs /> */}
         <ContactComponent />
       </main>
     </div>
