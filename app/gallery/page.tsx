@@ -1,43 +1,12 @@
-import Image from "next/image";
-import fs from "fs";
-import path from "path";
-import GalleryClient from "./GalleryClient";
+import GalleryPage from '@/components/Gallery/gallery'
+import React from 'react'
 
-// Define a type for the image object
-interface ImageType {
-  src: string;
-  alt: string;
-  caption: string;
+const Gallery = () => {
+  return (
+    <div>
+    <GalleryPage/>
+    </div>
+  )
 }
 
-export default function GalleryPage() {
-  // Dynamically read all images from public/gallery
-  const galleryDir = path.join(process.cwd(), "public", "gallery");
-  const files = fs.readdirSync(galleryDir);
-  // Filter only image files and create image objects with generated captions
-  const images: ImageType[] = files
-    .filter((file) =>
-      [".jpg", ".jpeg", ".png", ".webp", ".avif", ".gif"].some((ext) =>
-        file.toLowerCase().endsWith(ext)
-      )
-    )
-    .sort((a, b) => {
-      // Extract numbers from filenames for natural sort
-      const numA = parseInt(a, 10);
-      const numB = parseInt(b, 10);
-      if (!isNaN(numA) && !isNaN(numB)) {
-        return numA - numB;
-      }
-      return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
-    })
-    .map((file) => ({
-      src: `/gallery/${file}`,
-      alt: `Gallery image ${file}`,
-      caption: file
-        .replace(/\.[^/.]+$/, "") // Remove file extension
-        .replace(/[-_]/g, " ") // Replace hyphens/underscores with spaces
-        .replace(/\b\w/g, (c) => c.toUpperCase()), // Capitalize words
-    }));
-
-  return <GalleryClient images={images} />;
-}
+export default Gallery
