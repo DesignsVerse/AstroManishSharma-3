@@ -1,8 +1,20 @@
 "use client";
 
-// import { Product } from "@/data/products"; // Assuming you have a Product type defined
-// Define Product type here since it's not exported from products-en or products-hi
-export interface Product {
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { IndianRupee, Star } from "lucide-react";
+import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { useEffect, useRef, useState } from "react";
+import WhatsAppCallButtons from "@/components/ui/WhatsAppCallButtons";
+import { useRouter } from "next/navigation";
+
+// Import both products
+import { productsEn } from "@/data/products/products-en";
+import { productsHi } from "@/data/products/products-hi";
+
+interface Product {
   id: number;
   slug: string;
   name: string;
@@ -20,29 +32,19 @@ export interface Product {
   deliveryInfo: string;
   details: string;
 }
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { IndianRupee, Star } from "lucide-react";
-import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
-import { useLanguage } from "@/contexts/LanguageContext";
-import { useEffect, useRef, useState } from "react";
-import WhatsAppCallButtons from "@/components/ui/WhatsAppCallButtons";
-import { useRouter } from "next/navigation";
 
-interface FooterProductsProps {
-  products: Product[];
-}
-
-export default function FooterProducts({ products }: FooterProductsProps) {
+export default function FooterProducts() {
   const { language } = useLanguage();
   const [visibleProducts, setVisibleProducts] = useState<Product[]>([]);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
-  
+
+  // language ke hisaab se products select karo
+  const products = language === "hi" ? productsHi : productsEn;
+
   useEffect(() => {
     const updateVisibleProducts = () => {
-      if (typeof window !== 'undefined' && window.innerWidth < 768) {
+      if (typeof window !== "undefined" && window.innerWidth < 768) {
         setVisibleProducts(products.slice(0, 4)); // mobile: 4 cards
       } else {
         setVisibleProducts(products.slice(0, 3)); // desktop: 3 cards
@@ -50,27 +52,9 @@ export default function FooterProducts({ products }: FooterProductsProps) {
     };
 
     updateVisibleProducts();
-    window.addEventListener('resize', updateVisibleProducts);
-    return () => window.removeEventListener('resize', updateVisibleProducts);
+    window.addEventListener("resize", updateVisibleProducts);
+    return () => window.removeEventListener("resize", updateVisibleProducts);
   }, [products]);
-
-  const scrollLeft = () => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({
-        left: -300,
-        behavior: 'smooth'
-      });
-    }
-  };
-
-  const scrollRight = () => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({
-        left: 300,
-        behavior: 'smooth'
-      });
-    }
-  };
 
   const showAllProducts = () => {
     router.push("/products");
@@ -81,27 +65,29 @@ export default function FooterProducts({ products }: FooterProductsProps) {
       <div className="container mx-auto">
         <div className="text-center mb-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            {language === 'hi' ? 'हमारे उत्पाद' : 'Our Products'}
+            {language === "hi" ? "हमारे उत्पाद" : "Our Products"}
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            {language === 'hi' ? 'हमारे लोकप्रिय ज्योतिष उत्पादों की खोज करें' : 'Explore our most popular astrology products'}
+            {language === "hi"
+              ? "हमारे लोकप्रिय ज्योतिष उत्पादों की खोज करें"
+              : "Explore our most popular astrology products"}
           </p>
         </div>
-        
+
         <div className="relative">
-          <div 
+          <div
             ref={scrollContainerRef}
             className="grid grid-cols-2 md:grid-cols-3 gap-4"
-            style={{ scrollSnapType: 'x mandatory' }}
+            style={{ scrollSnapType: "x mandatory" }}
           >
             {visibleProducts.map((product) => (
               <div key={product.id} className="snap-start">
                 <Card className="h-full border-orange-200">
                   <div className="relative">
-                    <img 
-                      src={product.image} 
+                    <img
+                      src={product.image}
                       alt={product.name}
-                      className="w-full h-32 object-cover" // h-40 -> h-32 for smaller card
+                      className="w-full h-56 object-cover"
                     />
                     {product.badge && (
                       <Badge className="absolute top-2 right-2 bg-orange-600 text-white px-2 py-0.5 rounded-full text-xs font-bold">
@@ -109,20 +95,24 @@ export default function FooterProducts({ products }: FooterProductsProps) {
                       </Badge>
                     )}
                   </div>
-                  
+
                   <div className="p-4">
                     <h3 className="font-semibold text-gray-800 mb-1 line-clamp-1">
                       <Link href={`/products/${product.slug}`}>
                         {product.name}
                       </Link>
                     </h3>
-                    
+
                     <div className="flex items-center mb-1">
                       <div className="flex text-amber-500 mr-1">
                         {[...Array(5)].map((_, i) => (
-                          <Star 
+                          <Star
                             key={i}
-                            className={`w-3 h-3 ${i < Math.floor(product.rating) ? 'fill-current' : ''}`}
+                            className={`w-3 h-3 ${
+                              i < Math.floor(product.rating)
+                                ? "fill-current"
+                                : ""
+                            }`}
                           />
                         ))}
                       </div>
@@ -130,17 +120,21 @@ export default function FooterProducts({ products }: FooterProductsProps) {
                         {product.rating}
                       </span>
                     </div>
-                    
+
                     <p className="text-orange-700 font-bold text-sm flex items-center">
                       <IndianRupee className="w-3 h-3 mr-1" />
-                      {product.price.toLocaleString(language === 'hi' ? 'en-IN' : 'en-US')}
+                      {product.price.toLocaleString(
+                        language === "hi" ? "en-IN" : "en-US"
+                      )}
                     </p>
-                    
+
                     <WhatsAppCallButtons
                       whatsappNumber="917733994827"
                       callNumber="+917733994827"
-                      whatsappText={language === 'hi' ? 'व्हाट्सएप' : 'WhatsApp'}
-                      callText={language === 'hi' ? 'कॉल करें' : 'Call Now'}
+                      whatsappText={
+                        language === "hi" ? "व्हाट्सएप" : "WhatsApp"
+                      }
+                      callText={language === "hi" ? "कॉल करें" : "Call Now"}
                       message={`I'm interested in ${product.name}`}
                       className="mt-2 text-xs"
                     />
@@ -149,18 +143,16 @@ export default function FooterProducts({ products }: FooterProductsProps) {
               </div>
             ))}
           </div>
-          
-            
         </div>
-        
+
         {visibleProducts.length < products.length && (
           <div className="text-center mt-6">
-            <Button 
+            <Button
               onClick={showAllProducts}
               variant="outline"
               className="border-orange-600 text-orange-600 hover:bg-orange-50"
             >
-              {language === 'hi' ? 'और देखें' : 'View More'}
+              {language === "hi" ? "और देखें" : "View More"}
             </Button>
           </div>
         )}

@@ -56,7 +56,7 @@ export default function Home() {
         <Hero />
         <Services />
         <About />
-        <FooterProducts products={productsEn.slice(0, 6)} />
+        <FooterProducts  />
 
         <Testimonials />
         <AboutAstrologer />

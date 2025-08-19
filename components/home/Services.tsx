@@ -23,23 +23,22 @@ export default function ServicesPreview() {
           </p>
         </div>
 
-        {/* Services Grid - Always 2 columns on mobile, 3 on tablet/desktop */}
+        {/* Services Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 mb-8 md:mb-10">
           {displayedServices.map((service, index) => (
             <Link href={`/services/${service.id}`} key={index} className="block group">
               <Card 
                 className="hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-orange-300 overflow-hidden h-full flex flex-col cursor-pointer"
               >
-                {/* Image with fixed aspect ratio */}
-                <div className="relative h-[200px] sm:h-48 md:h-[400px]">
-                    <Image
-                      src={service.image}
-                      alt={service.title}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                  </div>  
+                {/* Image with full visible (no crop) */}
+                <div className="relative h-48 sm:h-56 md:h-64 flex items-center justify-center bg-gray-100">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    className="object-contain p-2" // ✅ full image visible, no cut
+                  />
+                </div>  
                 
                 {/* Card Content */}
                 <div className="flex-1 p-3 sm:p-4 flex flex-col">
@@ -72,8 +71,7 @@ export default function ServicesPreview() {
                         rel="noopener noreferrer"
                         onClick={e => e.stopPropagation()}
                       >
-                      {language === 'hi' ? 'व्हाट्सएप' : 'WhatsApp'}
-
+                        {language === 'hi' ? 'व्हाट्सएप' : 'WhatsApp'}
                       </a>
                     </Button>
                     <Button

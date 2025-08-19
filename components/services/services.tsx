@@ -160,15 +160,24 @@ function ServicesContent() {
               <Link href={`/services/${service.id}`} key={index} className="block group">
                 <Card className="hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-orange-300 overflow-hidden flex flex-col h-full cursor-pointer">
                   {/* Image Section */}
-                  <div className="relative h-[200px] sm:h-48 md:h-[400px]">
-                    <Image
-                      src={service.image}
-                      alt={service.title}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                  </div>
+                  <div className="relative h-[200px] sm:h-48 md:h-[400px] bg-white flex items-center justify-center">
+  <Image
+    src={service.image}
+    alt={service.title}
+    fill
+    className="object-contain"   // <-- ab pura image dikhega, cut nahi hoga
+  />
+
+  {/* Agar video hai toh Play Icon show karega */}
+  {service.type === "video" && (
+    <div className="absolute inset-0 flex items-center justify-center">
+      <div className="bg-white/80 text-orange-600 rounded-full p-3 sm:p-4 md:p-6 shadow-lg">
+        ▶
+      </div>
+    </div>
+  )}
+</div>
+
                   
                   {/* Content Section */}
                   <div className="flex flex-col flex-1 pt-0 pb-3 px-3 sm:pb-4 sm:px-4">
