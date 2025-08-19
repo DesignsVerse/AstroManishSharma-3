@@ -141,24 +141,24 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
             {/* Main Content */}
             <div className="lg:col-span-2 space-y-16">
               {/* Overview */}
-              <div>
+              {/* <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
                   {language === 'hi' ? 'सेवा का अवलोकन' : 'Service Overview'}
                 </h2>
                 <p className="text-gray-700 leading-relaxed text-lg">
                   {service.overview}
                 </p>
-              </div>
+              </div> */}
 
               {/* What's Included */}
-              <div>
+              {/* <div>
                 {service.content.map((item, index) => (
                   <div key={index} className="mb-8">
                     <h3 className="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">{item.heading}</h3>
                     <p className="text-gray-700 text-lg">{item.description}</p>
                   </div>
                 ))}
-              </div>
+              </div> */}
 
               {/* Benefits */}
               <div>
