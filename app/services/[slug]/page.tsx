@@ -237,7 +237,6 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
         </div>
       </section>
 
-      {/* Related Services */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center mb-16">
@@ -253,14 +252,16 @@ export default function ServiceDetailContent({ params }: { params: { slug: strin
             {relatedServices.map((relatedService) => (
               <Card key={relatedService.id} className="group hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-orange-300 overflow-hidden flex flex-col justify-between">
                 <div>
-                  <div className="relative h-48">
+                  {/* Related Service Image */}
+                  <div className="relative h-48 bg-white flex items-center justify-center">
                     <Image
                       src={relatedService.image}
                       alt={relatedService.title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="object-contain transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    
+                    
                   </div>
                   
                   <CardHeader>
