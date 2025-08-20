@@ -48,7 +48,6 @@ export const galleryItems: GalleryItem[] = [
   { id: 28, image: '/images/puja/29.avif', category: 'yajman', featured: true, type: 'image' },
   { id: 29, image: '/images/puja/30.avif', category: 'yajman', featured: true, type: 'image' },
   { id: 30, image: '/images/puja/31.avif', category: 'yajman', featured: true, type: 'image' },
-  { id: 31, image: '/images/puja/32.avif', category: 'yajman', featured: true, type: 'image' },
   { id: 32, image: '/images/puja/33.avif', category: 'yajman', featured: true, type: 'image' },
   { id: 33, image: '/images/puja/34.avif', category: 'yajman', featured: true, type: 'image' },
   { id: 34, image: '/images/puja/35.avif', category: 'yajman', featured: true, type: 'image' },

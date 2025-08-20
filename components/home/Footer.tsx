@@ -28,22 +28,22 @@ export default function Footer() {
             </p>
             <div className="flex gap-4">
               <Button asChild variant="ghost" size="icon" className="hover:bg-orange-600 hover:text-white" title="Facebook">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/people/%E0%A4%AE%E0%A4%BE%E0%A4%82-%E0%A4%AC%E0%A4%97%E0%A4%B2%E0%A4%BE%E0%A4%AE%E0%A5%81%E0%A4%96%E0%A5%80-%E0%A4%B6%E0%A4%B0%E0%A4%A3%E0%A4%AE/100084742483497/?rdid=bRyH6uWRmIpMRYt6&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1ELpP4pop4%2F" target="_blank" rel="noopener noreferrer">
                   <Facebook className="w-5 h-5" />
                 </a>
               </Button>
               <Button asChild variant="ghost" size="icon" className="hover:bg-orange-600 hover:text-white" title="Instagram">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/panditmanishsharma76?igsh=MWc5YjNqbjYweGJpMg%3D%3D" target="_blank" rel="noopener noreferrer">
                   <Instagram className="w-5 h-5" />
                 </a>
               </Button>
-              <Button asChild variant="ghost" size="icon" className="hover:bg-orange-600 hover:text-white" title="Twitter">
+              {/* <Button asChild variant="ghost" size="icon" className="hover:bg-orange-600 hover:text-white" title="Twitter">
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                   <Twitter className="w-5 h-5" />
                 </a>
-              </Button>
+              </Button> */}
               <Button asChild variant="ghost" size="icon" className="hover:bg-orange-600 hover:text-white" title="Youtube">
-                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/@maabaglamukhipandit.in36" target="_blank" rel="noopener noreferrer">
                   <Youtube className="w-5 h-5" />
                 </a>
               </Button>
